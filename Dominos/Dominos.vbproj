@@ -1,0 +1,182 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{F900C27B-0C7A-4C20-A8F3-80ECAC928EFF}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <StartupObject>Dominos.My.MyApplication</StartupObject>
+    <RootNamespace>Dominos</RootNamespace>
+    <AssemblyName>Dominos</AssemblyName>
+    <FileAlignment>512</FileAlignment>
+    <MyType>WindowsForms</MyType>
+    <TargetFrameworkVersion>v4.6.1</TargetFrameworkVersion>
+    <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <DefineDebug>true</DefineDebug>
+    <DefineTrace>true</DefineTrace>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DocumentationFile>Dominos.xml</DocumentationFile>
+    <NoWarn>42016,41999,42017,42018,42019,42032,42036,42020,42021,42022</NoWarn>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <DefineDebug>false</DefineDebug>
+    <DefineTrace>true</DefineTrace>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DocumentationFile>Dominos.xml</DocumentationFile>
+    <NoWarn>42016,41999,42017,42018,42019,42032,42036,42020,42021,42022</NoWarn>
+  </PropertyGroup>
+  <PropertyGroup>
+    <OptionExplicit>On</OptionExplicit>
+  </PropertyGroup>
+  <PropertyGroup>
+    <OptionCompare>Binary</OptionCompare>
+  </PropertyGroup>
+  <PropertyGroup>
+    <OptionStrict>Off</OptionStrict>
+  </PropertyGroup>
+  <PropertyGroup>
+    <OptionInfer>On</OptionInfer>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="System" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Deployment" />
+    <Reference Include="System.DirectoryServices" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="System.Net.Http" />
+  </ItemGroup>
+  <ItemGroup>
+    <Import Include="Microsoft.VisualBasic" />
+    <Import Include="System" />
+    <Import Include="System.Collections" />
+    <Import Include="System.Collections.Generic" />
+    <Import Include="System.Data" />
+    <Import Include="System.Drawing" />
+    <Import Include="System.Diagnostics" />
+    <Import Include="System.Windows.Forms" />
+    <Import Include="System.Linq" />
+    <Import Include="System.Xml.Linq" />
+    <Import Include="System.Threading.Tasks" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="ClassicOrder.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ClassicOrder.Designer.vb">
+      <DependentUpon>ClassicOrder.vb</DependentUpon>
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Login.Designer.vb">
+      <DependentUpon>Login.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Login.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="My Project\AssemblyInfo.vb" />
+    <Compile Include="My Project\Application.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Application.myapp</DependentUpon>
+    </Compile>
+    <Compile Include="My Project\Resources.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Resources.resx</DependentUpon>
+    </Compile>
+    <Compile Include="My Project\Settings.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="ClassicOrder.resx">
+      <DependentUpon>ClassicOrder.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Login.resx">
+      <DependentUpon>Login.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="My Project\Resources.resx">
+      <Generator>VbMyResourcesResXFileCodeGenerator</Generator>
+      <CustomToolNamespace>My.Resources</CustomToolNamespace>
+      <SubType>Designer</SubType>
+      <LastGenOutput>Resources.Designer.vb</LastGenOutput>
+    </EmbeddedResource>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="My Project\Application.myapp">
+      <Generator>MyApplicationCodeGenerator</Generator>
+      <LastGenOutput>Application.Designer.vb</LastGenOutput>
+    </None>
+    <None Include="My Project\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <CustomToolNamespace>My</CustomToolNamespace>
+      <LastGenOutput>Settings.Designer.vb</LastGenOutput>
+    </None>
+    <None Include="App.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Wedges-20170626.jpeg" />
+    <None Include="Resources\MeltinBalls-20170626.jpeg" />
+    <None Include="Resources\Wedges-20170626.jpg" />
+    <None Include="Resources\MeltinBalls-20170626.jpg" />
+    <None Include="Resources\sprite-drink-20171123.jpeg" />
+    <None Include="Resources\smartwater-drink-20170704.jpeg" />
+    <None Include="Resources\sprite.png" />
+    <None Include="Resources\glaceau.png" />
+    <None Include="Resources\fanta.png" />
+    <None Include="Resources\dietcoke.png" />
+    <None Include="Resources\cokezero.png" />
+    <None Include="Resources\cokelogo.png" />
+    <None Include="Resources\Dominos_Own_Tomato_Sauce_20170613.jpg" />
+    <None Include="Resources\BBQ_Sauce_20170613.jpg" />
+    <None Include="Resources\Sundried_Tomato_and_Garlic_Sauce_20170613.jpg" />
+    <None Include="Resources\meatzzapizza-20170704-large.jpg" />
+    <None Include="Resources\deluxe-20170704-large.jpg" />
+    <None Include="Resources\farmhouse-20170704-large.jpg" />
+    <None Include="Resources\tandoorihot-20170704-large.jpg" />
+    <None Include="Resources\texasbbq-20170704-large.jpg" />
+    <None Include="Resources\pepperonipassion-20170704-large.jpg" />
+    <None Include="Resources\mighty-meaty-20170704-large.jpg" />
+    <None Include="Resources\large.PNG" />
+    <None Include="Resources\medium.PNG" />
+    <None Include="Resources\small.PNG" />
+    <None Include="Resources\cheese-and-tomato-20170704-large.jpg" />
+    <None Include="Resources\meatzzapizza-20170704.jpg" />
+    <None Include="Resources\farmhouse-20170704.jpg" />
+    <None Include="Resources\texasbbq-20170704.jpg" />
+    <None Include="Resources\pepperonipassion-20170704.jpg" />
+    <None Include="Resources\mighty-meaty-20170704.jpg" />
+    <None Include="Resources\cheese-and-tomato-20170704.jpg" />
+    <None Include="Resources\fanta1.png" />
+    <None Include="Resources\coca-cola-drink-20171123.jpeg" />
+    <None Include="Resources\coca-cola-zero-drink-20171123.jpeg" />
+    <None Include="Resources\diet-coke-drink-20171123.jpeg" />
+    <None Include="Resources\fanta-drink-20171123.jpeg" />
+    <None Include="Resources\ChicknMix-20170626.jpg" />
+    <None Include="Resources\GarlicBread-20170626.jpg" />
+    <None Include="Resources\GarlicBread-20170626.jpeg" />
+    <None Include="Resources\GarlicBread-201706261.jpeg" />
+    <None Include="Resources\ChicknMix-20170626.jpeg" />
+    <None Include="Resources\Dips_Small_x4-20170626.jpeg" />
+    <None Include="Resources\Garlic_Dip-20170626.jpeg" />
+    <None Include="Resources\BBQ_Dip-20170626.jpeg" />
+    <None Include="Resources\Franks_Dip-20170626.jpeg" />
+    <None Include="Resources\ChilliOil-20170626.jpeg" />
+    <Content Include="Resources\Logo.PNG" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.VisualBasic.targets" />
+</Project>

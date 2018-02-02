@@ -1,0 +1,13 @@
+C:\Users\Daniel\source\repos\Dominos\Dominos\bin\Debug\Dominos.exe.config
+C:\Users\Daniel\source\repos\Dominos\Dominos\bin\Debug\Dominos.exe
+C:\Users\Daniel\source\repos\Dominos\Dominos\bin\Debug\Dominos.pdb
+C:\Users\Daniel\source\repos\Dominos\Dominos\bin\Debug\Dominos.xml
+C:\Users\Daniel\source\repos\Dominos\Dominos\obj\Debug\Dominos.vbprojResolveAssemblyReference.cache
+C:\Users\Daniel\source\repos\Dominos\Dominos\obj\Debug\Dominos.Resources.resources
+C:\Users\Daniel\source\repos\Dominos\Dominos\obj\Debug\Dominos.vbproj.GenerateResource.Cache
+C:\Users\Daniel\source\repos\Dominos\Dominos\obj\Debug\Dominos.vbproj.CoreCompileInputs.cache
+C:\Users\Daniel\source\repos\Dominos\Dominos\obj\Debug\Dominos.exe
+C:\Users\Daniel\source\repos\Dominos\Dominos\obj\Debug\Dominos.xml
+C:\Users\Daniel\source\repos\Dominos\Dominos\obj\Debug\Dominos.pdb
+C:\Users\Daniel\source\repos\Dominos\Dominos\obj\Debug\Dominos.ClassicOrder.resources
+C:\Users\Daniel\source\repos\Dominos\Dominos\obj\Debug\Dominos.Login.resources
