@@ -1,6 +1,9 @@
 ﻿Public Class ClassicOrder
 
     Private selectedSize As String = "Large"
+    Private selectedCrust As String = "Classic"
+    Private selectedBase As String = "Tomato"
+
     Private pizzaPrice As Decimal = 14.99
     Private crustPrice As Decimal
     Private drinkPrice As Decimal
@@ -17,6 +20,9 @@
         sideGarlicBread.SelectedIndex = 0
         sideWedges.SelectedIndex = 0
         sideChickenMixBox.SelectedIndex = 0
+
+        ' Use user details.
+        welcomeDetails.Text = "Welcome back, " & UserDetails.Name & ". Time for a pizza."
     End Sub
 
     ' To query the price if the order is updated.
@@ -52,6 +58,8 @@
             crustClassic.Checked = True
             pizzaPreview.Image = Dominos.My.Resources.Resources.cheese_and_tomato_20170704_large
             selectedSize = "Large" ' // default option
+            selectedBase = "Tomato" ' // default option
+            selectedCrust = "Classic" ' // default option
             pizzaPrice = 14.99 ' // default option
             crustPrice = 0
             drinkPrice = 0
@@ -122,21 +130,33 @@
     ' ==========================================================================
 
     Private Sub crustClassic_Apply(sender As Object, e As EventArgs) Handles crustClassic.GotFocus, crustItalian.GotFocus, crustThin.GotFocus
+        selectedCrust = "Classic"
         crustPrice = 0
         getPrice()
     End Sub
 
+    Private Sub crustThin_Apply(sender As Object, e As EventArgs) Handles crustThin.GotFocus
+        selectedCrust = "Thin"
+    End Sub
+
+    Private Sub crustItalian_Apply(sender As Object, e As EventArgs) Handles crustItalian.GotFocus
+        selectedCrust = "Italian"
+    End Sub
+
     Private Sub crustStuffedChilliCheese_Apply(sender As Object, e As EventArgs) Handles crustStuffedChilliCheese.GotFocus
+        selectedCrust = "Stuffed Chilli Cheese"
         crustPrice = 2.5
         getPrice()
     End Sub
 
     Private Sub crustStuffedCheese_Apply(sender As Object, e As EventArgs) Handles crustStuffedCheese.GotFocus
+        selectedCrust = "Stuffed Cheese"
         crustPrice = 2.99
         getPrice()
     End Sub
 
     Private Sub crustDoubleDecadence_Apply(sender As Object, e As EventArgs) Handles crustDoubleDecadence.GotFocus
+        selectedCrust = "Double Decadence"
         crustPrice = 2.99
         getPrice()
     End Sub
@@ -150,11 +170,28 @@
     ' // or revert their selection if they change their size to small.
     Private Sub crustDoubleDecadence_Deny(sender As Object, e As EventArgs) Handles sizeSmall.GotFocus
         If crustDoubleDecadence.Checked = True Then
+            selectedCrust = "Classic"
             crustClassic.Checked = True
             crustPrice = 0
             getPrice()
         End If
         crustDoubleDecadence.Enabled = False
+    End Sub
+
+    ' ==========================================================================
+    ' // Keep track of the base selection.
+    ' ==========================================================================
+
+    Private Sub baseTomato_Apply(sender As Object, e As EventArgs) Handles baseTomato.GotFocus
+        selectedBase = "Tomato"
+    End Sub
+
+    Private Sub baseSundriedTomatoGarlic_Apply(sender As Object, e As EventArgs) Handles baseSundriedTomatoGarlic.GotFocus
+        selectedBase = "Sundried Tomato and Garlic"
+    End Sub
+
+    Private Sub baseBBQ_Apply(sender As Object, e As EventArgs) Handles baseBBQ.GotFocus
+        selectedBase = "BBQ"
     End Sub
 
     ' ==========================================================================
@@ -184,5 +221,25 @@
         Dim NumberOfDips As Integer = dipBigGarlic.Value + dipBigBBQ.Value + dipFRANKs.Value + dipChiliInfusedOil.Value
         dipsPrice = (dipRandom.Value * 0.49) + NumberOfDips ' // Random Dip is 0.49 and other big dips are 1.00 each.
         getPrice()
+    End Sub
+
+    ' ==========================================================================
+    ' Keep track of the order.
+    ' ==========================================================================
+
+    ' // pizzaCount will be incremented, set to -1 so we start at 0.
+    Private pizzaCount As Integer = -1
+
+    Private Sub updateOrder_Click(sender As Object, e As EventArgs) Handles updateOrder.Click
+        pizzaCount = pizzaCount + 1
+        ReDim Preserve CurrentOrder.Pizzas(pizzaCount)
+        CurrentOrder.Pizzas(pizzaCount) = selectedSize & "," & selectedCrust & "," & selectedBase & "," & (pizzaPrice + crustPrice)
+        CurrentOrder.Extras(0) = "Drinks: " & "£" & drinkPrice & "," & drinkCocaCola.Value & "," & drinkDietCoke.Value & "," & drinkCokeZero.Value & "," & drinkSmartWater.Value & "," & drinkSprite.Value & "," & drinkFanta.Value & "|" & "Sides: " & "£" & sidesPrice & "," & sideMeatballs.SelectedItem & "," & sideGarlicBread.SelectedItem & "," & sideWedges.SelectedItem & "," & sideChickenMixBox.SelectedItem & "|" & "Dips: " & "£" & dipsPrice & "," & dipBigGarlic.Value & "," & dipBigBBQ.Value & "," & dipFRANKs.Value & "," & dipChiliInfusedOil.Value
+
+        ' // debug
+        For Each Order In CurrentOrder.Pizzas
+            MsgBox(Order)
+        Next
+        MsgBox(CurrentOrder.Extras(0))
     End Sub
 End Class

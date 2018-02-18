@@ -1,9 +1,9 @@
-﻿<Global.Microsoft.VisualBasic.CompilerServices.DesignerGenerated()> _
+﻿<Global.Microsoft.VisualBasic.CompilerServices.DesignerGenerated()>
 Partial Class Login
     Inherits System.Windows.Forms.Form
 
     'Form overrides dispose to clean up the component list.
-    <System.Diagnostics.DebuggerNonUserCode()> _
+    <System.Diagnostics.DebuggerNonUserCode()>
     Protected Overrides Sub Dispose(ByVal disposing As Boolean)
         Try
             If disposing AndAlso components IsNot Nothing Then
@@ -20,7 +20,7 @@ Partial Class Login
     'NOTE: The following procedure is required by the Windows Form Designer
     'It can be modified using the Windows Form Designer.  
     'Do not modify it using the code editor.
-    <System.Diagnostics.DebuggerStepThrough()> _
+    <System.Diagnostics.DebuggerStepThrough()>
     Private Sub InitializeComponent()
         Me.PictureBox2 = New System.Windows.Forms.PictureBox()
         Me.Label1 = New System.Windows.Forms.Label()
@@ -40,7 +40,8 @@ Partial Class Login
         Me.txtRegisterAddress = New System.Windows.Forms.TextBox()
         Me.txtRegisterPostcode = New System.Windows.Forms.TextBox()
         Me.btnRegister = New System.Windows.Forms.Button()
-        Me.chkRegisterDeals = New System.Windows.Forms.CheckBox()
+        Me.txtRegisterPassword = New System.Windows.Forms.TextBox()
+        Me.Label9 = New System.Windows.Forms.Label()
         CType(Me.PictureBox2, System.ComponentModel.ISupportInitialize).BeginInit()
         Me.SuspendLayout()
         '
@@ -135,7 +136,7 @@ Partial Class Login
         '
         Me.Label6.AutoSize = True
         Me.Label6.Font = New System.Drawing.Font("Corbel", 11.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Label6.Location = New System.Drawing.Point(42, 351)
+        Me.Label6.Location = New System.Drawing.Point(41, 366)
         Me.Label6.Name = "Label6"
         Me.Label6.Size = New System.Drawing.Size(52, 18)
         Me.Label6.TabIndex = 29
@@ -145,7 +146,7 @@ Partial Class Login
         '
         Me.Label7.AutoSize = True
         Me.Label7.Font = New System.Drawing.Font("Corbel", 11.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Label7.Location = New System.Drawing.Point(34, 384)
+        Me.Label7.Location = New System.Drawing.Point(31, 395)
         Me.Label7.Name = "Label7"
         Me.Label7.Size = New System.Drawing.Size(62, 18)
         Me.Label7.TabIndex = 30
@@ -155,7 +156,7 @@ Partial Class Login
         '
         Me.Label8.AutoSize = True
         Me.Label8.Font = New System.Drawing.Font("Corbel", 11.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Label8.Location = New System.Drawing.Point(27, 417)
+        Me.Label8.Location = New System.Drawing.Point(24, 427)
         Me.Label8.Name = "Label8"
         Me.Label8.Size = New System.Drawing.Size(69, 18)
         Me.Label8.TabIndex = 31
@@ -183,7 +184,7 @@ Partial Class Login
         '
         Me.txtRegisterPhone.BackColor = System.Drawing.Color.White
         Me.txtRegisterPhone.Font = New System.Drawing.Font("Corbel", 12.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.txtRegisterPhone.Location = New System.Drawing.Point(100, 347)
+        Me.txtRegisterPhone.Location = New System.Drawing.Point(100, 357)
         Me.txtRegisterPhone.Name = "txtRegisterPhone"
         Me.txtRegisterPhone.Size = New System.Drawing.Size(150, 27)
         Me.txtRegisterPhone.TabIndex = 34
@@ -192,7 +193,7 @@ Partial Class Login
         '
         Me.txtRegisterAddress.BackColor = System.Drawing.Color.White
         Me.txtRegisterAddress.Font = New System.Drawing.Font("Corbel", 12.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.txtRegisterAddress.Location = New System.Drawing.Point(100, 380)
+        Me.txtRegisterAddress.Location = New System.Drawing.Point(100, 390)
         Me.txtRegisterAddress.Name = "txtRegisterAddress"
         Me.txtRegisterAddress.Size = New System.Drawing.Size(150, 27)
         Me.txtRegisterAddress.TabIndex = 35
@@ -201,37 +202,47 @@ Partial Class Login
         '
         Me.txtRegisterPostcode.BackColor = System.Drawing.Color.White
         Me.txtRegisterPostcode.Font = New System.Drawing.Font("Corbel", 12.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.txtRegisterPostcode.Location = New System.Drawing.Point(100, 413)
+        Me.txtRegisterPostcode.Location = New System.Drawing.Point(100, 423)
         Me.txtRegisterPostcode.Name = "txtRegisterPostcode"
         Me.txtRegisterPostcode.Size = New System.Drawing.Size(150, 27)
         Me.txtRegisterPostcode.TabIndex = 36
         '
         'btnRegister
         '
-        Me.btnRegister.Location = New System.Drawing.Point(267, 395)
+        Me.btnRegister.Location = New System.Drawing.Point(267, 423)
         Me.btnRegister.Name = "btnRegister"
         Me.btnRegister.Size = New System.Drawing.Size(75, 27)
         Me.btnRegister.TabIndex = 37
         Me.btnRegister.Text = "Register"
         Me.btnRegister.UseVisualStyleBackColor = True
         '
-        'chkRegisterDeals
+        'txtRegisterPassword
         '
-        Me.chkRegisterDeals.AutoSize = True
-        Me.chkRegisterDeals.Location = New System.Drawing.Point(101, 324)
-        Me.chkRegisterDeals.Name = "chkRegisterDeals"
-        Me.chkRegisterDeals.Size = New System.Drawing.Size(160, 17)
-        Me.chkRegisterDeals.TabIndex = 38
-        Me.chkRegisterDeals.Text = "Is it okay to send you deals?"
-        Me.chkRegisterDeals.UseVisualStyleBackColor = True
+        Me.txtRegisterPassword.BackColor = System.Drawing.Color.White
+        Me.txtRegisterPassword.Font = New System.Drawing.Font("Corbel", 12.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.txtRegisterPassword.Location = New System.Drawing.Point(100, 324)
+        Me.txtRegisterPassword.Name = "txtRegisterPassword"
+        Me.txtRegisterPassword.Size = New System.Drawing.Size(150, 27)
+        Me.txtRegisterPassword.TabIndex = 38
+        '
+        'Label9
+        '
+        Me.Label9.AutoSize = True
+        Me.Label9.Font = New System.Drawing.Font("Corbel", 11.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.Label9.Location = New System.Drawing.Point(19, 328)
+        Me.Label9.Name = "Label9"
+        Me.Label9.Size = New System.Drawing.Size(72, 18)
+        Me.Label9.TabIndex = 39
+        Me.Label9.Text = "Password:"
         '
         'Login
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
         Me.BackColor = System.Drawing.Color.White
-        Me.ClientSize = New System.Drawing.Size(354, 458)
-        Me.Controls.Add(Me.chkRegisterDeals)
+        Me.ClientSize = New System.Drawing.Size(354, 471)
+        Me.Controls.Add(Me.Label9)
+        Me.Controls.Add(Me.txtRegisterPassword)
         Me.Controls.Add(Me.btnRegister)
         Me.Controls.Add(Me.txtRegisterPostcode)
         Me.Controls.Add(Me.txtRegisterAddress)
@@ -276,5 +287,6 @@ Partial Class Login
     Friend WithEvents txtRegisterAddress As TextBox
     Friend WithEvents txtRegisterPostcode As TextBox
     Friend WithEvents btnRegister As Button
-    Friend WithEvents chkRegisterDeals As CheckBox
+    Friend WithEvents txtRegisterPassword As TextBox
+    Friend WithEvents Label9 As Label
 End Class

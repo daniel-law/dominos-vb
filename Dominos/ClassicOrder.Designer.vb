@@ -34,7 +34,7 @@ Partial Class ClassicOrder
         Me.Label7 = New System.Windows.Forms.Label()
         Me.Label8 = New System.Windows.Forms.Label()
         Me.Label9 = New System.Windows.Forms.Label()
-        Me.Label1 = New System.Windows.Forms.Label()
+        Me.welcomeDetails = New System.Windows.Forms.Label()
         Me.Label10 = New System.Windows.Forms.Label()
         Me.sizeSmall = New System.Windows.Forms.RadioButton()
         Me.sizeMedium = New System.Windows.Forms.RadioButton()
@@ -87,6 +87,10 @@ Partial Class ClassicOrder
         Me.Label17 = New System.Windows.Forms.Label()
         Me.Label18 = New System.Windows.Forms.Label()
         Me.GroupBox5 = New System.Windows.Forms.GroupBox()
+        Me.Label31 = New System.Windows.Forms.Label()
+        Me.Label30 = New System.Windows.Forms.Label()
+        Me.Label29 = New System.Windows.Forms.Label()
+        Me.Label13 = New System.Windows.Forms.Label()
         Me.sideChickenMixBox = New System.Windows.Forms.ComboBox()
         Me.sideWedges = New System.Windows.Forms.ComboBox()
         Me.sideGarlicBread = New System.Windows.Forms.ComboBox()
@@ -123,11 +127,8 @@ Partial Class ClassicOrder
         Me.pizzaPreview = New System.Windows.Forms.PictureBox()
         Me.PictureBox2 = New System.Windows.Forms.PictureBox()
         Me.PictureBox1 = New System.Windows.Forms.PictureBox()
-        Me.Label13 = New System.Windows.Forms.Label()
-        Me.Label29 = New System.Windows.Forms.Label()
-        Me.Label30 = New System.Windows.Forms.Label()
-        Me.Label31 = New System.Windows.Forms.Label()
         Me.resetOrder = New System.Windows.Forms.Button()
+        Me.updateOrder = New System.Windows.Forms.Button()
         Me.GroupBox1.SuspendLayout()
         Me.GroupBox2.SuspendLayout()
         CType(Me.PictureBox4, System.ComponentModel.ISupportInitialize).BeginInit()
@@ -275,15 +276,15 @@ Partial Class ClassicOrder
         Me.Label9.TabIndex = 16
         Me.Label9.Text = "In case the dropoff fails, highly unlikely!"
         '
-        'Label1
+        'welcomeDetails
         '
-        Me.Label1.AutoSize = True
-        Me.Label1.Font = New System.Drawing.Font("Corbel", 12.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Label1.Location = New System.Drawing.Point(786, 145)
-        Me.Label1.Name = "Label1"
-        Me.Label1.Size = New System.Drawing.Size(265, 19)
-        Me.Label1.TabIndex = 19
-        Me.Label1.Text = "Welcome back, {user}. Time for a pizza."
+        Me.welcomeDetails.AutoSize = True
+        Me.welcomeDetails.Font = New System.Drawing.Font("Corbel", 12.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.welcomeDetails.Location = New System.Drawing.Point(786, 145)
+        Me.welcomeDetails.Name = "welcomeDetails"
+        Me.welcomeDetails.Size = New System.Drawing.Size(265, 19)
+        Me.welcomeDetails.TabIndex = 19
+        Me.welcomeDetails.Text = "Welcome back, {user}. Time for a pizza."
         '
         'Label10
         '
@@ -836,6 +837,46 @@ Partial Class ClassicOrder
         Me.GroupBox5.TabIndex = 53
         Me.GroupBox5.TabStop = False
         '
+        'Label31
+        '
+        Me.Label31.AutoSize = True
+        Me.Label31.Font = New System.Drawing.Font("Corbel", 12.0!)
+        Me.Label31.Location = New System.Drawing.Point(415, 263)
+        Me.Label31.Name = "Label31"
+        Me.Label31.Size = New System.Drawing.Size(45, 19)
+        Me.Label31.TabIndex = 82
+        Me.Label31.Text = "£8.49"
+        '
+        'Label30
+        '
+        Me.Label30.AutoSize = True
+        Me.Label30.Font = New System.Drawing.Font("Corbel", 12.0!)
+        Me.Label30.Location = New System.Drawing.Point(283, 257)
+        Me.Label30.Name = "Label30"
+        Me.Label30.Size = New System.Drawing.Size(44, 19)
+        Me.Label30.TabIndex = 81
+        Me.Label30.Text = "£3.99"
+        '
+        'Label29
+        '
+        Me.Label29.AutoSize = True
+        Me.Label29.Font = New System.Drawing.Font("Corbel", 12.0!)
+        Me.Label29.Location = New System.Drawing.Point(144, 257)
+        Me.Label29.Name = "Label29"
+        Me.Label29.Size = New System.Drawing.Size(44, 19)
+        Me.Label29.TabIndex = 80
+        Me.Label29.Text = "£3.99"
+        '
+        'Label13
+        '
+        Me.Label13.AutoSize = True
+        Me.Label13.Font = New System.Drawing.Font("Corbel", 12.0!)
+        Me.Label13.Location = New System.Drawing.Point(12, 257)
+        Me.Label13.Name = "Label13"
+        Me.Label13.Size = New System.Drawing.Size(45, 19)
+        Me.Label13.TabIndex = 79
+        Me.Label13.Text = "£4.99"
+        '
         'sideChickenMixBox
         '
         Me.sideChickenMixBox.Cursor = System.Windows.Forms.Cursors.Default
@@ -1198,56 +1239,25 @@ Partial Class ClassicOrder
         Me.PictureBox1.TabIndex = 2
         Me.PictureBox1.TabStop = False
         '
-        'Label13
-        '
-        Me.Label13.AutoSize = True
-        Me.Label13.Font = New System.Drawing.Font("Corbel", 12.0!)
-        Me.Label13.Location = New System.Drawing.Point(12, 257)
-        Me.Label13.Name = "Label13"
-        Me.Label13.Size = New System.Drawing.Size(45, 19)
-        Me.Label13.TabIndex = 79
-        Me.Label13.Text = "£4.99"
-        '
-        'Label29
-        '
-        Me.Label29.AutoSize = True
-        Me.Label29.Font = New System.Drawing.Font("Corbel", 12.0!)
-        Me.Label29.Location = New System.Drawing.Point(144, 257)
-        Me.Label29.Name = "Label29"
-        Me.Label29.Size = New System.Drawing.Size(44, 19)
-        Me.Label29.TabIndex = 80
-        Me.Label29.Text = "£3.99"
-        '
-        'Label30
-        '
-        Me.Label30.AutoSize = True
-        Me.Label30.Font = New System.Drawing.Font("Corbel", 12.0!)
-        Me.Label30.Location = New System.Drawing.Point(283, 257)
-        Me.Label30.Name = "Label30"
-        Me.Label30.Size = New System.Drawing.Size(44, 19)
-        Me.Label30.TabIndex = 81
-        Me.Label30.Text = "£3.99"
-        '
-        'Label31
-        '
-        Me.Label31.AutoSize = True
-        Me.Label31.Font = New System.Drawing.Font("Corbel", 12.0!)
-        Me.Label31.Location = New System.Drawing.Point(415, 263)
-        Me.Label31.Name = "Label31"
-        Me.Label31.Size = New System.Drawing.Size(45, 19)
-        Me.Label31.TabIndex = 82
-        Me.Label31.Text = "£8.49"
-        '
         'resetOrder
         '
-        Me.resetOrder.Location = New System.Drawing.Point(887, 220)
+        Me.resetOrder.Location = New System.Drawing.Point(822, 221)
         Me.resetOrder.Name = "resetOrder"
-        Me.resetOrder.Size = New System.Drawing.Size(75, 23)
+        Me.resetOrder.Size = New System.Drawing.Size(97, 23)
         Me.resetOrder.TabIndex = 83
         Me.resetOrder.Text = "Reset Order"
         Me.resetOrder.UseVisualStyleBackColor = True
         '
-        'Form1
+        'updateOrder
+        '
+        Me.updateOrder.Location = New System.Drawing.Point(930, 221)
+        Me.updateOrder.Name = "updateOrder"
+        Me.updateOrder.Size = New System.Drawing.Size(97, 23)
+        Me.updateOrder.TabIndex = 84
+        Me.updateOrder.Text = "Update Order"
+        Me.updateOrder.UseVisualStyleBackColor = True
+        '
+        'ClassicOrder
         '
         Me.AllowDrop = True
         Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
@@ -1255,6 +1265,7 @@ Partial Class ClassicOrder
         Me.AutoScroll = True
         Me.BackColor = System.Drawing.Color.White
         Me.ClientSize = New System.Drawing.Size(1084, 942)
+        Me.Controls.Add(Me.updateOrder)
         Me.Controls.Add(Me.resetOrder)
         Me.Controls.Add(Me.Label23)
         Me.Controls.Add(Me.GroupBox6)
@@ -1278,7 +1289,7 @@ Partial Class ClassicOrder
         Me.Controls.Add(Me.GroupBox1)
         Me.Controls.Add(Me.Label11)
         Me.Controls.Add(Me.Label10)
-        Me.Controls.Add(Me.Label1)
+        Me.Controls.Add(Me.welcomeDetails)
         Me.Controls.Add(Me.pizzaPreview)
         Me.Controls.Add(Me.PictureBox2)
         Me.Controls.Add(Me.Label9)
@@ -1293,7 +1304,7 @@ Partial Class ClassicOrder
         Me.Controls.Add(Me.PictureBox1)
         Me.Controls.Add(Me.TextBox2)
         Me.Controls.Add(Me.TextBox1)
-        Me.Name = "Form1"
+        Me.Name = "ClassicOrder"
         Me.Text = "Domino's Order"
         Me.GroupBox1.ResumeLayout(False)
         Me.GroupBox1.PerformLayout()
@@ -1360,7 +1371,7 @@ Partial Class ClassicOrder
     Friend WithEvents Label9 As Label
     Friend WithEvents PictureBox2 As PictureBox
     Friend WithEvents pizzaPreview As PictureBox
-    Friend WithEvents Label1 As Label
+    Friend WithEvents welcomeDetails As Label
     Friend WithEvents Label10 As Label
     Friend WithEvents PictureBox4 As PictureBox
     Friend WithEvents PictureBox5 As PictureBox
@@ -1451,4 +1462,5 @@ Partial Class ClassicOrder
     Friend WithEvents Label29 As Label
     Friend WithEvents Label13 As Label
     Friend WithEvents resetOrder As Button
+    Friend WithEvents updateOrder As Button
 End Class
