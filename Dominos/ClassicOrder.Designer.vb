@@ -128,7 +128,13 @@ Partial Class ClassicOrder
         Me.PictureBox2 = New System.Windows.Forms.PictureBox()
         Me.PictureBox1 = New System.Windows.Forms.PictureBox()
         Me.resetOrder = New System.Windows.Forms.Button()
-        Me.updateOrder = New System.Windows.Forms.Button()
+        Me.completeOrder = New System.Windows.Forms.Button()
+        Me.addPizza = New System.Windows.Forms.Button()
+        Me.pizzaMaker = New System.Windows.Forms.Button()
+        Me.pizzasInOrder = New System.Windows.Forms.Label()
+        Me.removePizza = New System.Windows.Forms.Button()
+        Me.Label1 = New System.Windows.Forms.Label()
+        Me.orderPrice = New System.Windows.Forms.Label()
         Me.GroupBox1.SuspendLayout()
         Me.GroupBox2.SuspendLayout()
         CType(Me.PictureBox4, System.ComponentModel.ISupportInitialize).BeginInit()
@@ -280,7 +286,7 @@ Partial Class ClassicOrder
         '
         Me.welcomeDetails.AutoSize = True
         Me.welcomeDetails.Font = New System.Drawing.Font("Corbel", 12.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.welcomeDetails.Location = New System.Drawing.Point(786, 145)
+        Me.welcomeDetails.Location = New System.Drawing.Point(788, 116)
         Me.welcomeDetails.Name = "welcomeDetails"
         Me.welcomeDetails.Size = New System.Drawing.Size(265, 19)
         Me.welcomeDetails.TabIndex = 19
@@ -569,7 +575,7 @@ Partial Class ClassicOrder
         '
         Me.currentPrice.AutoSize = True
         Me.currentPrice.Font = New System.Drawing.Font("Corbel", 18.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.currentPrice.Location = New System.Drawing.Point(925, 178)
+        Me.currentPrice.Location = New System.Drawing.Point(927, 149)
         Me.currentPrice.Name = "currentPrice"
         Me.currentPrice.Size = New System.Drawing.Size(84, 29)
         Me.currentPrice.TabIndex = 49
@@ -579,7 +585,7 @@ Partial Class ClassicOrder
         '
         Me.Label14.AutoSize = True
         Me.Label14.Font = New System.Drawing.Font("Corbel", 12.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Label14.Location = New System.Drawing.Point(820, 188)
+        Me.Label14.Location = New System.Drawing.Point(822, 159)
         Me.Label14.Name = "Label14"
         Me.Label14.Size = New System.Drawing.Size(99, 19)
         Me.Label14.TabIndex = 50
@@ -1241,21 +1247,78 @@ Partial Class ClassicOrder
         '
         'resetOrder
         '
-        Me.resetOrder.Location = New System.Drawing.Point(822, 221)
+        Me.resetOrder.Location = New System.Drawing.Point(872, 229)
         Me.resetOrder.Name = "resetOrder"
-        Me.resetOrder.Size = New System.Drawing.Size(97, 23)
+        Me.resetOrder.Size = New System.Drawing.Size(89, 24)
         Me.resetOrder.TabIndex = 83
         Me.resetOrder.Text = "Reset Order"
         Me.resetOrder.UseVisualStyleBackColor = True
         '
-        'updateOrder
+        'completeOrder
         '
-        Me.updateOrder.Location = New System.Drawing.Point(930, 221)
-        Me.updateOrder.Name = "updateOrder"
-        Me.updateOrder.Size = New System.Drawing.Size(97, 23)
-        Me.updateOrder.TabIndex = 84
-        Me.updateOrder.Text = "Update Order"
-        Me.updateOrder.UseVisualStyleBackColor = True
+        Me.completeOrder.Location = New System.Drawing.Point(967, 229)
+        Me.completeOrder.Name = "completeOrder"
+        Me.completeOrder.Size = New System.Drawing.Size(92, 24)
+        Me.completeOrder.TabIndex = 84
+        Me.completeOrder.Text = "Complete Order"
+        Me.completeOrder.UseVisualStyleBackColor = True
+        '
+        'addPizza
+        '
+        Me.addPizza.Location = New System.Drawing.Point(926, 307)
+        Me.addPizza.Name = "addPizza"
+        Me.addPizza.Size = New System.Drawing.Size(61, 24)
+        Me.addPizza.TabIndex = 86
+        Me.addPizza.Text = "Add"
+        Me.addPizza.UseVisualStyleBackColor = True
+        '
+        'pizzaMaker
+        '
+        Me.pizzaMaker.Location = New System.Drawing.Point(780, 229)
+        Me.pizzaMaker.Name = "pizzaMaker"
+        Me.pizzaMaker.Size = New System.Drawing.Size(86, 24)
+        Me.pizzaMaker.TabIndex = 87
+        Me.pizzaMaker.Text = "Pizza Maker"
+        Me.pizzaMaker.UseVisualStyleBackColor = True
+        '
+        'pizzasInOrder
+        '
+        Me.pizzasInOrder.AutoSize = True
+        Me.pizzasInOrder.Font = New System.Drawing.Font("Corbel", 12.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.pizzasInOrder.Location = New System.Drawing.Point(926, 281)
+        Me.pizzasInOrder.Name = "pizzasInOrder"
+        Me.pizzasInOrder.Size = New System.Drawing.Size(127, 19)
+        Me.pizzasInOrder.TabIndex = 88
+        Me.pizzasInOrder.Text = "1 pizza(s) in order."
+        '
+        'removePizza
+        '
+        Me.removePizza.Location = New System.Drawing.Point(993, 307)
+        Me.removePizza.Name = "removePizza"
+        Me.removePizza.Size = New System.Drawing.Size(61, 24)
+        Me.removePizza.TabIndex = 89
+        Me.removePizza.Text = "Remove"
+        Me.removePizza.UseVisualStyleBackColor = True
+        '
+        'Label1
+        '
+        Me.Label1.AutoSize = True
+        Me.Label1.Font = New System.Drawing.Font("Corbel", 12.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.Label1.Location = New System.Drawing.Point(832, 189)
+        Me.Label1.Name = "Label1"
+        Me.Label1.Size = New System.Drawing.Size(89, 19)
+        Me.Label1.TabIndex = 90
+        Me.Label1.Text = "Order Total:"
+        '
+        'orderPrice
+        '
+        Me.orderPrice.AutoSize = True
+        Me.orderPrice.Font = New System.Drawing.Font("Corbel", 18.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.orderPrice.Location = New System.Drawing.Point(927, 178)
+        Me.orderPrice.Name = "orderPrice"
+        Me.orderPrice.Size = New System.Drawing.Size(84, 29)
+        Me.orderPrice.TabIndex = 91
+        Me.orderPrice.Text = "£14.99"
         '
         'ClassicOrder
         '
@@ -1265,7 +1328,13 @@ Partial Class ClassicOrder
         Me.AutoScroll = True
         Me.BackColor = System.Drawing.Color.White
         Me.ClientSize = New System.Drawing.Size(1084, 942)
-        Me.Controls.Add(Me.updateOrder)
+        Me.Controls.Add(Me.orderPrice)
+        Me.Controls.Add(Me.Label1)
+        Me.Controls.Add(Me.removePizza)
+        Me.Controls.Add(Me.pizzasInOrder)
+        Me.Controls.Add(Me.pizzaMaker)
+        Me.Controls.Add(Me.addPizza)
+        Me.Controls.Add(Me.completeOrder)
         Me.Controls.Add(Me.resetOrder)
         Me.Controls.Add(Me.Label23)
         Me.Controls.Add(Me.GroupBox6)
@@ -1462,5 +1531,11 @@ Partial Class ClassicOrder
     Friend WithEvents Label29 As Label
     Friend WithEvents Label13 As Label
     Friend WithEvents resetOrder As Button
-    Friend WithEvents updateOrder As Button
+    Friend WithEvents completeOrder As Button
+    Friend WithEvents addPizza As Button
+    Friend WithEvents pizzaMaker As Button
+    Friend WithEvents pizzasInOrder As Label
+    Friend WithEvents removePizza As Button
+    Friend WithEvents Label1 As Label
+    Friend WithEvents orderPrice As Label
 End Class

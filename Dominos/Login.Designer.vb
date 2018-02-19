@@ -222,6 +222,7 @@ Partial Class Login
         Me.txtRegisterPassword.Font = New System.Drawing.Font("Corbel", 12.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.txtRegisterPassword.Location = New System.Drawing.Point(100, 324)
         Me.txtRegisterPassword.Name = "txtRegisterPassword"
+        Me.txtRegisterPassword.PasswordChar = Global.Microsoft.VisualBasic.ChrW(42)
         Me.txtRegisterPassword.Size = New System.Drawing.Size(150, 27)
         Me.txtRegisterPassword.TabIndex = 38
         '

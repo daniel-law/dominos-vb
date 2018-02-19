@@ -1,5 +1,6 @@
 ﻿Public Class ClassicOrder
 
+    Private selectedTopping As String = "Original Cheese and Tomato"
     Private selectedSize As String = "Large"
     Private selectedCrust As String = "Classic"
     Private selectedBase As String = "Tomato"
@@ -9,6 +10,9 @@
     Private drinkPrice As Decimal
     Private sidesPrice As Decimal
     Private dipsPrice As Decimal
+
+    Private pizzaCount As Integer = 0
+    Private orderedPizzaTotal = 14.99
 
     ' ==========================================================================
     ' GLOBAL
@@ -21,13 +25,19 @@
         sideWedges.SelectedIndex = 0
         sideChickenMixBox.SelectedIndex = 0
 
-        ' Use user details.
+        ' Utilize user details.
         welcomeDetails.Text = "Welcome back, " & UserDetails.Name & ". Time for a pizza."
+
+        ' Push default selection to order tracking.
+        pizzaCount = 0
+        ReDim Preserve CurrentOrder.Pizzas(pizzaCount)
+        CurrentOrder.Pizzas(pizzaCount) = "Large" & "," & "Cheese and Tomato" & "," & "Classic" & "," & "Tomato" & "|" & pizzaPrice
     End Sub
 
     ' To query the price if the order is updated.
     Private Sub getPrice()
-        currentPrice.Text = "£" & pizzaPrice + crustPrice + drinkPrice + sidesPrice + dipsPrice
+        currentPrice.Text = "£" & pizzaPrice + crustPrice
+        orderPrice.Text = "£" & Math.Round(orderedPizzaTotal + drinkPrice + sidesPrice + dipsPrice, 2, MidpointRounding.AwayFromZero)
     End Sub
 
     Private Sub resetOrder_Click(sender As Object, e As EventArgs) Handles resetOrder.Click
@@ -51,16 +61,24 @@
             dipFRANKs.Value = 0
             dipChiliInfusedOil.Value = 0
 
+            ' // Revert our order tracking.
+            ReDim CurrentOrder.Pizzas(0)
+            pizzaCount = -1
+            ReDim CurrentOrder.Extras(0)
+            orderedPizzaTotal = 0.00
+            pizzasInOrder.Text = "0 pizza(s) in order." ' // 0 based indexing.
+
             ' // Revert to default selection state.
             sizeLarge.Checked = True
             toppingCheeseTomato.Checked = True
             baseTomato.Checked = True
             crustClassic.Checked = True
             pizzaPreview.Image = Dominos.My.Resources.Resources.cheese_and_tomato_20170704_large
-            selectedSize = "Large" ' // default option
-            selectedBase = "Tomato" ' // default option
-            selectedCrust = "Classic" ' // default option
-            pizzaPrice = 14.99 ' // default option
+            selectedTopping = "Original Cheese and Tomato"
+            selectedSize = "Large"
+            selectedBase = "Tomato"
+            selectedCrust = "Classic"
+            pizzaPrice = 14.99
             crustPrice = 0
             drinkPrice = 0
             sidesPrice = 0
@@ -73,34 +91,42 @@
     ' // Change the pizza graphic based on selected pizza option.
     ' ==========================================================================
     Private Sub toppingCheeseTomato_Set(sender As Object, e As EventArgs) Handles toppingCheeseTomato.GotFocus
+        selectedTopping = "Original Cheese and Tomato"
         pizzaPreview.Image = Dominos.My.Resources.Resources.cheese_and_tomato_20170704_large
     End Sub
 
     Private Sub toppingMightyMeaty_Set(sender As Object, e As EventArgs) Handles toppingMightyMeaty.GotFocus
+        selectedTopping = "Mighty Meaty"
         pizzaPreview.Image = Dominos.My.Resources.Resources.mighty_meaty_20170704_large
     End Sub
 
     Private Sub toppingPepperoniPassion_Set(sender As Object, e As EventArgs) Handles toppingPepperoniPassion.GotFocus
+        selectedTopping = "Pepperoni Passion"
         pizzaPreview.Image = Dominos.My.Resources.Resources.pepperonipassion_20170704_large
     End Sub
 
     Private Sub toppingTexasBBQ_Set(sender As Object, e As EventArgs) Handles toppingTexasBBQ.GotFocus
+        selectedTopping = "Texas BBQ"
         pizzaPreview.Image = Dominos.My.Resources.Resources.texasbbq_20170704_large
     End Sub
 
     Private Sub toppingTandooriHot_Set(sender As Object, e As EventArgs) Handles toppingTandooriHot.GotFocus
+        selectedTopping = "Domino's Tandoori Hot"
         pizzaPreview.Image = Dominos.My.Resources.Resources.tandoorihot_20170704_large
     End Sub
 
     Private Sub toppingFarmhouse_Set(sender As Object, e As EventArgs) Handles toppingFarmhouse.GotFocus
+        selectedTopping = "Farmhouse"
         pizzaPreview.Image = Dominos.My.Resources.Resources.farmhouse_20170704_large
     End Sub
 
     Private Sub toppingDeluxe_Set(sender As Object, e As EventArgs) Handles toppingDeluxe.GotFocus
+        selectedTopping = "Deluxe"
         pizzaPreview.Image = Dominos.My.Resources.Resources.deluxe_20170704_large
     End Sub
 
     Private Sub toppingMeatzza_Set(sender As Object, e As EventArgs) Handles toppingMeatzza.GotFocus
+        selectedTopping = "Meatzza"
         pizzaPreview.Image = Dominos.My.Resources.Resources.meatzzapizza_20170704_large
     End Sub
 
@@ -224,22 +250,54 @@
     End Sub
 
     ' ==========================================================================
-    ' Keep track of the order.
+    ' Add/remove a pizza to/from the order.
     ' ==========================================================================
 
-    ' // pizzaCount will be incremented, set to -1 so we start at 0.
-    Private pizzaCount As Integer = -1
-
-    Private Sub updateOrder_Click(sender As Object, e As EventArgs) Handles updateOrder.Click
+    Private Sub addPizza_Click(sender As Object, e As EventArgs) Handles addPizza.Click
+        ' // Store the fact they've added a pizza to their order.
         pizzaCount = pizzaCount + 1
         ReDim Preserve CurrentOrder.Pizzas(pizzaCount)
-        CurrentOrder.Pizzas(pizzaCount) = selectedSize & "," & selectedCrust & "," & selectedBase & "," & (pizzaPrice + crustPrice)
-        CurrentOrder.Extras(0) = "Drinks: " & "£" & drinkPrice & "," & drinkCocaCola.Value & "," & drinkDietCoke.Value & "," & drinkCokeZero.Value & "," & drinkSmartWater.Value & "," & drinkSprite.Value & "," & drinkFanta.Value & "|" & "Sides: " & "£" & sidesPrice & "," & sideMeatballs.SelectedItem & "," & sideGarlicBread.SelectedItem & "," & sideWedges.SelectedItem & "," & sideChickenMixBox.SelectedItem & "|" & "Dips: " & "£" & dipsPrice & "," & dipBigGarlic.Value & "," & dipBigBBQ.Value & "," & dipFRANKs.Value & "," & dipChiliInfusedOil.Value
+        CurrentOrder.Pizzas(pizzaCount) = selectedSize & "," & selectedTopping & "," & selectedCrust & "," & selectedBase & "|" & (pizzaPrice + crustPrice)
+        pizzasInOrder.Text = (pizzaCount + 1) & " pizza(s) in order." ' // 0 based indexing.
 
-        ' // debug
-        For Each Order In CurrentOrder.Pizzas
-            MsgBox(Order)
-        Next
-        MsgBox(CurrentOrder.Extras(0))
+        ' // Update the total price.
+        orderedPizzaTotal = orderedPizzaTotal + (pizzaPrice + crustPrice)
+        getPrice()
+    End Sub
+
+    Private Sub removePizza_Click(sender As Object, e As EventArgs) Handles removePizza.Click
+        If pizzaCount <> -1 Then
+            ' // Remove pizza price from order.
+            Dim lastPizzaPrice() As String = Split(CurrentOrder.Pizzas(pizzaCount), "|")
+            orderedPizzaTotal = orderedPizzaTotal - lastPizzaPrice(1)
+            getPrice()
+
+            ' // Store the fact they've removed a pizza from their order.
+            pizzaCount = pizzaCount - 1
+            ReDim Preserve CurrentOrder.Pizzas(pizzaCount)
+            pizzasInOrder.Text = (pizzaCount + 1) & " pizza(s) in order." ' // 0 based indexing.
+
+        Else
+            MsgBox("No pizzas to remove.")
+        End If
+    End Sub
+
+    ' ==========================================================================
+    ' Finish the order.
+    ' ==========================================================================
+
+    Private Sub completeOrder_Click(sender As Object, e As EventArgs) Handles completeOrder.Click
+        If pizzaCount = -1 Then
+            MsgBox("First, grab yourself a pizza :)")
+        Else
+            ' // Get their current side selection.
+            CurrentOrder.Extras(0) = "Drinks: " & "£" & drinkPrice & "," & drinkCocaCola.Value & "," & drinkDietCoke.Value & "," & drinkCokeZero.Value & "," & drinkSmartWater.Value & "," & drinkSprite.Value & "," & drinkFanta.Value & "|" & "Sides: " & "£" & sidesPrice & "," & sideMeatballs.SelectedItem & "," & sideGarlicBread.SelectedItem & "," & sideWedges.SelectedItem & "," & sideChickenMixBox.SelectedItem & "|" & "Dips: " & "£" & dipsPrice & "," & dipBigGarlic.Value & "," & dipBigBBQ.Value & "," & dipFRANKs.Value & "," & dipChiliInfusedOil.Value
+
+            ' // debug
+            For Each Order In CurrentOrder.Pizzas
+                MsgBox(Order)
+            Next
+            MsgBox(CurrentOrder.Extras(0))
+        End If
     End Sub
 End Class
