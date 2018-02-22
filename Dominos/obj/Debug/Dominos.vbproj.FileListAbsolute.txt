@@ -11,3 +11,4 @@ C:\Users\Daniel\source\repos\Dominos\Dominos\obj\Debug\Dominos.xml
 C:\Users\Daniel\source\repos\Dominos\Dominos\obj\Debug\Dominos.pdb
 C:\Users\Daniel\source\repos\Dominos\Dominos\obj\Debug\Dominos.ClassicOrder.resources
 C:\Users\Daniel\source\repos\Dominos\Dominos\obj\Debug\Dominos.Login.resources
+C:\Users\Daniel\source\repos\Dominos\Dominos\obj\Debug\Dominos.StaffView.resources

@@ -22,7 +22,6 @@ Partial Class Login
     'Do not modify it using the code editor.
     <System.Diagnostics.DebuggerStepThrough()>
     Private Sub InitializeComponent()
-        Me.PictureBox2 = New System.Windows.Forms.PictureBox()
         Me.Label1 = New System.Windows.Forms.Label()
         Me.txtEmail = New System.Windows.Forms.TextBox()
         Me.Label3 = New System.Windows.Forms.Label()
@@ -42,17 +41,9 @@ Partial Class Login
         Me.btnRegister = New System.Windows.Forms.Button()
         Me.txtRegisterPassword = New System.Windows.Forms.TextBox()
         Me.Label9 = New System.Windows.Forms.Label()
+        Me.PictureBox2 = New System.Windows.Forms.PictureBox()
         CType(Me.PictureBox2, System.ComponentModel.ISupportInitialize).BeginInit()
         Me.SuspendLayout()
-        '
-        'PictureBox2
-        '
-        Me.PictureBox2.Image = Global.Dominos.My.Resources.Resources.Logo
-        Me.PictureBox2.Location = New System.Drawing.Point(22, 12)
-        Me.PictureBox2.Name = "PictureBox2"
-        Me.PictureBox2.Size = New System.Drawing.Size(310, 81)
-        Me.PictureBox2.TabIndex = 18
-        Me.PictureBox2.TabStop = False
         '
         'Label1
         '
@@ -72,6 +63,7 @@ Partial Class Login
         Me.txtEmail.Name = "txtEmail"
         Me.txtEmail.Size = New System.Drawing.Size(150, 27)
         Me.txtEmail.TabIndex = 21
+        Me.txtEmail.Text = "asuna@yuuki.moe"
         '
         'Label3
         '
@@ -92,6 +84,7 @@ Partial Class Login
         Me.txtPassword.PasswordChar = Global.Microsoft.VisualBasic.ChrW(42)
         Me.txtPassword.Size = New System.Drawing.Size(150, 27)
         Me.txtPassword.TabIndex = 24
+        Me.txtPassword.Text = "password"
         '
         'Label4
         '
@@ -235,6 +228,15 @@ Partial Class Login
         Me.Label9.Size = New System.Drawing.Size(72, 18)
         Me.Label9.TabIndex = 39
         Me.Label9.Text = "Password:"
+        '
+        'PictureBox2
+        '
+        Me.PictureBox2.Image = Global.Dominos.My.Resources.Resources.Logo
+        Me.PictureBox2.Location = New System.Drawing.Point(22, 12)
+        Me.PictureBox2.Name = "PictureBox2"
+        Me.PictureBox2.Size = New System.Drawing.Size(310, 81)
+        Me.PictureBox2.TabIndex = 18
+        Me.PictureBox2.TabStop = False
         '
         'Login
         '

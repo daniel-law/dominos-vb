@@ -1,4 +1,7 @@
-﻿Public Class ClassicOrder
+﻿Imports System.IO
+Imports System.Text
+
+Public Class ClassicOrder
 
     Private selectedTopping As String = "Original Cheese and Tomato"
     Private selectedSize As String = "Large"
@@ -31,7 +34,7 @@
         ' Push default selection to order tracking.
         pizzaCount = 0
         ReDim Preserve CurrentOrder.Pizzas(pizzaCount)
-        CurrentOrder.Pizzas(pizzaCount) = "Large" & "," & "Cheese and Tomato" & "," & "Classic" & "," & "Tomato" & "|" & pizzaPrice
+        CurrentOrder.Pizzas(pizzaCount) = "Large" & " " & "Cheese and Tomato" & " " & "Classic" & " " & "Tomato" & "|" & pizzaPrice
     End Sub
 
     ' To query the price if the order is updated.
@@ -257,7 +260,7 @@
         ' // Store the fact they've added a pizza to their order.
         pizzaCount = pizzaCount + 1
         ReDim Preserve CurrentOrder.Pizzas(pizzaCount)
-        CurrentOrder.Pizzas(pizzaCount) = selectedSize & "," & selectedTopping & "," & selectedCrust & "," & selectedBase & "|" & (pizzaPrice + crustPrice)
+        CurrentOrder.Pizzas(pizzaCount) = "Size: " & selectedSize & " / " & "Topping: " & selectedTopping & " / " & "Crust: " & selectedCrust & " / " & "Base: " & selectedBase & "|" & (pizzaPrice + crustPrice)
         pizzasInOrder.Text = (pizzaCount + 1) & " pizza(s) in order." ' // 0 based indexing.
 
         ' // Update the total price.
@@ -291,13 +294,31 @@
             MsgBox("First, grab yourself a pizza :)")
         Else
             ' // Get their current side selection.
-            CurrentOrder.Extras(0) = "Drinks: " & "£" & drinkPrice & "," & drinkCocaCola.Value & "," & drinkDietCoke.Value & "," & drinkCokeZero.Value & "," & drinkSmartWater.Value & "," & drinkSprite.Value & "," & drinkFanta.Value & "|" & "Sides: " & "£" & sidesPrice & "," & sideMeatballs.SelectedItem & "," & sideGarlicBread.SelectedItem & "," & sideWedges.SelectedItem & "," & sideChickenMixBox.SelectedItem & "|" & "Dips: " & "£" & dipsPrice & "," & dipBigGarlic.Value & "," & dipBigBBQ.Value & "," & dipFRANKs.Value & "," & dipChiliInfusedOil.Value
+            CurrentOrder.Extras(0) = "Drinks: " & "£" & drinkPrice & "," & drinkCocaCola.Value & "," & drinkDietCoke.Value & "," & drinkCokeZero.Value & "," & drinkSmartWater.Value & "," & drinkSprite.Value & "," & drinkFanta.Value & "|" & "Sides: " & "£" & sidesPrice & "," & sideMeatballs.SelectedItem & "," & sideGarlicBread.SelectedItem & "," & sideWedges.SelectedItem & "," & sideChickenMixBox.SelectedItem & "|" & "Dips: " & "£" & dipsPrice & "," & dipRandom.Value & "," & dipBigGarlic.Value & "," & dipBigBBQ.Value & "," & dipFRANKs.Value & "," & dipChiliInfusedOil.Value & "," & orderPrice.Text
 
             ' // debug
             For Each Order In CurrentOrder.Pizzas
                 MsgBox(Order)
             Next
             MsgBox(CurrentOrder.Extras(0))
+
+            Dim OrderPizzas As String
+            Dim PizzaPointer As Integer
+            For Each Pizza In CurrentOrder.Pizzas
+                PizzaPointer = PizzaPointer + 1
+                OrderPizzas = OrderPizzas + Pizza
+                If PizzaPointer = pizzaCount Then OrderPizzas = OrderPizzas + "/" ' // Add delimiter char if needed.
+            Next
+
+            ' Create a temporary file, and put some data into it. 
+            Dim path1 As String = "Orders.txt"
+            Using fs As FileStream = File.Open(path1, FileMode.Append, FileAccess.Write, FileShare.ReadWrite)
+                Dim OrderDetails As Byte() = New UTF8Encoding(True).GetBytes(UserDetails.ID & "," & OrderPizzas & "," & CurrentOrder.Extras(0) + Environment.NewLine)
+
+                ' Add some information to the file.
+                fs.Write(OrderDetails, 0, OrderDetails.Length)
+            End Using
+
         End If
     End Sub
 End Class

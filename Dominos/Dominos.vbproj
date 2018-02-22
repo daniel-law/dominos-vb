@@ -102,6 +102,12 @@
       <DesignTimeSharedInput>True</DesignTimeSharedInput>
     </Compile>
     <Compile Include="CurrentOrder.vb" />
+    <Compile Include="StaffView.Designer.vb">
+      <DependentUpon>StaffView.vb</DependentUpon>
+    </Compile>
+    <Compile Include="StaffView.vb">
+      <SubType>Form</SubType>
+    </Compile>
     <Compile Include="UserDetails.vb" />
   </ItemGroup>
   <ItemGroup>
@@ -116,6 +122,9 @@
       <CustomToolNamespace>My.Resources</CustomToolNamespace>
       <SubType>Designer</SubType>
       <LastGenOutput>Resources.Designer.vb</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="StaffView.resx">
+      <DependentUpon>StaffView.vb</DependentUpon>
     </EmbeddedResource>
   </ItemGroup>
   <ItemGroup>

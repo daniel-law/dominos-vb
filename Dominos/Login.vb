@@ -35,6 +35,10 @@ Public Class Login
                 ClassicOrder.Show()
                 Me.Hide()
                 FileClose()
+
+                ' // debug
+                StaffView.Show()
+
                 Exit Do
             End If
         Loop
