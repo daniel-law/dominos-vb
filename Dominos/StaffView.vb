@@ -6,8 +6,14 @@ Public Class StaffView
 
     Private Sub StaffView_Load(sender As Object, e As EventArgs) Handles MyBase.Load
         staffWelcomeDetails.Text = "Welcome to the Dominos system management screen, " & UserDetails.Name & "."
+        getOrders()
+        getUsers()
+    End Sub
 
-        ' Open the file to read from.
+    Private Sub getOrders()
+        ordersDataGridView.Rows.Clear()
+        takings = 0
+
         Dim readText() As String = File.ReadAllLines("Orders.txt")
         Dim fileContent As String
         ordersPlaced.Text = "Orders Placed (" & readText.Count & " in total)"
@@ -49,13 +55,25 @@ Public Class StaffView
         Next
 
         totalTakings.Text = "Total Takings: " & "£" & takings
+    End Sub
 
-        ' Open the file to read from.
+    Private Sub getUsers()
+        usersDataGridView.Rows.Clear()
+
+        Dim LoginStatus As Boolean = 0
         Dim readUsers() As String = File.ReadAllLines("Users.txt")
-        Dim userDetail As String
-
-        For Each userDetail In readUsers
-
+        Dim User As String
+        For Each User In readUsers
+            Dim thisUser As String() = Split(User, ",")
+            usersDataGridView.Rows.Add(thisUser(0), thisUser(1), thisUser(2), thisUser(5), thisUser(6), thisUser(4))
         Next
+    End Sub
+
+    Private Sub ordersRefresh_Click(sender As Object, e As EventArgs) Handles ordersRefresh.Click
+        getOrders()
+    End Sub
+
+    Private Sub usersRefresh_Click(sender As Object, e As EventArgs) Handles usersRefresh.Click
+        getUsers()
     End Sub
 End Class

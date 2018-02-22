@@ -1,5 +1,4 @@
 ﻿Imports System.IO
-Imports System.Text
 
 Public Class ClassicOrder
 
@@ -14,8 +13,8 @@ Public Class ClassicOrder
     Private sidesPrice As Decimal
     Private dipsPrice As Decimal
 
-    Private pizzaCount As Integer = 0
-    Private orderedPizzaTotal = 14.99
+    Private pizzaCount As Integer = 0 ' // Stores the quantity of all pizza(s).
+    Private orderedPizzaTotal As Decimal = 14.99 ' // Stores the cost of all pizza(s).
 
     ' ==========================================================================
     ' GLOBAL
@@ -34,13 +33,13 @@ Public Class ClassicOrder
         ' Push default selection to order tracking.
         pizzaCount = 0
         ReDim Preserve CurrentOrder.Pizzas(pizzaCount)
-        CurrentOrder.Pizzas(pizzaCount) = "Large" & " " & "Cheese and Tomato" & " " & "Classic" & " " & "Tomato" & "|" & pizzaPrice
+        CurrentOrder.Pizzas(pizzaCount) = "Size: Large " & "/" & " Topping: Cheese and Tomato " & "/" & " Crust: Classic " & "/" & " Base: Tomato" & "|" & pizzaPrice
     End Sub
 
-    ' To query the price if the order is updated.
+    ' // To query the price if the order is updated.
     Private Sub getPrice()
         currentPrice.Text = "£" & pizzaPrice + crustPrice
-        orderPrice.Text = "£" & Math.Round(orderedPizzaTotal + drinkPrice + sidesPrice + dipsPrice, 2, MidpointRounding.AwayFromZero)
+        orderPrice.Text = "£" & orderedPizzaTotal + drinkPrice + sidesPrice + dipsPrice
     End Sub
 
     Private Sub resetOrder_Click(sender As Object, e As EventArgs) Handles resetOrder.Click
@@ -93,6 +92,7 @@ Public Class ClassicOrder
     ' ==========================================================================
     ' // Change the pizza graphic based on selected pizza option.
     ' ==========================================================================
+
     Private Sub toppingCheeseTomato_Set(sender As Object, e As EventArgs) Handles toppingCheeseTomato.GotFocus
         selectedTopping = "Original Cheese and Tomato"
         pizzaPreview.Image = Dominos.My.Resources.Resources.cheese_and_tomato_20170704_large
@@ -136,6 +136,7 @@ Public Class ClassicOrder
     ' ==========================================================================
     ' // Change prices based on size selected.
     ' ==========================================================================
+
     Private Sub sizeSmall_Apply(sender As Object, e As EventArgs) Handles sizeSmall.GotFocus
         selectedSize = "Small"
         pizzaPrice = 9.99
@@ -286,7 +287,7 @@ Public Class ClassicOrder
     End Sub
 
     ' ==========================================================================
-    ' Finish the order.
+    ' Place the order.
     ' ==========================================================================
 
     Private Sub completeOrder_Click(sender As Object, e As EventArgs) Handles completeOrder.Click
@@ -296,12 +297,7 @@ Public Class ClassicOrder
             ' // Get their current side selection.
             CurrentOrder.Extras(0) = "Drinks: " & "£" & drinkPrice & "," & drinkCocaCola.Value & "," & drinkDietCoke.Value & "," & drinkCokeZero.Value & "," & drinkSmartWater.Value & "," & drinkSprite.Value & "," & drinkFanta.Value & "|" & "Sides: " & "£" & sidesPrice & "," & sideMeatballs.SelectedItem & "," & sideGarlicBread.SelectedItem & "," & sideWedges.SelectedItem & "," & sideChickenMixBox.SelectedItem & "|" & "Dips: " & "£" & dipsPrice & "," & dipRandom.Value & "," & dipBigGarlic.Value & "," & dipBigBBQ.Value & "," & dipFRANKs.Value & "," & dipChiliInfusedOil.Value & "," & orderPrice.Text
 
-            ' // debug
-            For Each Order In CurrentOrder.Pizzas
-                MsgBox(Order)
-            Next
-            MsgBox(CurrentOrder.Extras(0))
-
+            ' // Get their current pizza selection.
             Dim OrderPizzas As String
             Dim PizzaPointer As Integer
             For Each Pizza In CurrentOrder.Pizzas
@@ -310,15 +306,8 @@ Public Class ClassicOrder
                 If PizzaPointer = pizzaCount Then OrderPizzas = OrderPizzas + "/" ' // Add delimiter char if needed.
             Next
 
-            ' Create a temporary file, and put some data into it. 
-            Dim path1 As String = "Orders.txt"
-            Using fs As FileStream = File.Open(path1, FileMode.Append, FileAccess.Write, FileShare.ReadWrite)
-                Dim OrderDetails As Byte() = New UTF8Encoding(True).GetBytes(UserDetails.ID & "," & OrderPizzas & "," & CurrentOrder.Extras(0) + Environment.NewLine)
-
-                ' Add some information to the file.
-                fs.Write(OrderDetails, 0, OrderDetails.Length)
-            End Using
-
+            File.AppendAllText("Orders.txt", UserDetails.ID & "," & OrderPizzas & "," & CurrentOrder.Extras(0) + Environment.NewLine)
+            MsgBox("Order placed sucessfully.")
         End If
     End Sub
 End Class

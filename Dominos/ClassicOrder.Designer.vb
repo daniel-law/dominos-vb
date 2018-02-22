@@ -1327,7 +1327,7 @@ Partial Class ClassicOrder
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
         Me.AutoScroll = True
         Me.BackColor = System.Drawing.Color.White
-        Me.ClientSize = New System.Drawing.Size(1084, 942)
+        Me.ClientSize = New System.Drawing.Size(1091, 942)
         Me.Controls.Add(Me.orderPrice)
         Me.Controls.Add(Me.Label1)
         Me.Controls.Add(Me.removePizza)

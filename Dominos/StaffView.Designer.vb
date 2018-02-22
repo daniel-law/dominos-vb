@@ -25,6 +25,12 @@ Partial Class StaffView
         Me.staffWelcomeDetails = New System.Windows.Forms.Label()
         Me.ordersPlaced = New System.Windows.Forms.Label()
         Me.ordersDataGridView = New System.Windows.Forms.DataGridView()
+        Me.UserReference = New System.Windows.Forms.DataGridViewTextBoxColumn()
+        Me.Pizzas = New System.Windows.Forms.DataGridViewTextBoxColumn()
+        Me.Drinks = New System.Windows.Forms.DataGridViewTextBoxColumn()
+        Me.Sides = New System.Windows.Forms.DataGridViewTextBoxColumn()
+        Me.Dips = New System.Windows.Forms.DataGridViewTextBoxColumn()
+        Me.TotalPrice = New System.Windows.Forms.DataGridViewTextBoxColumn()
         Me.totalTakings = New System.Windows.Forms.Label()
         Me.Label2 = New System.Windows.Forms.Label()
         Me.usersDataGridView = New System.Windows.Forms.DataGridView()
@@ -34,12 +40,8 @@ Partial Class StaffView
         Me.Address = New System.Windows.Forms.DataGridViewTextBoxColumn()
         Me.Postcode = New System.Windows.Forms.DataGridViewTextBoxColumn()
         Me.PhoneNo = New System.Windows.Forms.DataGridViewTextBoxColumn()
-        Me.UserReference = New System.Windows.Forms.DataGridViewTextBoxColumn()
-        Me.Pizzas = New System.Windows.Forms.DataGridViewTextBoxColumn()
-        Me.Drinks = New System.Windows.Forms.DataGridViewTextBoxColumn()
-        Me.Sides = New System.Windows.Forms.DataGridViewTextBoxColumn()
-        Me.Dips = New System.Windows.Forms.DataGridViewTextBoxColumn()
-        Me.TotalPrice = New System.Windows.Forms.DataGridViewTextBoxColumn()
+        Me.ordersRefresh = New System.Windows.Forms.Button()
+        Me.usersRefresh = New System.Windows.Forms.Button()
         CType(Me.ordersDataGridView, System.ComponentModel.ISupportInitialize).BeginInit()
         CType(Me.usersDataGridView, System.ComponentModel.ISupportInitialize).BeginInit()
         Me.SuspendLayout()
@@ -75,6 +77,54 @@ Partial Class StaffView
         Me.ordersDataGridView.ReadOnly = True
         Me.ordersDataGridView.Size = New System.Drawing.Size(1301, 188)
         Me.ordersDataGridView.TabIndex = 51
+        '
+        'UserReference
+        '
+        Me.UserReference.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.None
+        Me.UserReference.HeaderText = "User ID"
+        Me.UserReference.Name = "UserReference"
+        Me.UserReference.ReadOnly = True
+        Me.UserReference.Width = 40
+        '
+        'Pizzas
+        '
+        Me.Pizzas.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.DisplayedCells
+        Me.Pizzas.HeaderText = "Pizza(s) Requested"
+        Me.Pizzas.Name = "Pizzas"
+        Me.Pizzas.ReadOnly = True
+        Me.Pizzas.Width = 113
+        '
+        'Drinks
+        '
+        Me.Drinks.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.DisplayedCells
+        Me.Drinks.HeaderText = "Drinks(s) Requested"
+        Me.Drinks.Name = "Drinks"
+        Me.Drinks.ReadOnly = True
+        Me.Drinks.Width = 117
+        '
+        'Sides
+        '
+        Me.Sides.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.DisplayedCells
+        Me.Sides.HeaderText = "Side(s) Requested"
+        Me.Sides.Name = "Sides"
+        Me.Sides.ReadOnly = True
+        Me.Sides.Width = 109
+        '
+        'Dips
+        '
+        Me.Dips.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.DisplayedCells
+        Me.Dips.HeaderText = "Dip(s) Requested"
+        Me.Dips.Name = "Dips"
+        Me.Dips.ReadOnly = True
+        Me.Dips.Width = 105
+        '
+        'TotalPrice
+        '
+        Me.TotalPrice.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.DisplayedCells
+        Me.TotalPrice.HeaderText = "TOTAL"
+        Me.TotalPrice.Name = "TotalPrice"
+        Me.TotalPrice.ReadOnly = True
+        Me.TotalPrice.Width = 67
         '
         'totalTakings
         '
@@ -150,59 +200,31 @@ Partial Class StaffView
         Me.PhoneNo.ReadOnly = True
         Me.PhoneNo.Width = 150
         '
-        'UserReference
+        'ordersRefresh
         '
-        Me.UserReference.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.None
-        Me.UserReference.HeaderText = "User ID"
-        Me.UserReference.Name = "UserReference"
-        Me.UserReference.ReadOnly = True
-        Me.UserReference.Width = 40
+        Me.ordersRefresh.Location = New System.Drawing.Point(1253, 77)
+        Me.ordersRefresh.Name = "ordersRefresh"
+        Me.ordersRefresh.Size = New System.Drawing.Size(75, 29)
+        Me.ordersRefresh.TabIndex = 55
+        Me.ordersRefresh.Text = "Refresh"
+        Me.ordersRefresh.UseVisualStyleBackColor = True
         '
-        'Pizzas
+        'usersRefresh
         '
-        Me.Pizzas.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.DisplayedCells
-        Me.Pizzas.HeaderText = "Pizza(s) Requested"
-        Me.Pizzas.Name = "Pizzas"
-        Me.Pizzas.ReadOnly = True
-        Me.Pizzas.Width = 113
-        '
-        'Drinks
-        '
-        Me.Drinks.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.DisplayedCells
-        Me.Drinks.HeaderText = "Drinks(s) Requested"
-        Me.Drinks.Name = "Drinks"
-        Me.Drinks.ReadOnly = True
-        Me.Drinks.Width = 117
-        '
-        'Sides
-        '
-        Me.Sides.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.DisplayedCells
-        Me.Sides.HeaderText = "Side(s) Requested"
-        Me.Sides.Name = "Sides"
-        Me.Sides.ReadOnly = True
-        Me.Sides.Width = 109
-        '
-        'Dips
-        '
-        Me.Dips.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.DisplayedCells
-        Me.Dips.HeaderText = "Dip(s) Requested"
-        Me.Dips.Name = "Dips"
-        Me.Dips.ReadOnly = True
-        Me.Dips.Width = 105
-        '
-        'TotalPrice
-        '
-        Me.TotalPrice.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.DisplayedCells
-        Me.TotalPrice.HeaderText = "TOTAL"
-        Me.TotalPrice.Name = "TotalPrice"
-        Me.TotalPrice.ReadOnly = True
-        Me.TotalPrice.Width = 67
+        Me.usersRefresh.Location = New System.Drawing.Point(1006, 357)
+        Me.usersRefresh.Name = "usersRefresh"
+        Me.usersRefresh.Size = New System.Drawing.Size(75, 29)
+        Me.usersRefresh.TabIndex = 56
+        Me.usersRefresh.Text = "Refresh"
+        Me.usersRefresh.UseVisualStyleBackColor = True
         '
         'StaffView
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
         Me.ClientSize = New System.Drawing.Size(1354, 626)
+        Me.Controls.Add(Me.usersRefresh)
+        Me.Controls.Add(Me.ordersRefresh)
         Me.Controls.Add(Me.usersDataGridView)
         Me.Controls.Add(Me.Label2)
         Me.Controls.Add(Me.totalTakings)
@@ -236,4 +258,6 @@ Partial Class StaffView
     Friend WithEvents Sides As DataGridViewTextBoxColumn
     Friend WithEvents Dips As DataGridViewTextBoxColumn
     Friend WithEvents TotalPrice As DataGridViewTextBoxColumn
+    Friend WithEvents ordersRefresh As Button
+    Friend WithEvents usersRefresh As Button
 End Class

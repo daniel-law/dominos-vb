@@ -35,7 +35,7 @@ Partial Class Login
         Me.Label8 = New System.Windows.Forms.Label()
         Me.txtRegisterName = New System.Windows.Forms.TextBox()
         Me.txtRegisterEmail = New System.Windows.Forms.TextBox()
-        Me.txtRegisterPhone = New System.Windows.Forms.TextBox()
+        Me.txtRegisterPhoneNo = New System.Windows.Forms.TextBox()
         Me.txtRegisterAddress = New System.Windows.Forms.TextBox()
         Me.txtRegisterPostcode = New System.Windows.Forms.TextBox()
         Me.btnRegister = New System.Windows.Forms.Button()
@@ -173,14 +173,14 @@ Partial Class Login
         Me.txtRegisterEmail.Size = New System.Drawing.Size(150, 27)
         Me.txtRegisterEmail.TabIndex = 33
         '
-        'txtRegisterPhone
+        'txtRegisterPhoneNo
         '
-        Me.txtRegisterPhone.BackColor = System.Drawing.Color.White
-        Me.txtRegisterPhone.Font = New System.Drawing.Font("Corbel", 12.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.txtRegisterPhone.Location = New System.Drawing.Point(100, 357)
-        Me.txtRegisterPhone.Name = "txtRegisterPhone"
-        Me.txtRegisterPhone.Size = New System.Drawing.Size(150, 27)
-        Me.txtRegisterPhone.TabIndex = 34
+        Me.txtRegisterPhoneNo.BackColor = System.Drawing.Color.White
+        Me.txtRegisterPhoneNo.Font = New System.Drawing.Font("Corbel", 12.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.txtRegisterPhoneNo.Location = New System.Drawing.Point(100, 357)
+        Me.txtRegisterPhoneNo.Name = "txtRegisterPhoneNo"
+        Me.txtRegisterPhoneNo.Size = New System.Drawing.Size(150, 27)
+        Me.txtRegisterPhoneNo.TabIndex = 34
         '
         'txtRegisterAddress
         '
@@ -249,7 +249,7 @@ Partial Class Login
         Me.Controls.Add(Me.btnRegister)
         Me.Controls.Add(Me.txtRegisterPostcode)
         Me.Controls.Add(Me.txtRegisterAddress)
-        Me.Controls.Add(Me.txtRegisterPhone)
+        Me.Controls.Add(Me.txtRegisterPhoneNo)
         Me.Controls.Add(Me.txtRegisterEmail)
         Me.Controls.Add(Me.txtRegisterName)
         Me.Controls.Add(Me.Label8)
@@ -286,7 +286,7 @@ Partial Class Login
     Friend WithEvents Label8 As Label
     Friend WithEvents txtRegisterName As TextBox
     Friend WithEvents txtRegisterEmail As TextBox
-    Friend WithEvents txtRegisterPhone As TextBox
+    Friend WithEvents txtRegisterPhoneNo As TextBox
     Friend WithEvents txtRegisterAddress As TextBox
     Friend WithEvents txtRegisterPostcode As TextBox
     Friend WithEvents btnRegister As Button

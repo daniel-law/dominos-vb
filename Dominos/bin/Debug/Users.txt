@@ -1,1 +1,3 @@
-1,"Mike","passwerd","mike@dominos.co.uk","+433456545346","Dominos Lane","DOM INO"
+1,Daniel,hello@daniellaw.me,secretpassword,+44074679873,Pizza Land,DOM INO
+2,Yuuki,admin@yuuki.moe,password,+48734376545673,N/A,N/A
+3,Asuna,asuna@yuuki.moe,password,+4408674365,Asuna Lane,AS UNA
