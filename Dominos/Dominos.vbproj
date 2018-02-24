@@ -102,6 +102,12 @@
       <DesignTimeSharedInput>True</DesignTimeSharedInput>
     </Compile>
     <Compile Include="CurrentOrder.vb" />
+    <Compile Include="PizzaMaker.Designer.vb">
+      <DependentUpon>PizzaMaker.vb</DependentUpon>
+    </Compile>
+    <Compile Include="PizzaMaker.vb">
+      <SubType>Form</SubType>
+    </Compile>
     <Compile Include="StaffView.Designer.vb">
       <DependentUpon>StaffView.vb</DependentUpon>
     </Compile>
@@ -123,6 +129,9 @@
       <SubType>Designer</SubType>
       <LastGenOutput>Resources.Designer.vb</LastGenOutput>
     </EmbeddedResource>
+    <EmbeddedResource Include="PizzaMaker.resx">
+      <DependentUpon>PizzaMaker.vb</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="StaffView.resx">
       <DependentUpon>StaffView.vb</DependentUpon>
     </EmbeddedResource>
@@ -140,18 +149,34 @@
     <None Include="App.config" />
   </ItemGroup>
   <ItemGroup>
+    <None Include="Resources\Topping.V_ComponentImage_PizzaChef.Tray_en_Default.png" />
+    <None Include="Resources\Topping.V_ComponentImage_PizzaChef.Stack.Circle.3_en_Default.png" />
+    <None Include="Resources\Topping.V_ComponentImage_PizzaChef.Stack.Circle.2_en_Default.png" />
+    <None Include="Resources\Topping.V_ComponentImage_PizzaChef.Stack.Circle.1_en_Default.png" />
+    <None Include="Resources\NL_Topping.B_all_CircleLayer3Image_1121.png" />
+    <None Include="Resources\NL_Topping.B_all_CircleLayer2Image_1121.png" />
+    <None Include="Resources\NL_Topping.B_all_CircleLayer1Image_1121.png" />
+    <None Include="Resources\Topping.B_ComponentImage_PizzaChef.Tray_en_Default.png" />
+    <None Include="Resources\Topping.F_ComponentImage_PizzaChef.Stack.Circle.3_en_Default.png" />
+    <None Include="Resources\Topping.F_ComponentImage_PizzaChef.Stack.Circle.2_en_Default.png" />
+    <None Include="Resources\Topping.F_ComponentImage_PizzaChef.Stack.Circle.1_en_Default.png" />
+    <None Include="Resources\Topping.F_ComponentImage_PizzaChef.Tray_en_Default.png" />
+    <None Include="Resources\NL_Topping.K_all_TrayImage_1275.png" />
+    <None Include="Resources\tray-placeholder.png" />
+    <None Include="Resources\Sauce.Xb_ComponentImage_PizzaChef.Stack.Circle.1_en_Default.png" />
+    <None Include="Resources\Sauce.X_ComponentImage_PizzaChef.Tray_en_Default.png" />
+    <None Include="Resources\Sauce.HBBSCComponentImagePizzaChef.Stack.Circle.1ENDefault19000101_011052.png" />
+    <None Include="Resources\Sauce.HBBSCComponentImagePizzaChef.TrayENDefault19000101_011053.png" />
+    <None Include="Resources\Sauce.Xz_ComponentImage_PizzaChef.Stack.Circle.1_en_Default.png" />
+    <None Include="Resources\Sauce.Xz_ComponentImage_PizzaChef.Tray_en_Default.png" />
+    <None Include="Resources\Sauce.Xb_ComponentImage_PizzaChef.Tray_en_Default.png" />
+    <None Include="Resources\NL_Topping.K_all_CircleLayer3Image_1275.png" />
+    <None Include="Resources\NL_Sauce.X_all_CircleLayer1Image_1275.png" />
+    <None Include="Resources\PizzaChef-Tray-Circle.png" />
     <None Include="Resources\Wedges-20170626.jpeg" />
     <None Include="Resources\MeltinBalls-20170626.jpeg" />
-    <None Include="Resources\Wedges-20170626.jpg" />
-    <None Include="Resources\MeltinBalls-20170626.jpg" />
     <None Include="Resources\sprite-drink-20171123.jpeg" />
     <None Include="Resources\smartwater-drink-20170704.jpeg" />
-    <None Include="Resources\sprite.png" />
-    <None Include="Resources\glaceau.png" />
-    <None Include="Resources\fanta.png" />
-    <None Include="Resources\dietcoke.png" />
-    <None Include="Resources\cokezero.png" />
-    <None Include="Resources\cokelogo.png" />
     <None Include="Resources\Dominos_Own_Tomato_Sauce_20170613.jpg" />
     <None Include="Resources\BBQ_Sauce_20170613.jpg" />
     <None Include="Resources\Sundried_Tomato_and_Garlic_Sauce_20170613.jpg" />
@@ -172,13 +197,10 @@
     <None Include="Resources\pepperonipassion-20170704.jpg" />
     <None Include="Resources\mighty-meaty-20170704.jpg" />
     <None Include="Resources\cheese-and-tomato-20170704.jpg" />
-    <None Include="Resources\fanta1.png" />
     <None Include="Resources\coca-cola-drink-20171123.jpeg" />
     <None Include="Resources\coca-cola-zero-drink-20171123.jpeg" />
     <None Include="Resources\diet-coke-drink-20171123.jpeg" />
     <None Include="Resources\fanta-drink-20171123.jpeg" />
-    <None Include="Resources\ChicknMix-20170626.jpg" />
-    <None Include="Resources\GarlicBread-20170626.jpg" />
     <None Include="Resources\GarlicBread-20170626.jpeg" />
     <None Include="Resources\GarlicBread-201706261.jpeg" />
     <None Include="Resources\ChicknMix-20170626.jpeg" />
@@ -187,6 +209,14 @@
     <None Include="Resources\BBQ_Dip-20170626.jpeg" />
     <None Include="Resources\Franks_Dip-20170626.jpeg" />
     <None Include="Resources\ChilliOil-20170626.jpeg" />
+    <None Include="Resources\Crust.H_ComponentImage_PizzaChef.Stack.Circle.1_en_Default.png" />
+    <None Include="Resources\Crust.H_ComponentImage_PizzaChef.Tray_en_Default.png" />
+    <None Include="Resources\Crust.C_ComponentImage_PizzaChef.Tray_en_Default.png" />
+    <None Include="Resources\Crust.C_ComponentImage_PizzaChef.Stack.Circle.1_en_Default.png" />
+    <None Include="Resources\Crust.T_ComponentImage_PizzaChef.Tray_en_Default.png" />
+    <None Include="Resources\Crust.T_ComponentImage_PizzaChef.Stack.Circle.1_en_Default.png" />
+    <None Include="Resources\Crust.P_ComponentImage_PizzaChef.Tray_en_Default.png" />
+    <None Include="Resources\Crust.P_ComponentImage_PizzaChef.Stack.Circle.1_en_Default.png" />
     <Content Include="Resources\Logo.PNG" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.VisualBasic.targets" />

@@ -62,6 +62,46 @@ Dominos
   Looks up a localized resource of type System.Drawing.Bitmap.
 </summary>
 </member>
+<member name="P:Dominos.My.Resources.Resources.Crust_C_ComponentImage_PizzaChef_Stack_Circle_1_en_Default">
+<summary>
+  Looks up a localized resource of type System.Drawing.Bitmap.
+</summary>
+</member>
+<member name="P:Dominos.My.Resources.Resources.Crust_C_ComponentImage_PizzaChef_Tray_en_Default">
+<summary>
+  Looks up a localized resource of type System.Drawing.Bitmap.
+</summary>
+</member>
+<member name="P:Dominos.My.Resources.Resources.Crust_H_ComponentImage_PizzaChef_Stack_Circle_1_en_Default">
+<summary>
+  Looks up a localized resource of type System.Drawing.Bitmap.
+</summary>
+</member>
+<member name="P:Dominos.My.Resources.Resources.Crust_H_ComponentImage_PizzaChef_Tray_en_Default">
+<summary>
+  Looks up a localized resource of type System.Drawing.Bitmap.
+</summary>
+</member>
+<member name="P:Dominos.My.Resources.Resources.Crust_P_ComponentImage_PizzaChef_Stack_Circle_1_en_Default">
+<summary>
+  Looks up a localized resource of type System.Drawing.Bitmap.
+</summary>
+</member>
+<member name="P:Dominos.My.Resources.Resources.Crust_P_ComponentImage_PizzaChef_Tray_en_Default">
+<summary>
+  Looks up a localized resource of type System.Drawing.Bitmap.
+</summary>
+</member>
+<member name="P:Dominos.My.Resources.Resources.Crust_T_ComponentImage_PizzaChef_Stack_Circle_1_en_Default">
+<summary>
+  Looks up a localized resource of type System.Drawing.Bitmap.
+</summary>
+</member>
+<member name="P:Dominos.My.Resources.Resources.Crust_T_ComponentImage_PizzaChef_Tray_en_Default">
+<summary>
+  Looks up a localized resource of type System.Drawing.Bitmap.
+</summary>
+</member>
 <member name="P:Dominos.My.Resources.Resources.deluxe_20170704_large">
 <summary>
   Looks up a localized resource of type System.Drawing.Bitmap.
@@ -157,12 +197,82 @@ Dominos
   Looks up a localized resource of type System.Drawing.Bitmap.
 </summary>
 </member>
+<member name="P:Dominos.My.Resources.Resources.NL_Sauce_X_all_CircleLayer1Image_1275">
+<summary>
+  Looks up a localized resource of type System.Drawing.Bitmap.
+</summary>
+</member>
+<member name="P:Dominos.My.Resources.Resources.NL_Topping_B_all_CircleLayer1Image_1121">
+<summary>
+  Looks up a localized resource of type System.Drawing.Bitmap.
+</summary>
+</member>
+<member name="P:Dominos.My.Resources.Resources.NL_Topping_B_all_CircleLayer2Image_1121">
+<summary>
+  Looks up a localized resource of type System.Drawing.Bitmap.
+</summary>
+</member>
+<member name="P:Dominos.My.Resources.Resources.NL_Topping_B_all_CircleLayer3Image_1121">
+<summary>
+  Looks up a localized resource of type System.Drawing.Bitmap.
+</summary>
+</member>
+<member name="P:Dominos.My.Resources.Resources.NL_Topping_K_all_CircleLayer3Image_1275">
+<summary>
+  Looks up a localized resource of type System.Drawing.Bitmap.
+</summary>
+</member>
+<member name="P:Dominos.My.Resources.Resources.NL_Topping_K_all_TrayImage_1275">
+<summary>
+  Looks up a localized resource of type System.Drawing.Bitmap.
+</summary>
+</member>
 <member name="P:Dominos.My.Resources.Resources.pepperonipassion_20170704">
 <summary>
   Looks up a localized resource of type System.Drawing.Bitmap.
 </summary>
 </member>
 <member name="P:Dominos.My.Resources.Resources.pepperonipassion_20170704_large">
+<summary>
+  Looks up a localized resource of type System.Drawing.Bitmap.
+</summary>
+</member>
+<member name="P:Dominos.My.Resources.Resources.PizzaChef_Tray_Circle">
+<summary>
+  Looks up a localized resource of type System.Drawing.Bitmap.
+</summary>
+</member>
+<member name="P:Dominos.My.Resources.Resources.Sauce_HBBSCComponentImagePizzaChef_Stack_Circle_1ENDefault19000101_011052">
+<summary>
+  Looks up a localized resource of type System.Drawing.Bitmap.
+</summary>
+</member>
+<member name="P:Dominos.My.Resources.Resources.Sauce_HBBSCComponentImagePizzaChef_TrayENDefault19000101_011053">
+<summary>
+  Looks up a localized resource of type System.Drawing.Bitmap.
+</summary>
+</member>
+<member name="P:Dominos.My.Resources.Resources.Sauce_X_ComponentImage_PizzaChef_Tray_en_Default">
+<summary>
+  Looks up a localized resource of type System.Drawing.Bitmap.
+</summary>
+</member>
+<member name="P:Dominos.My.Resources.Resources.Sauce_Xb_ComponentImage_PizzaChef_Stack_Circle_1_en_Default">
+<summary>
+  Looks up a localized resource of type System.Drawing.Bitmap.
+</summary>
+</member>
+<member name="P:Dominos.My.Resources.Resources.Sauce_Xb_ComponentImage_PizzaChef_Tray_en_Default">
+<summary>
+  Looks up a localized resource of type System.Drawing.Bitmap.
+</summary>
+</member>
+<member name="P:Dominos.My.Resources.Resources.Sauce_Xz_ComponentImage_PizzaChef_Stack_Circle_1_en_Default">
+<summary>
+  Looks up a localized resource of type System.Drawing.Bitmap.
+</summary>
+</member>
+<member name="P:Dominos.My.Resources.Resources.Sauce_Xz_ComponentImage_PizzaChef_Tray_en_Default">
 <summary>
   Looks up a localized resource of type System.Drawing.Bitmap.
 </summary>
@@ -198,6 +308,56 @@ Dominos
 </summary>
 </member>
 <member name="P:Dominos.My.Resources.Resources.texasbbq_20170704_large">
+<summary>
+  Looks up a localized resource of type System.Drawing.Bitmap.
+</summary>
+</member>
+<member name="P:Dominos.My.Resources.Resources.Topping_B_ComponentImage_PizzaChef_Tray_en_Default">
+<summary>
+  Looks up a localized resource of type System.Drawing.Bitmap.
+</summary>
+</member>
+<member name="P:Dominos.My.Resources.Resources.Topping_F_ComponentImage_PizzaChef_Stack_Circle_1_en_Default">
+<summary>
+  Looks up a localized resource of type System.Drawing.Bitmap.
+</summary>
+</member>
+<member name="P:Dominos.My.Resources.Resources.Topping_F_ComponentImage_PizzaChef_Stack_Circle_2_en_Default">
+<summary>
+  Looks up a localized resource of type System.Drawing.Bitmap.
+</summary>
+</member>
+<member name="P:Dominos.My.Resources.Resources.Topping_F_ComponentImage_PizzaChef_Stack_Circle_3_en_Default">
+<summary>
+  Looks up a localized resource of type System.Drawing.Bitmap.
+</summary>
+</member>
+<member name="P:Dominos.My.Resources.Resources.Topping_F_ComponentImage_PizzaChef_Tray_en_Default">
+<summary>
+  Looks up a localized resource of type System.Drawing.Bitmap.
+</summary>
+</member>
+<member name="P:Dominos.My.Resources.Resources.Topping_V_ComponentImage_PizzaChef_Stack_Circle_1_en_Default">
+<summary>
+  Looks up a localized resource of type System.Drawing.Bitmap.
+</summary>
+</member>
+<member name="P:Dominos.My.Resources.Resources.Topping_V_ComponentImage_PizzaChef_Stack_Circle_2_en_Default">
+<summary>
+  Looks up a localized resource of type System.Drawing.Bitmap.
+</summary>
+</member>
+<member name="P:Dominos.My.Resources.Resources.Topping_V_ComponentImage_PizzaChef_Stack_Circle_3_en_Default">
+<summary>
+  Looks up a localized resource of type System.Drawing.Bitmap.
+</summary>
+</member>
+<member name="P:Dominos.My.Resources.Resources.Topping_V_ComponentImage_PizzaChef_Tray_en_Default">
+<summary>
+  Looks up a localized resource of type System.Drawing.Bitmap.
+</summary>
+</member>
+<member name="P:Dominos.My.Resources.Resources.tray_placeholder">
 <summary>
   Looks up a localized resource of type System.Drawing.Bitmap.
 </summary>
