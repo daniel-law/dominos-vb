@@ -21,7 +21,7 @@ Public Class StaffView
         For Each fileContent In readText
             Dim order As String() = Split(fileContent, ",")
 
-            Dim orderDrinks As String
+            Dim orderDrinks As String = ""
             If order(3) <> 0 Then orderDrinks = orderDrinks & "Coke: " & order(3)
             If order(4) <> 0 Then orderDrinks = orderDrinks & " Diet Coke: " & order(4)
             If order(5) <> 0 Then orderDrinks = orderDrinks & " Coke Zero: " & order(5)
@@ -31,7 +31,7 @@ Public Class StaffView
             If spriteQuantity <> 0 Then orderDrinks = orderDrinks & " Sprite: " & spriteQuantity
             If order(3) + order(4) + order(5) + order(6) + order(7) + spriteQuantity = 0 Then orderDrinks = "None."
 
-            Dim orderSides As String
+            Dim orderSides As String = ""
             If order(9) <> 0 Then orderSides = orderSides & " Meltin' Meatballs: " & order(9)
             If order(10) <> 0 Then orderSides = orderSides & " Garlic Pizza Bread: " & order(10)
             If order(11) <> 0 Then orderSides = orderSides & " Potato Wedges: " & order(11)
@@ -39,7 +39,7 @@ Public Class StaffView
             If chicknmixboxQuantity <> 0 Then orderSides = orderSides & " Chick 'n' Mix Box: " & chicknmixboxQuantity
             If order(9) + order(10) + order(11) + chicknmixboxQuantity = 0 Then orderSides = "None."
 
-            Dim orderDips As String
+            Dim orderDips As String = ""
             If order(13) <> 0 Then orderDips = orderDips & " Random: " & order(13)
             If order(14) <> 0 Then orderDips = orderDips & " Big Garlic: " & order(14)
             If order(15) <> 0 Then orderDips = orderDips & " Big BBQ: " & order(15)
@@ -51,7 +51,7 @@ Public Class StaffView
             orderDrinks = ""
             orderSides = ""
             orderDips = ""
-            takings = takings + order(18).Remove(0, 1)
+            takings = takings + order(18)
         Next
 
         totalTakings.Text = "Total Takings: " & "£" & takings

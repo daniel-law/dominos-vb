@@ -22,7 +22,6 @@ Public Class Login
                 Me.Hide()
                 ' // debug
                 StaffView.Show()
-                PizzaMaker.Show()
                 Exit For
             End If
         Next

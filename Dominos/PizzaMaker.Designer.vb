@@ -38,6 +38,7 @@ Partial Class PizzaMaker
         Me.sauceHBBQ = New System.Windows.Forms.RadioButton()
         Me.Label4 = New System.Windows.Forms.Label()
         Me.chooseCrust = New System.Windows.Forms.GroupBox()
+        Me.sizeSelection = New System.Windows.Forms.ComboBox()
         Me.previewCrustClassic = New System.Windows.Forms.PictureBox()
         Me.previewCrustFreshPan = New System.Windows.Forms.PictureBox()
         Me.previewCrustItalian = New System.Windows.Forms.PictureBox()
@@ -49,32 +50,51 @@ Partial Class PizzaMaker
         Me.previewBaseBBQ = New System.Windows.Forms.PictureBox()
         Me.previewBaseNone = New System.Windows.Forms.PictureBox()
         Me.chooseToppings = New System.Windows.Forms.GroupBox()
-        Me.selectToppingChicken = New System.Windows.Forms.GroupBox()
-        Me.toppingChicken3 = New System.Windows.Forms.CheckBox()
-        Me.toppingChicken2 = New System.Windows.Forms.CheckBox()
-        Me.toppingChicken1 = New System.Windows.Forms.CheckBox()
-        Me.PictureBox1 = New System.Windows.Forms.PictureBox()
-        Me.selectToppingBacon = New System.Windows.Forms.GroupBox()
-        Me.toppingBacon3 = New System.Windows.Forms.CheckBox()
-        Me.toppingBacon2 = New System.Windows.Forms.CheckBox()
-        Me.toppingBacon1 = New System.Windows.Forms.CheckBox()
+        Me.maxToppingsNotice = New System.Windows.Forms.Label()
+        Me.Label15 = New System.Windows.Forms.Label()
+        Me.toppingSwissCheese = New System.Windows.Forms.ComboBox()
+        Me.previewToppingSwissCheese = New System.Windows.Forms.PictureBox()
+        Me.Label13 = New System.Windows.Forms.Label()
+        Me.toppingSalami = New System.Windows.Forms.ComboBox()
+        Me.previewToppingSalami = New System.Windows.Forms.PictureBox()
+        Me.Label12 = New System.Windows.Forms.Label()
+        Me.toppingPineapple = New System.Windows.Forms.ComboBox()
+        Me.previewToppingPineapple = New System.Windows.Forms.PictureBox()
+        Me.Label11 = New System.Windows.Forms.Label()
+        Me.toppingPepperoni = New System.Windows.Forms.ComboBox()
+        Me.previewToppingPepperoni = New System.Windows.Forms.PictureBox()
+        Me.Label10 = New System.Windows.Forms.Label()
+        Me.toppingHam = New System.Windows.Forms.ComboBox()
+        Me.previewToppingHam = New System.Windows.Forms.PictureBox()
+        Me.Label9 = New System.Windows.Forms.Label()
+        Me.toppingGroundBeef = New System.Windows.Forms.ComboBox()
+        Me.previewToppingGroundBeef = New System.Windows.Forms.PictureBox()
+        Me.Label8 = New System.Windows.Forms.Label()
+        Me.Label7 = New System.Windows.Forms.Label()
+        Me.Label6 = New System.Windows.Forms.Label()
+        Me.Label5 = New System.Windows.Forms.Label()
+        Me.toppingChicken = New System.Windows.Forms.ComboBox()
+        Me.toppingCheese = New System.Windows.Forms.ComboBox()
+        Me.toppingBacon = New System.Windows.Forms.ComboBox()
+        Me.toppingAnchovy = New System.Windows.Forms.ComboBox()
+        Me.previewToppingChicken = New System.Windows.Forms.PictureBox()
         Me.previewToppingBacon = New System.Windows.Forms.PictureBox()
         Me.Label3 = New System.Windows.Forms.Label()
-        Me.selectToppingCheese = New System.Windows.Forms.GroupBox()
-        Me.toppingCheese3 = New System.Windows.Forms.CheckBox()
-        Me.toppingCheese2 = New System.Windows.Forms.CheckBox()
-        Me.toppingCheese1 = New System.Windows.Forms.CheckBox()
         Me.previewToppingCheese = New System.Windows.Forms.PictureBox()
-        Me.selectToppingAnchovy = New System.Windows.Forms.GroupBox()
-        Me.toppingAnchovy3 = New System.Windows.Forms.CheckBox()
-        Me.toppingAnchovy1 = New System.Windows.Forms.CheckBox()
-        Me.toppingAnchovy2 = New System.Windows.Forms.CheckBox()
         Me.previewToppingAnchovy = New System.Windows.Forms.PictureBox()
         Me.pizzaTray = New System.Windows.Forms.Panel()
         Me.anchovyLayer = New System.Windows.Forms.Panel()
+        Me.salamiLayer = New System.Windows.Forms.Panel()
+        Me.swissCheeseLayer = New System.Windows.Forms.Panel()
+        Me.pineappleLayer = New System.Windows.Forms.Panel()
+        Me.pepperoniLayer = New System.Windows.Forms.Panel()
         Me.baconLayer = New System.Windows.Forms.Panel()
+        Me.hamLayer = New System.Windows.Forms.Panel()
         Me.chickenLayer = New System.Windows.Forms.Panel()
+        Me.groundBeefLayer = New System.Windows.Forms.Panel()
         Me.PictureBox2 = New System.Windows.Forms.PictureBox()
+        Me.startOver = New System.Windows.Forms.Button()
+        Me.addPizza = New System.Windows.Forms.Button()
         Me.chooseCrust.SuspendLayout()
         CType(Me.previewCrustClassic, System.ComponentModel.ISupportInitialize).BeginInit()
         CType(Me.previewCrustFreshPan, System.ComponentModel.ISupportInitialize).BeginInit()
@@ -87,17 +107,25 @@ Partial Class PizzaMaker
         CType(Me.previewBaseBBQ, System.ComponentModel.ISupportInitialize).BeginInit()
         CType(Me.previewBaseNone, System.ComponentModel.ISupportInitialize).BeginInit()
         Me.chooseToppings.SuspendLayout()
-        Me.selectToppingChicken.SuspendLayout()
-        CType(Me.PictureBox1, System.ComponentModel.ISupportInitialize).BeginInit()
-        Me.selectToppingBacon.SuspendLayout()
+        CType(Me.previewToppingSwissCheese, System.ComponentModel.ISupportInitialize).BeginInit()
+        CType(Me.previewToppingSalami, System.ComponentModel.ISupportInitialize).BeginInit()
+        CType(Me.previewToppingPineapple, System.ComponentModel.ISupportInitialize).BeginInit()
+        CType(Me.previewToppingPepperoni, System.ComponentModel.ISupportInitialize).BeginInit()
+        CType(Me.previewToppingHam, System.ComponentModel.ISupportInitialize).BeginInit()
+        CType(Me.previewToppingGroundBeef, System.ComponentModel.ISupportInitialize).BeginInit()
+        CType(Me.previewToppingChicken, System.ComponentModel.ISupportInitialize).BeginInit()
         CType(Me.previewToppingBacon, System.ComponentModel.ISupportInitialize).BeginInit()
-        Me.selectToppingCheese.SuspendLayout()
         CType(Me.previewToppingCheese, System.ComponentModel.ISupportInitialize).BeginInit()
-        Me.selectToppingAnchovy.SuspendLayout()
         CType(Me.previewToppingAnchovy, System.ComponentModel.ISupportInitialize).BeginInit()
         Me.pizzaTray.SuspendLayout()
         Me.anchovyLayer.SuspendLayout()
+        Me.salamiLayer.SuspendLayout()
+        Me.swissCheeseLayer.SuspendLayout()
+        Me.pineappleLayer.SuspendLayout()
+        Me.pepperoniLayer.SuspendLayout()
         Me.baconLayer.SuspendLayout()
+        Me.hamLayer.SuspendLayout()
+        Me.chickenLayer.SuspendLayout()
         CType(Me.PictureBox2, System.ComponentModel.ISupportInitialize).BeginInit()
         Me.SuspendLayout()
         '
@@ -127,9 +155,9 @@ Partial Class PizzaMaker
         Me.currentPrice.Font = New System.Drawing.Font("Corbel", 18.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.currentPrice.Location = New System.Drawing.Point(976, 69)
         Me.currentPrice.Name = "currentPrice"
-        Me.currentPrice.Size = New System.Drawing.Size(84, 29)
+        Me.currentPrice.Size = New System.Drawing.Size(69, 29)
         Me.currentPrice.TabIndex = 67
-        Me.currentPrice.Text = "£14.99"
+        Me.currentPrice.Text = "£0.00"
         '
         'crustFreshPan
         '
@@ -165,7 +193,7 @@ Partial Class PizzaMaker
         '
         Me.Label1.AutoSize = True
         Me.Label1.Font = New System.Drawing.Font("Corbel", 18.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Label1.Location = New System.Drawing.Point(20, 29)
+        Me.Label1.Location = New System.Drawing.Point(108, 35)
         Me.Label1.Name = "Label1"
         Me.Label1.Size = New System.Drawing.Size(67, 29)
         Me.Label1.TabIndex = 72
@@ -251,12 +279,13 @@ Partial Class PizzaMaker
         Me.Label4.Font = New System.Drawing.Font("Corbel", 12.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.Label4.Location = New System.Drawing.Point(507, 16)
         Me.Label4.Name = "Label4"
-        Me.Label4.Size = New System.Drawing.Size(478, 19)
+        Me.Label4.Size = New System.Drawing.Size(477, 19)
         Me.Label4.TabIndex = 91
-        Me.Label4.Text = "Now's the time to shine. You can do anything. Modify your toppings:"
+        Me.Label4.Text = "Now's the time to shine. Any combination of 11 toppings is possible!"
         '
         'chooseCrust
         '
+        Me.chooseCrust.Controls.Add(Me.sizeSelection)
         Me.chooseCrust.Controls.Add(Me.crustFreshPan)
         Me.chooseCrust.Controls.Add(Me.previewCrustClassic)
         Me.chooseCrust.Controls.Add(Me.previewCrustFreshPan)
@@ -271,6 +300,17 @@ Partial Class PizzaMaker
         Me.chooseCrust.Size = New System.Drawing.Size(530, 194)
         Me.chooseCrust.TabIndex = 3
         Me.chooseCrust.TabStop = False
+        '
+        'sizeSelection
+        '
+        Me.sizeSelection.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList
+        Me.sizeSelection.Font = New System.Drawing.Font("Corbel", 18.0!, System.Drawing.FontStyle.Bold)
+        Me.sizeSelection.FormattingEnabled = True
+        Me.sizeSelection.Items.AddRange(New Object() {"""9.5", """11.5", """13.5"})
+        Me.sizeSelection.Location = New System.Drawing.Point(24, 32)
+        Me.sizeSelection.Name = "sizeSelection"
+        Me.sizeSelection.Size = New System.Drawing.Size(78, 37)
+        Me.sizeSelection.TabIndex = 79
         '
         'previewCrustClassic
         '
@@ -383,125 +423,323 @@ Partial Class PizzaMaker
         '
         'chooseToppings
         '
-        Me.chooseToppings.Controls.Add(Me.selectToppingChicken)
-        Me.chooseToppings.Controls.Add(Me.PictureBox1)
-        Me.chooseToppings.Controls.Add(Me.selectToppingBacon)
+        Me.chooseToppings.Controls.Add(Me.maxToppingsNotice)
+        Me.chooseToppings.Controls.Add(Me.Label15)
+        Me.chooseToppings.Controls.Add(Me.toppingSwissCheese)
+        Me.chooseToppings.Controls.Add(Me.previewToppingSwissCheese)
+        Me.chooseToppings.Controls.Add(Me.Label13)
+        Me.chooseToppings.Controls.Add(Me.toppingSalami)
+        Me.chooseToppings.Controls.Add(Me.previewToppingSalami)
+        Me.chooseToppings.Controls.Add(Me.Label12)
+        Me.chooseToppings.Controls.Add(Me.toppingPineapple)
+        Me.chooseToppings.Controls.Add(Me.previewToppingPineapple)
+        Me.chooseToppings.Controls.Add(Me.Label11)
+        Me.chooseToppings.Controls.Add(Me.toppingPepperoni)
+        Me.chooseToppings.Controls.Add(Me.previewToppingPepperoni)
+        Me.chooseToppings.Controls.Add(Me.Label10)
+        Me.chooseToppings.Controls.Add(Me.toppingHam)
+        Me.chooseToppings.Controls.Add(Me.previewToppingHam)
+        Me.chooseToppings.Controls.Add(Me.Label9)
+        Me.chooseToppings.Controls.Add(Me.toppingGroundBeef)
+        Me.chooseToppings.Controls.Add(Me.previewToppingGroundBeef)
+        Me.chooseToppings.Controls.Add(Me.Label8)
+        Me.chooseToppings.Controls.Add(Me.Label7)
+        Me.chooseToppings.Controls.Add(Me.Label6)
+        Me.chooseToppings.Controls.Add(Me.Label5)
+        Me.chooseToppings.Controls.Add(Me.toppingChicken)
+        Me.chooseToppings.Controls.Add(Me.toppingCheese)
+        Me.chooseToppings.Controls.Add(Me.toppingBacon)
+        Me.chooseToppings.Controls.Add(Me.toppingAnchovy)
+        Me.chooseToppings.Controls.Add(Me.previewToppingChicken)
         Me.chooseToppings.Controls.Add(Me.Label4)
         Me.chooseToppings.Controls.Add(Me.previewToppingBacon)
         Me.chooseToppings.Controls.Add(Me.Label3)
-        Me.chooseToppings.Controls.Add(Me.selectToppingCheese)
         Me.chooseToppings.Controls.Add(Me.previewToppingCheese)
-        Me.chooseToppings.Controls.Add(Me.selectToppingAnchovy)
         Me.chooseToppings.Controls.Add(Me.previewToppingAnchovy)
         Me.chooseToppings.Location = New System.Drawing.Point(48, 565)
         Me.chooseToppings.Name = "chooseToppings"
-        Me.chooseToppings.Size = New System.Drawing.Size(996, 396)
+        Me.chooseToppings.Size = New System.Drawing.Size(996, 464)
         Me.chooseToppings.TabIndex = 93
         Me.chooseToppings.TabStop = False
         '
-        'selectToppingChicken
+        'maxToppingsNotice
         '
-        Me.selectToppingChicken.Controls.Add(Me.toppingChicken3)
-        Me.selectToppingChicken.Controls.Add(Me.toppingChicken2)
-        Me.selectToppingChicken.Controls.Add(Me.toppingChicken1)
-        Me.selectToppingChicken.Location = New System.Drawing.Point(660, 259)
-        Me.selectToppingChicken.Name = "selectToppingChicken"
-        Me.selectToppingChicken.Size = New System.Drawing.Size(200, 46)
-        Me.selectToppingChicken.TabIndex = 90
-        Me.selectToppingChicken.TabStop = False
-        Me.selectToppingChicken.Text = "Chicken"
+        Me.maxToppingsNotice.AutoSize = True
+        Me.maxToppingsNotice.Font = New System.Drawing.Font("Corbel", 12.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.maxToppingsNotice.Location = New System.Drawing.Point(130, 24)
+        Me.maxToppingsNotice.Name = "maxToppingsNotice"
+        Me.maxToppingsNotice.Size = New System.Drawing.Size(166, 19)
+        Me.maxToppingsNotice.TabIndex = 118
+        Me.maxToppingsNotice.Text = "Max toppings reached."
+        Me.maxToppingsNotice.Visible = False
         '
-        'toppingChicken3
+        'Label15
         '
-        Me.toppingChicken3.AutoSize = True
-        Me.toppingChicken3.Enabled = False
-        Me.toppingChicken3.Location = New System.Drawing.Point(92, 19)
-        Me.toppingChicken3.Name = "toppingChicken3"
-        Me.toppingChicken3.Size = New System.Drawing.Size(37, 17)
-        Me.toppingChicken3.TabIndex = 2
-        Me.toppingChicken3.Text = "x3"
-        Me.toppingChicken3.UseVisualStyleBackColor = True
+        Me.Label15.AutoSize = True
+        Me.Label15.Location = New System.Drawing.Point(793, 426)
+        Me.Label15.Name = "Label15"
+        Me.Label15.Size = New System.Drawing.Size(73, 13)
+        Me.Label15.TabIndex = 117
+        Me.Label15.Text = "Swiss Cheese"
         '
-        'toppingChicken2
+        'toppingSwissCheese
         '
-        Me.toppingChicken2.AutoSize = True
-        Me.toppingChicken2.Enabled = False
-        Me.toppingChicken2.Location = New System.Drawing.Point(49, 19)
-        Me.toppingChicken2.Name = "toppingChicken2"
-        Me.toppingChicken2.Size = New System.Drawing.Size(37, 17)
-        Me.toppingChicken2.TabIndex = 1
-        Me.toppingChicken2.Text = "x2"
-        Me.toppingChicken2.UseVisualStyleBackColor = True
+        Me.toppingSwissCheese.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList
+        Me.toppingSwissCheese.FormattingEnabled = True
+        Me.toppingSwissCheese.Items.AddRange(New Object() {"0", "1", "2", "3"})
+        Me.toppingSwissCheese.Location = New System.Drawing.Point(872, 423)
+        Me.toppingSwissCheese.Name = "toppingSwissCheese"
+        Me.toppingSwissCheese.Size = New System.Drawing.Size(91, 21)
+        Me.toppingSwissCheese.TabIndex = 116
         '
-        'toppingChicken1
+        'previewToppingSwissCheese
         '
-        Me.toppingChicken1.AutoSize = True
-        Me.toppingChicken1.Location = New System.Drawing.Point(6, 19)
-        Me.toppingChicken1.Name = "toppingChicken1"
-        Me.toppingChicken1.Size = New System.Drawing.Size(37, 17)
-        Me.toppingChicken1.TabIndex = 0
-        Me.toppingChicken1.Text = "x1"
-        Me.toppingChicken1.UseVisualStyleBackColor = True
+        Me.previewToppingSwissCheese.Image = Global.Dominos.My.Resources.Resources.NL_Topping_Et_all_TrayImage_1275
+        Me.previewToppingSwissCheese.Location = New System.Drawing.Point(796, 261)
+        Me.previewToppingSwissCheese.Name = "previewToppingSwissCheese"
+        Me.previewToppingSwissCheese.Size = New System.Drawing.Size(167, 162)
+        Me.previewToppingSwissCheese.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom
+        Me.previewToppingSwissCheese.TabIndex = 115
+        Me.previewToppingSwissCheese.TabStop = False
         '
-        'PictureBox1
+        'Label13
         '
-        Me.PictureBox1.Image = Global.Dominos.My.Resources.Resources.Topping_V_ComponentImage_PizzaChef_Tray_en_Default
-        Me.PictureBox1.Location = New System.Drawing.Point(660, 60)
-        Me.PictureBox1.Name = "PictureBox1"
-        Me.PictureBox1.Size = New System.Drawing.Size(194, 190)
-        Me.PictureBox1.TabIndex = 91
-        Me.PictureBox1.TabStop = False
+        Me.Label13.AutoSize = True
+        Me.Label13.Location = New System.Drawing.Point(599, 426)
+        Me.Label13.Name = "Label13"
+        Me.Label13.Size = New System.Drawing.Size(38, 13)
+        Me.Label13.TabIndex = 114
+        Me.Label13.Text = "Salami"
         '
-        'selectToppingBacon
+        'toppingSalami
         '
-        Me.selectToppingBacon.Controls.Add(Me.toppingBacon3)
-        Me.selectToppingBacon.Controls.Add(Me.toppingBacon2)
-        Me.selectToppingBacon.Controls.Add(Me.toppingBacon1)
-        Me.selectToppingBacon.Location = New System.Drawing.Point(233, 259)
-        Me.selectToppingBacon.Name = "selectToppingBacon"
-        Me.selectToppingBacon.Size = New System.Drawing.Size(200, 46)
-        Me.selectToppingBacon.TabIndex = 3
-        Me.selectToppingBacon.TabStop = False
-        Me.selectToppingBacon.Text = "Bacon"
+        Me.toppingSalami.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList
+        Me.toppingSalami.FormattingEnabled = True
+        Me.toppingSalami.Items.AddRange(New Object() {"0", "1", "2", "3"})
+        Me.toppingSalami.Location = New System.Drawing.Point(678, 423)
+        Me.toppingSalami.Name = "toppingSalami"
+        Me.toppingSalami.Size = New System.Drawing.Size(91, 21)
+        Me.toppingSalami.TabIndex = 113
         '
-        'toppingBacon3
+        'previewToppingSalami
         '
-        Me.toppingBacon3.AutoSize = True
-        Me.toppingBacon3.Enabled = False
-        Me.toppingBacon3.Location = New System.Drawing.Point(90, 19)
-        Me.toppingBacon3.Name = "toppingBacon3"
-        Me.toppingBacon3.Size = New System.Drawing.Size(37, 17)
-        Me.toppingBacon3.TabIndex = 3
-        Me.toppingBacon3.Text = "x3"
-        Me.toppingBacon3.UseVisualStyleBackColor = True
+        Me.previewToppingSalami.Image = Global.Dominos.My.Resources.Resources.NL_Topping_Ss_all_TrayImage_1275
+        Me.previewToppingSalami.Location = New System.Drawing.Point(602, 261)
+        Me.previewToppingSalami.Name = "previewToppingSalami"
+        Me.previewToppingSalami.Size = New System.Drawing.Size(167, 162)
+        Me.previewToppingSalami.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom
+        Me.previewToppingSalami.TabIndex = 112
+        Me.previewToppingSalami.TabStop = False
         '
-        'toppingBacon2
+        'Label12
         '
-        Me.toppingBacon2.AutoSize = True
-        Me.toppingBacon2.Enabled = False
-        Me.toppingBacon2.Location = New System.Drawing.Point(49, 19)
-        Me.toppingBacon2.Name = "toppingBacon2"
-        Me.toppingBacon2.Size = New System.Drawing.Size(37, 17)
-        Me.toppingBacon2.TabIndex = 3
-        Me.toppingBacon2.Text = "x2"
-        Me.toppingBacon2.UseVisualStyleBackColor = True
+        Me.Label12.AutoSize = True
+        Me.Label12.Location = New System.Drawing.Point(408, 426)
+        Me.Label12.Name = "Label12"
+        Me.Label12.Size = New System.Drawing.Size(54, 13)
+        Me.Label12.TabIndex = 111
+        Me.Label12.Text = "Pineapple"
         '
-        'toppingBacon1
+        'toppingPineapple
         '
-        Me.toppingBacon1.AutoSize = True
-        Me.toppingBacon1.Location = New System.Drawing.Point(6, 19)
-        Me.toppingBacon1.Name = "toppingBacon1"
-        Me.toppingBacon1.Size = New System.Drawing.Size(37, 17)
-        Me.toppingBacon1.TabIndex = 3
-        Me.toppingBacon1.Text = "x1"
-        Me.toppingBacon1.UseVisualStyleBackColor = True
+        Me.toppingPineapple.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList
+        Me.toppingPineapple.FormattingEnabled = True
+        Me.toppingPineapple.Items.AddRange(New Object() {"0", "1", "2", "3"})
+        Me.toppingPineapple.Location = New System.Drawing.Point(488, 423)
+        Me.toppingPineapple.Name = "toppingPineapple"
+        Me.toppingPineapple.Size = New System.Drawing.Size(91, 21)
+        Me.toppingPineapple.TabIndex = 110
+        '
+        'previewToppingPineapple
+        '
+        Me.previewToppingPineapple.Image = Global.Dominos.My.Resources.Resources.Topping_A_ComponentImage_PizzaChef_Tray_en_Default
+        Me.previewToppingPineapple.Location = New System.Drawing.Point(411, 261)
+        Me.previewToppingPineapple.Name = "previewToppingPineapple"
+        Me.previewToppingPineapple.Size = New System.Drawing.Size(167, 162)
+        Me.previewToppingPineapple.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom
+        Me.previewToppingPineapple.TabIndex = 109
+        Me.previewToppingPineapple.TabStop = False
+        '
+        'Label11
+        '
+        Me.Label11.AutoSize = True
+        Me.Label11.Location = New System.Drawing.Point(213, 426)
+        Me.Label11.Name = "Label11"
+        Me.Label11.Size = New System.Drawing.Size(55, 13)
+        Me.Label11.TabIndex = 108
+        Me.Label11.Text = "Pepperoni"
+        '
+        'toppingPepperoni
+        '
+        Me.toppingPepperoni.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList
+        Me.toppingPepperoni.FormattingEnabled = True
+        Me.toppingPepperoni.Items.AddRange(New Object() {"0", "1", "2", "3"})
+        Me.toppingPepperoni.Location = New System.Drawing.Point(292, 423)
+        Me.toppingPepperoni.Name = "toppingPepperoni"
+        Me.toppingPepperoni.Size = New System.Drawing.Size(91, 21)
+        Me.toppingPepperoni.TabIndex = 107
+        '
+        'previewToppingPepperoni
+        '
+        Me.previewToppingPepperoni.Image = Global.Dominos.My.Resources.Resources.Topping_S_ComponentImage_PizzaChef_Tray_en_Default
+        Me.previewToppingPepperoni.Location = New System.Drawing.Point(216, 261)
+        Me.previewToppingPepperoni.Name = "previewToppingPepperoni"
+        Me.previewToppingPepperoni.Size = New System.Drawing.Size(167, 162)
+        Me.previewToppingPepperoni.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom
+        Me.previewToppingPepperoni.TabIndex = 106
+        Me.previewToppingPepperoni.TabStop = False
+        '
+        'Label10
+        '
+        Me.Label10.AutoSize = True
+        Me.Label10.Location = New System.Drawing.Point(20, 426)
+        Me.Label10.Name = "Label10"
+        Me.Label10.Size = New System.Drawing.Size(29, 13)
+        Me.Label10.TabIndex = 105
+        Me.Label10.Text = "Ham"
+        '
+        'toppingHam
+        '
+        Me.toppingHam.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList
+        Me.toppingHam.FormattingEnabled = True
+        Me.toppingHam.Items.AddRange(New Object() {"0", "1", "2", "3"})
+        Me.toppingHam.Location = New System.Drawing.Point(99, 423)
+        Me.toppingHam.Name = "toppingHam"
+        Me.toppingHam.Size = New System.Drawing.Size(91, 21)
+        Me.toppingHam.TabIndex = 104
+        '
+        'previewToppingHam
+        '
+        Me.previewToppingHam.Image = Global.Dominos.My.Resources.Resources.NL_Topping_H_all_TrayImage_1275
+        Me.previewToppingHam.Location = New System.Drawing.Point(23, 261)
+        Me.previewToppingHam.Name = "previewToppingHam"
+        Me.previewToppingHam.Size = New System.Drawing.Size(167, 162)
+        Me.previewToppingHam.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom
+        Me.previewToppingHam.TabIndex = 103
+        Me.previewToppingHam.TabStop = False
+        '
+        'Label9
+        '
+        Me.Label9.AutoSize = True
+        Me.Label9.Location = New System.Drawing.Point(793, 228)
+        Me.Label9.Name = "Label9"
+        Me.Label9.Size = New System.Drawing.Size(67, 13)
+        Me.Label9.TabIndex = 102
+        Me.Label9.Text = "Ground Beef"
+        '
+        'toppingGroundBeef
+        '
+        Me.toppingGroundBeef.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList
+        Me.toppingGroundBeef.FormattingEnabled = True
+        Me.toppingGroundBeef.Items.AddRange(New Object() {"0", "1", "2", "3"})
+        Me.toppingGroundBeef.Location = New System.Drawing.Point(872, 225)
+        Me.toppingGroundBeef.Name = "toppingGroundBeef"
+        Me.toppingGroundBeef.Size = New System.Drawing.Size(91, 21)
+        Me.toppingGroundBeef.TabIndex = 101
+        '
+        'previewToppingGroundBeef
+        '
+        Me.previewToppingGroundBeef.Image = Global.Dominos.My.Resources.Resources.Topping_G_ComponentImage_PizzaChef_Tray_en_Default
+        Me.previewToppingGroundBeef.Location = New System.Drawing.Point(796, 63)
+        Me.previewToppingGroundBeef.Name = "previewToppingGroundBeef"
+        Me.previewToppingGroundBeef.Size = New System.Drawing.Size(167, 162)
+        Me.previewToppingGroundBeef.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom
+        Me.previewToppingGroundBeef.TabIndex = 100
+        Me.previewToppingGroundBeef.TabStop = False
+        '
+        'Label8
+        '
+        Me.Label8.AutoSize = True
+        Me.Label8.Location = New System.Drawing.Point(599, 228)
+        Me.Label8.Name = "Label8"
+        Me.Label8.Size = New System.Drawing.Size(46, 13)
+        Me.Label8.TabIndex = 99
+        Me.Label8.Text = "Chicken"
+        '
+        'Label7
+        '
+        Me.Label7.AutoSize = True
+        Me.Label7.Location = New System.Drawing.Point(408, 228)
+        Me.Label7.Name = "Label7"
+        Me.Label7.Size = New System.Drawing.Size(43, 13)
+        Me.Label7.TabIndex = 98
+        Me.Label7.Text = "Cheese"
+        '
+        'Label6
+        '
+        Me.Label6.AutoSize = True
+        Me.Label6.Location = New System.Drawing.Point(213, 228)
+        Me.Label6.Name = "Label6"
+        Me.Label6.Size = New System.Drawing.Size(38, 13)
+        Me.Label6.TabIndex = 97
+        Me.Label6.Text = "Bacon"
+        '
+        'Label5
+        '
+        Me.Label5.AutoSize = True
+        Me.Label5.Location = New System.Drawing.Point(21, 228)
+        Me.Label5.Name = "Label5"
+        Me.Label5.Size = New System.Drawing.Size(49, 13)
+        Me.Label5.TabIndex = 96
+        Me.Label5.Text = "Anchovy"
+        '
+        'toppingChicken
+        '
+        Me.toppingChicken.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList
+        Me.toppingChicken.FormattingEnabled = True
+        Me.toppingChicken.Items.AddRange(New Object() {"0", "1", "2", "3"})
+        Me.toppingChicken.Location = New System.Drawing.Point(678, 225)
+        Me.toppingChicken.Name = "toppingChicken"
+        Me.toppingChicken.Size = New System.Drawing.Size(91, 21)
+        Me.toppingChicken.TabIndex = 95
+        '
+        'toppingCheese
+        '
+        Me.toppingCheese.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList
+        Me.toppingCheese.FormattingEnabled = True
+        Me.toppingCheese.Items.AddRange(New Object() {"0", "1", "2", "3"})
+        Me.toppingCheese.Location = New System.Drawing.Point(488, 225)
+        Me.toppingCheese.Name = "toppingCheese"
+        Me.toppingCheese.Size = New System.Drawing.Size(91, 21)
+        Me.toppingCheese.TabIndex = 94
+        '
+        'toppingBacon
+        '
+        Me.toppingBacon.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList
+        Me.toppingBacon.FormattingEnabled = True
+        Me.toppingBacon.Items.AddRange(New Object() {"0", "1", "2", "3"})
+        Me.toppingBacon.Location = New System.Drawing.Point(292, 225)
+        Me.toppingBacon.Name = "toppingBacon"
+        Me.toppingBacon.Size = New System.Drawing.Size(91, 21)
+        Me.toppingBacon.TabIndex = 93
+        '
+        'toppingAnchovy
+        '
+        Me.toppingAnchovy.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList
+        Me.toppingAnchovy.FormattingEnabled = True
+        Me.toppingAnchovy.Items.AddRange(New Object() {"0", "1", "2", "3"})
+        Me.toppingAnchovy.Location = New System.Drawing.Point(99, 225)
+        Me.toppingAnchovy.Name = "toppingAnchovy"
+        Me.toppingAnchovy.Size = New System.Drawing.Size(91, 21)
+        Me.toppingAnchovy.TabIndex = 92
+        '
+        'previewToppingChicken
+        '
+        Me.previewToppingChicken.Image = Global.Dominos.My.Resources.Resources.Topping_V_ComponentImage_PizzaChef_Tray_en_Default
+        Me.previewToppingChicken.Location = New System.Drawing.Point(602, 63)
+        Me.previewToppingChicken.Name = "previewToppingChicken"
+        Me.previewToppingChicken.Size = New System.Drawing.Size(167, 162)
+        Me.previewToppingChicken.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom
+        Me.previewToppingChicken.TabIndex = 91
+        Me.previewToppingChicken.TabStop = False
         '
         'previewToppingBacon
         '
         Me.previewToppingBacon.Image = Global.Dominos.My.Resources.Resources.Topping_B_ComponentImage_PizzaChef_Tray_en_Default
-        Me.previewToppingBacon.Location = New System.Drawing.Point(233, 60)
+        Me.previewToppingBacon.Location = New System.Drawing.Point(216, 63)
         Me.previewToppingBacon.Name = "previewToppingBacon"
-        Me.previewToppingBacon.Size = New System.Drawing.Size(194, 190)
+        Me.previewToppingBacon.Size = New System.Drawing.Size(167, 162)
+        Me.previewToppingBacon.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom
         Me.previewToppingBacon.TabIndex = 90
         Me.previewToppingBacon.TabStop = False
         '
@@ -515,109 +753,23 @@ Partial Class PizzaMaker
         Me.Label3.TabIndex = 79
         Me.Label3.Text = "Toppings"
         '
-        'selectToppingCheese
-        '
-        Me.selectToppingCheese.Controls.Add(Me.toppingCheese3)
-        Me.selectToppingCheese.Controls.Add(Me.toppingCheese2)
-        Me.selectToppingCheese.Controls.Add(Me.toppingCheese1)
-        Me.selectToppingCheese.Location = New System.Drawing.Point(443, 259)
-        Me.selectToppingCheese.Name = "selectToppingCheese"
-        Me.selectToppingCheese.Size = New System.Drawing.Size(200, 46)
-        Me.selectToppingCheese.TabIndex = 89
-        Me.selectToppingCheese.TabStop = False
-        Me.selectToppingCheese.Text = "Cheese"
-        '
-        'toppingCheese3
-        '
-        Me.toppingCheese3.AutoSize = True
-        Me.toppingCheese3.Enabled = False
-        Me.toppingCheese3.Location = New System.Drawing.Point(92, 19)
-        Me.toppingCheese3.Name = "toppingCheese3"
-        Me.toppingCheese3.Size = New System.Drawing.Size(37, 17)
-        Me.toppingCheese3.TabIndex = 2
-        Me.toppingCheese3.Text = "x3"
-        Me.toppingCheese3.UseVisualStyleBackColor = True
-        '
-        'toppingCheese2
-        '
-        Me.toppingCheese2.AutoSize = True
-        Me.toppingCheese2.Enabled = False
-        Me.toppingCheese2.Location = New System.Drawing.Point(49, 19)
-        Me.toppingCheese2.Name = "toppingCheese2"
-        Me.toppingCheese2.Size = New System.Drawing.Size(37, 17)
-        Me.toppingCheese2.TabIndex = 1
-        Me.toppingCheese2.Text = "x2"
-        Me.toppingCheese2.UseVisualStyleBackColor = True
-        '
-        'toppingCheese1
-        '
-        Me.toppingCheese1.AutoSize = True
-        Me.toppingCheese1.Location = New System.Drawing.Point(6, 19)
-        Me.toppingCheese1.Name = "toppingCheese1"
-        Me.toppingCheese1.Size = New System.Drawing.Size(37, 17)
-        Me.toppingCheese1.TabIndex = 0
-        Me.toppingCheese1.Text = "x1"
-        Me.toppingCheese1.UseVisualStyleBackColor = True
-        '
         'previewToppingCheese
         '
         Me.previewToppingCheese.Image = Global.Dominos.My.Resources.Resources.NL_Topping_K_all_TrayImage_1275
-        Me.previewToppingCheese.Location = New System.Drawing.Point(443, 60)
+        Me.previewToppingCheese.Location = New System.Drawing.Point(411, 63)
         Me.previewToppingCheese.Name = "previewToppingCheese"
-        Me.previewToppingCheese.Size = New System.Drawing.Size(194, 190)
+        Me.previewToppingCheese.Size = New System.Drawing.Size(167, 162)
+        Me.previewToppingCheese.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom
         Me.previewToppingCheese.TabIndex = 86
         Me.previewToppingCheese.TabStop = False
-        '
-        'selectToppingAnchovy
-        '
-        Me.selectToppingAnchovy.Controls.Add(Me.toppingAnchovy3)
-        Me.selectToppingAnchovy.Controls.Add(Me.toppingAnchovy1)
-        Me.selectToppingAnchovy.Controls.Add(Me.toppingAnchovy2)
-        Me.selectToppingAnchovy.Location = New System.Drawing.Point(23, 256)
-        Me.selectToppingAnchovy.Name = "selectToppingAnchovy"
-        Me.selectToppingAnchovy.Size = New System.Drawing.Size(200, 49)
-        Me.selectToppingAnchovy.TabIndex = 3
-        Me.selectToppingAnchovy.TabStop = False
-        Me.selectToppingAnchovy.Text = "Anchovy"
-        '
-        'toppingAnchovy3
-        '
-        Me.toppingAnchovy3.AutoSize = True
-        Me.toppingAnchovy3.Enabled = False
-        Me.toppingAnchovy3.Location = New System.Drawing.Point(92, 19)
-        Me.toppingAnchovy3.Name = "toppingAnchovy3"
-        Me.toppingAnchovy3.Size = New System.Drawing.Size(37, 17)
-        Me.toppingAnchovy3.TabIndex = 2
-        Me.toppingAnchovy3.Text = "x3"
-        Me.toppingAnchovy3.UseVisualStyleBackColor = True
-        '
-        'toppingAnchovy1
-        '
-        Me.toppingAnchovy1.AutoSize = True
-        Me.toppingAnchovy1.Location = New System.Drawing.Point(6, 19)
-        Me.toppingAnchovy1.Name = "toppingAnchovy1"
-        Me.toppingAnchovy1.Size = New System.Drawing.Size(37, 17)
-        Me.toppingAnchovy1.TabIndex = 0
-        Me.toppingAnchovy1.Text = "x1"
-        Me.toppingAnchovy1.UseVisualStyleBackColor = True
-        '
-        'toppingAnchovy2
-        '
-        Me.toppingAnchovy2.AutoSize = True
-        Me.toppingAnchovy2.Enabled = False
-        Me.toppingAnchovy2.Location = New System.Drawing.Point(49, 19)
-        Me.toppingAnchovy2.Name = "toppingAnchovy2"
-        Me.toppingAnchovy2.Size = New System.Drawing.Size(37, 17)
-        Me.toppingAnchovy2.TabIndex = 1
-        Me.toppingAnchovy2.Text = "x2"
-        Me.toppingAnchovy2.UseVisualStyleBackColor = True
         '
         'previewToppingAnchovy
         '
         Me.previewToppingAnchovy.Image = Global.Dominos.My.Resources.Resources.Topping_F_ComponentImage_PizzaChef_Tray_en_Default
-        Me.previewToppingAnchovy.Location = New System.Drawing.Point(23, 60)
+        Me.previewToppingAnchovy.Location = New System.Drawing.Point(23, 63)
         Me.previewToppingAnchovy.Name = "previewToppingAnchovy"
-        Me.previewToppingAnchovy.Size = New System.Drawing.Size(194, 190)
+        Me.previewToppingAnchovy.Size = New System.Drawing.Size(167, 162)
+        Me.previewToppingAnchovy.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom
         Me.previewToppingAnchovy.TabIndex = 88
         Me.previewToppingAnchovy.TabStop = False
         '
@@ -634,28 +786,76 @@ Partial Class PizzaMaker
         'anchovyLayer
         '
         Me.anchovyLayer.BackColor = System.Drawing.Color.Transparent
-        Me.anchovyLayer.Controls.Add(Me.baconLayer)
+        Me.anchovyLayer.Controls.Add(Me.salamiLayer)
         Me.anchovyLayer.Location = New System.Drawing.Point(0, 0)
         Me.anchovyLayer.Name = "anchovyLayer"
         Me.anchovyLayer.Size = New System.Drawing.Size(398, 397)
         Me.anchovyLayer.TabIndex = 92
         '
+        'salamiLayer
+        '
+        Me.salamiLayer.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Center
+        Me.salamiLayer.Controls.Add(Me.swissCheeseLayer)
+        Me.salamiLayer.Location = New System.Drawing.Point(0, 0)
+        Me.salamiLayer.Name = "salamiLayer"
+        Me.salamiLayer.Size = New System.Drawing.Size(398, 397)
+        Me.salamiLayer.TabIndex = 101
+        '
+        'swissCheeseLayer
+        '
+        Me.swissCheeseLayer.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Center
+        Me.swissCheeseLayer.Controls.Add(Me.pineappleLayer)
+        Me.swissCheeseLayer.Location = New System.Drawing.Point(0, 0)
+        Me.swissCheeseLayer.Name = "swissCheeseLayer"
+        Me.swissCheeseLayer.Size = New System.Drawing.Size(398, 397)
+        Me.swissCheeseLayer.TabIndex = 0
+        '
+        'pineappleLayer
+        '
+        Me.pineappleLayer.Controls.Add(Me.pepperoniLayer)
+        Me.pineappleLayer.Location = New System.Drawing.Point(0, 0)
+        Me.pineappleLayer.Name = "pineappleLayer"
+        Me.pineappleLayer.Size = New System.Drawing.Size(398, 397)
+        Me.pineappleLayer.TabIndex = 0
+        '
+        'pepperoniLayer
+        '
+        Me.pepperoniLayer.Controls.Add(Me.baconLayer)
+        Me.pepperoniLayer.Location = New System.Drawing.Point(0, 0)
+        Me.pepperoniLayer.Name = "pepperoniLayer"
+        Me.pepperoniLayer.Size = New System.Drawing.Size(398, 397)
+        Me.pepperoniLayer.TabIndex = 0
+        '
         'baconLayer
         '
-        Me.baconLayer.BackColor = System.Drawing.Color.Transparent
-        Me.baconLayer.Controls.Add(Me.chickenLayer)
+        Me.baconLayer.Controls.Add(Me.hamLayer)
         Me.baconLayer.Location = New System.Drawing.Point(0, 0)
         Me.baconLayer.Name = "baconLayer"
         Me.baconLayer.Size = New System.Drawing.Size(398, 397)
-        Me.baconLayer.TabIndex = 93
+        Me.baconLayer.TabIndex = 0
+        '
+        'hamLayer
+        '
+        Me.hamLayer.Controls.Add(Me.chickenLayer)
+        Me.hamLayer.Location = New System.Drawing.Point(0, 0)
+        Me.hamLayer.Name = "hamLayer"
+        Me.hamLayer.Size = New System.Drawing.Size(398, 397)
+        Me.hamLayer.TabIndex = 0
         '
         'chickenLayer
         '
-        Me.chickenLayer.BackColor = System.Drawing.Color.Transparent
+        Me.chickenLayer.Controls.Add(Me.groundBeefLayer)
         Me.chickenLayer.Location = New System.Drawing.Point(0, 0)
         Me.chickenLayer.Name = "chickenLayer"
         Me.chickenLayer.Size = New System.Drawing.Size(398, 397)
-        Me.chickenLayer.TabIndex = 94
+        Me.chickenLayer.TabIndex = 0
+        '
+        'groundBeefLayer
+        '
+        Me.groundBeefLayer.Location = New System.Drawing.Point(0, 0)
+        Me.groundBeefLayer.Name = "groundBeefLayer"
+        Me.groundBeefLayer.Size = New System.Drawing.Size(398, 397)
+        Me.groundBeefLayer.TabIndex = 0
         '
         'PictureBox2
         '
@@ -666,12 +866,32 @@ Partial Class PizzaMaker
         Me.PictureBox2.TabIndex = 18
         Me.PictureBox2.TabStop = False
         '
+        'startOver
+        '
+        Me.startOver.Location = New System.Drawing.Point(576, 79)
+        Me.startOver.Name = "startOver"
+        Me.startOver.Size = New System.Drawing.Size(117, 23)
+        Me.startOver.TabIndex = 119
+        Me.startOver.Text = "Start Over"
+        Me.startOver.UseVisualStyleBackColor = True
+        '
+        'addPizza
+        '
+        Me.addPizza.Location = New System.Drawing.Point(699, 79)
+        Me.addPizza.Name = "addPizza"
+        Me.addPizza.Size = New System.Drawing.Size(117, 23)
+        Me.addPizza.TabIndex = 120
+        Me.addPizza.Text = "Add Pizza to Order"
+        Me.addPizza.UseVisualStyleBackColor = True
+        '
         'PizzaMaker
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
         Me.BackColor = System.Drawing.SystemColors.ButtonHighlight
-        Me.ClientSize = New System.Drawing.Size(1097, 991)
+        Me.ClientSize = New System.Drawing.Size(1097, 1041)
+        Me.Controls.Add(Me.addPizza)
+        Me.Controls.Add(Me.startOver)
         Me.Controls.Add(Me.chooseToppings)
         Me.Controls.Add(Me.chooseBas)
         Me.Controls.Add(Me.chooseCrust)
@@ -697,21 +917,25 @@ Partial Class PizzaMaker
         CType(Me.previewBaseNone, System.ComponentModel.ISupportInitialize).EndInit()
         Me.chooseToppings.ResumeLayout(False)
         Me.chooseToppings.PerformLayout()
-        Me.selectToppingChicken.ResumeLayout(False)
-        Me.selectToppingChicken.PerformLayout()
-        CType(Me.PictureBox1, System.ComponentModel.ISupportInitialize).EndInit()
-        Me.selectToppingBacon.ResumeLayout(False)
-        Me.selectToppingBacon.PerformLayout()
+        CType(Me.previewToppingSwissCheese, System.ComponentModel.ISupportInitialize).EndInit()
+        CType(Me.previewToppingSalami, System.ComponentModel.ISupportInitialize).EndInit()
+        CType(Me.previewToppingPineapple, System.ComponentModel.ISupportInitialize).EndInit()
+        CType(Me.previewToppingPepperoni, System.ComponentModel.ISupportInitialize).EndInit()
+        CType(Me.previewToppingHam, System.ComponentModel.ISupportInitialize).EndInit()
+        CType(Me.previewToppingGroundBeef, System.ComponentModel.ISupportInitialize).EndInit()
+        CType(Me.previewToppingChicken, System.ComponentModel.ISupportInitialize).EndInit()
         CType(Me.previewToppingBacon, System.ComponentModel.ISupportInitialize).EndInit()
-        Me.selectToppingCheese.ResumeLayout(False)
-        Me.selectToppingCheese.PerformLayout()
         CType(Me.previewToppingCheese, System.ComponentModel.ISupportInitialize).EndInit()
-        Me.selectToppingAnchovy.ResumeLayout(False)
-        Me.selectToppingAnchovy.PerformLayout()
         CType(Me.previewToppingAnchovy, System.ComponentModel.ISupportInitialize).EndInit()
         Me.pizzaTray.ResumeLayout(False)
         Me.anchovyLayer.ResumeLayout(False)
+        Me.salamiLayer.ResumeLayout(False)
+        Me.swissCheeseLayer.ResumeLayout(False)
+        Me.pineappleLayer.ResumeLayout(False)
+        Me.pepperoniLayer.ResumeLayout(False)
         Me.baconLayer.ResumeLayout(False)
+        Me.hamLayer.ResumeLayout(False)
+        Me.chickenLayer.ResumeLayout(False)
         CType(Me.PictureBox2, System.ComponentModel.ISupportInitialize).EndInit()
         Me.ResumeLayout(False)
         Me.PerformLayout()
@@ -749,26 +973,46 @@ Partial Class PizzaMaker
     Friend WithEvents chooseBas As GroupBox
     Friend WithEvents chooseToppings As GroupBox
     Friend WithEvents Label3 As Label
-    Friend WithEvents selectToppingCheese As GroupBox
-    Friend WithEvents toppingCheese3 As CheckBox
-    Friend WithEvents toppingCheese2 As CheckBox
-    Friend WithEvents toppingCheese1 As CheckBox
     Friend WithEvents previewToppingCheese As PictureBox
-    Friend WithEvents selectToppingAnchovy As GroupBox
-    Friend WithEvents toppingAnchovy3 As CheckBox
-    Friend WithEvents toppingAnchovy1 As CheckBox
-    Friend WithEvents toppingAnchovy2 As CheckBox
     Friend WithEvents previewToppingAnchovy As PictureBox
-    Friend WithEvents selectToppingBacon As GroupBox
-    Friend WithEvents toppingBacon3 As CheckBox
-    Friend WithEvents toppingBacon2 As CheckBox
-    Friend WithEvents toppingBacon1 As CheckBox
     Friend WithEvents previewToppingBacon As PictureBox
+    Friend WithEvents previewToppingChicken As PictureBox
+    Friend WithEvents toppingAnchovy As ComboBox
+    Friend WithEvents toppingBacon As ComboBox
+    Friend WithEvents toppingCheese As ComboBox
+    Friend WithEvents toppingChicken As ComboBox
+    Friend WithEvents Label5 As Label
+    Friend WithEvents Label8 As Label
+    Friend WithEvents Label7 As Label
+    Friend WithEvents Label6 As Label
+    Friend WithEvents previewToppingGroundBeef As PictureBox
+    Friend WithEvents Label9 As Label
+    Friend WithEvents toppingGroundBeef As ComboBox
+    Friend WithEvents Label10 As Label
+    Friend WithEvents toppingHam As ComboBox
+    Friend WithEvents previewToppingHam As PictureBox
+    Friend WithEvents Label11 As Label
+    Friend WithEvents toppingPepperoni As ComboBox
+    Friend WithEvents previewToppingPepperoni As PictureBox
+    Friend WithEvents Label12 As Label
+    Friend WithEvents toppingPineapple As ComboBox
+    Friend WithEvents previewToppingPineapple As PictureBox
+    Friend WithEvents Label13 As Label
+    Friend WithEvents toppingSalami As ComboBox
+    Friend WithEvents previewToppingSalami As PictureBox
+    Friend WithEvents Label15 As Label
+    Friend WithEvents toppingSwissCheese As ComboBox
+    Friend WithEvents previewToppingSwissCheese As PictureBox
+    Friend WithEvents salamiLayer As Panel
+    Friend WithEvents swissCheeseLayer As Panel
+    Friend WithEvents pineappleLayer As Panel
+    Friend WithEvents pepperoniLayer As Panel
     Friend WithEvents baconLayer As Panel
-    Friend WithEvents selectToppingChicken As GroupBox
-    Friend WithEvents toppingChicken3 As CheckBox
-    Friend WithEvents toppingChicken2 As CheckBox
-    Friend WithEvents toppingChicken1 As CheckBox
-    Friend WithEvents PictureBox1 As PictureBox
+    Friend WithEvents hamLayer As Panel
     Friend WithEvents chickenLayer As Panel
+    Friend WithEvents groundBeefLayer As Panel
+    Friend WithEvents sizeSelection As ComboBox
+    Friend WithEvents maxToppingsNotice As Label
+    Friend WithEvents startOver As Button
+    Friend WithEvents addPizza As Button
 End Class

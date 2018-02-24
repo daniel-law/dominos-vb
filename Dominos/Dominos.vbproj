@@ -149,6 +149,33 @@
     <None Include="App.config" />
   </ItemGroup>
   <ItemGroup>
+    <None Include="Resources\NL_Topping.Et_all_TrayImage_1275.png" />
+    <None Include="Resources\Topping.Et_ComponentImage_PizzaChef.Stack.Circle.3_en_Default.png" />
+    <None Include="Resources\Topping.Et_ComponentImage_PizzaChef.Stack.Circle.2_en_Default.png" />
+    <None Include="Resources\Topping.Et_ComponentImage_PizzaChef.Stack.Circle.1_en_Default.png" />
+    <None Include="Resources\NL_Topping.Ss_all_TrayImage_1275.png" />
+    <None Include="Resources\NL_Topping.Ss_all_CircleLayer3Image_1275.png" />
+    <None Include="Resources\NL_Topping.Ss_all_CircleLayer2Image_1275.png" />
+    <None Include="Resources\NL_Topping.Ss_all_CircleLayer1Image_1275.png" />
+    <None Include="Resources\Topping.A_ComponentImage_PizzaChef.Tray_en_Default.png" />
+    <None Include="Resources\Topping.A_ComponentImage_PizzaChef.Stack.Circle.3_en_Default.png" />
+    <None Include="Resources\Topping.A_ComponentImage_PizzaChef.Stack.Circle.2_en_Default.png" />
+    <None Include="Resources\Topping.A_ComponentImage_PizzaChef.Stack.Circle.1_en_Default.png" />
+    <None Include="Resources\Topping.S_ComponentImage_PizzaChef.Tray_en_Default.png" />
+    <None Include="Resources\Topping.S_ComponentImage_PizzaChef.Stack.Circle.3_en_Default.png" />
+    <None Include="Resources\Topping.S_ComponentImage_PizzaChef.Stack.Circle.2_en_Default.png" />
+    <None Include="Resources\Topping.S_ComponentImage_PizzaChef.Stack.Circle.1_en_Default.png" />
+    <None Include="Resources\NL_Topping.H_all_CircleLayer3Image_1275.png" />
+    <None Include="Resources\NL_Topping.H_all_CircleLayer2Image_1275.png" />
+    <None Include="Resources\NL_Topping.H_all_CircleLayer1Image_1275.png" />
+    <None Include="Resources\NL_Topping.H_all_TrayImage_1275.png" />
+    <None Include="Resources\Topping.H_ComponentImage_PizzaChef.Stack.Circle.3_en_Default.png" />
+    <None Include="Resources\Topping.H_ComponentImage_PizzaChef.Stack.Circle.2_en_Default.png" />
+    <None Include="Resources\Topping.H_ComponentImage_PizzaChef.Stack.Circle.1_en_Default.png" />
+    <None Include="Resources\Topping.G_ComponentImage_PizzaChef.Stack.Circle.3_en_Default.png" />
+    <None Include="Resources\Topping.G_ComponentImage_PizzaChef.Stack.Circle.2_en_Default.png" />
+    <None Include="Resources\Topping.G_ComponentImage_PizzaChef.Stack.Circle.1_en_Default.png" />
+    <None Include="Resources\Topping.G_ComponentImage_PizzaChef.Tray_en_Default.png" />
     <None Include="Resources\Topping.V_ComponentImage_PizzaChef.Tray_en_Default.png" />
     <None Include="Resources\Topping.V_ComponentImage_PizzaChef.Stack.Circle.3_en_Default.png" />
     <None Include="Resources\Topping.V_ComponentImage_PizzaChef.Stack.Circle.2_en_Default.png" />

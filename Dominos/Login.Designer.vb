@@ -60,10 +60,10 @@ Partial Class Login
         Me.txtEmail.BackColor = System.Drawing.Color.White
         Me.txtEmail.Font = New System.Drawing.Font("Corbel", 12.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.txtEmail.Location = New System.Drawing.Point(100, 156)
+        Me.txtEmail.MaxLength = 64
         Me.txtEmail.Name = "txtEmail"
         Me.txtEmail.Size = New System.Drawing.Size(150, 27)
         Me.txtEmail.TabIndex = 21
-        Me.txtEmail.Text = "asuna@yuuki.moe"
         '
         'Label3
         '
@@ -80,11 +80,11 @@ Partial Class Login
         Me.txtPassword.BackColor = System.Drawing.Color.White
         Me.txtPassword.Font = New System.Drawing.Font("Corbel", 12.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.txtPassword.Location = New System.Drawing.Point(100, 189)
+        Me.txtPassword.MaxLength = 128
         Me.txtPassword.Name = "txtPassword"
         Me.txtPassword.PasswordChar = Global.Microsoft.VisualBasic.ChrW(42)
         Me.txtPassword.Size = New System.Drawing.Size(150, 27)
         Me.txtPassword.TabIndex = 24
-        Me.txtPassword.Text = "password"
         '
         'Label4
         '
@@ -160,6 +160,7 @@ Partial Class Login
         Me.txtRegisterName.BackColor = System.Drawing.Color.White
         Me.txtRegisterName.Font = New System.Drawing.Font("Corbel", 12.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.txtRegisterName.Location = New System.Drawing.Point(100, 258)
+        Me.txtRegisterName.MaxLength = 64
         Me.txtRegisterName.Name = "txtRegisterName"
         Me.txtRegisterName.Size = New System.Drawing.Size(150, 27)
         Me.txtRegisterName.TabIndex = 32
@@ -169,6 +170,7 @@ Partial Class Login
         Me.txtRegisterEmail.BackColor = System.Drawing.Color.White
         Me.txtRegisterEmail.Font = New System.Drawing.Font("Corbel", 12.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.txtRegisterEmail.Location = New System.Drawing.Point(100, 291)
+        Me.txtRegisterEmail.MaxLength = 64
         Me.txtRegisterEmail.Name = "txtRegisterEmail"
         Me.txtRegisterEmail.Size = New System.Drawing.Size(150, 27)
         Me.txtRegisterEmail.TabIndex = 33
@@ -178,6 +180,7 @@ Partial Class Login
         Me.txtRegisterPhoneNo.BackColor = System.Drawing.Color.White
         Me.txtRegisterPhoneNo.Font = New System.Drawing.Font("Corbel", 12.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.txtRegisterPhoneNo.Location = New System.Drawing.Point(100, 357)
+        Me.txtRegisterPhoneNo.MaxLength = 30
         Me.txtRegisterPhoneNo.Name = "txtRegisterPhoneNo"
         Me.txtRegisterPhoneNo.Size = New System.Drawing.Size(150, 27)
         Me.txtRegisterPhoneNo.TabIndex = 34
@@ -187,6 +190,7 @@ Partial Class Login
         Me.txtRegisterAddress.BackColor = System.Drawing.Color.White
         Me.txtRegisterAddress.Font = New System.Drawing.Font("Corbel", 12.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.txtRegisterAddress.Location = New System.Drawing.Point(100, 390)
+        Me.txtRegisterAddress.MaxLength = 64
         Me.txtRegisterAddress.Name = "txtRegisterAddress"
         Me.txtRegisterAddress.Size = New System.Drawing.Size(150, 27)
         Me.txtRegisterAddress.TabIndex = 35
@@ -196,6 +200,7 @@ Partial Class Login
         Me.txtRegisterPostcode.BackColor = System.Drawing.Color.White
         Me.txtRegisterPostcode.Font = New System.Drawing.Font("Corbel", 12.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.txtRegisterPostcode.Location = New System.Drawing.Point(100, 423)
+        Me.txtRegisterPostcode.MaxLength = 10
         Me.txtRegisterPostcode.Name = "txtRegisterPostcode"
         Me.txtRegisterPostcode.Size = New System.Drawing.Size(150, 27)
         Me.txtRegisterPostcode.TabIndex = 36
@@ -214,6 +219,7 @@ Partial Class Login
         Me.txtRegisterPassword.BackColor = System.Drawing.Color.White
         Me.txtRegisterPassword.Font = New System.Drawing.Font("Corbel", 12.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.txtRegisterPassword.Location = New System.Drawing.Point(100, 324)
+        Me.txtRegisterPassword.MaxLength = 128
         Me.txtRegisterPassword.Name = "txtRegisterPassword"
         Me.txtRegisterPassword.PasswordChar = Global.Microsoft.VisualBasic.ChrW(42)
         Me.txtRegisterPassword.Size = New System.Drawing.Size(150, 27)

@@ -89,6 +89,11 @@ Public Class ClassicOrder
         End If
     End Sub
 
+    Private Sub pizzaMaker_Click(sender As Object, e As EventArgs) Handles pizzaMaker.Click
+        Dim pM As New PizzaMaker
+        pM.Show()
+    End Sub
+
     ' ==========================================================================
     ' // Change the pizza graphic based on selected pizza option.
     ' ==========================================================================
@@ -291,14 +296,16 @@ Public Class ClassicOrder
     ' ==========================================================================
 
     Private Sub completeOrder_Click(sender As Object, e As EventArgs) Handles completeOrder.Click
-        If pizzaCount = -1 Then
+        If pizzaCount = -1 And CurrentOrder.PizzaMakerStatus = False Then
             MsgBox("First, grab yourself a pizza :)")
-        Else
+        ElseIf pizzaCount >= 0 And CurrentOrder.pizzamakerstatus = False Then
+            MsgBox("ClassicOrder detected.")
             ' // Get their current side selection.
-            CurrentOrder.Extras(0) = "Drinks: " & "£" & drinkPrice & "," & drinkCocaCola.Value & "," & drinkDietCoke.Value & "," & drinkCokeZero.Value & "," & drinkSmartWater.Value & "," & drinkSprite.Value & "," & drinkFanta.Value & "|" & "Sides: " & "£" & sidesPrice & "," & sideMeatballs.SelectedItem & "," & sideGarlicBread.SelectedItem & "," & sideWedges.SelectedItem & "," & sideChickenMixBox.SelectedItem & "|" & "Dips: " & "£" & dipsPrice & "," & dipRandom.Value & "," & dipBigGarlic.Value & "," & dipBigBBQ.Value & "," & dipFRANKs.Value & "," & dipChiliInfusedOil.Value & "," & orderPrice.Text
+            Dim total As Decimal = orderPrice.Text.Remove(0, 1)
+            CurrentOrder.Extras(0) = "Drinks: " & "£" & drinkPrice & "," & drinkCocaCola.Value & "," & drinkDietCoke.Value & "," & drinkCokeZero.Value & "," & drinkSmartWater.Value & "," & drinkSprite.Value & "," & drinkFanta.Value & "|" & "Sides: " & "£" & sidesPrice & "," & sideMeatballs.SelectedItem & "," & sideGarlicBread.SelectedItem & "," & sideWedges.SelectedItem & "," & sideChickenMixBox.SelectedItem & "|" & "Dips: " & "£" & dipsPrice & "," & dipRandom.Value & "," & dipBigGarlic.Value & "," & dipBigBBQ.Value & "," & dipFRANKs.Value & "," & dipChiliInfusedOil.Value & "," & total.ToString("C")
 
             ' // Get their current pizza selection.
-            Dim OrderPizzas As String
+            Dim OrderPizzas As String = ""
             Dim PizzaPointer As Integer
             For Each Pizza In CurrentOrder.Pizzas
                 PizzaPointer = PizzaPointer + 1
@@ -308,6 +315,51 @@ Public Class ClassicOrder
 
             File.AppendAllText("Orders.txt", UserDetails.ID & "," & OrderPizzas & "," & CurrentOrder.Extras(0) + Environment.NewLine)
             MsgBox("Order placed sucessfully.")
+        End If
+
+        If CurrentOrder.PizzaMakerStatus = True Then
+            Dim total As Decimal = orderPrice.Text.Remove(0, 1) + CurrentOrder.PizzaMakerTotal
+
+            ' // Get their current side selection.
+            CurrentOrder.Extras(0) = "Drinks: " & "£" & drinkPrice & "," & drinkCocaCola.Value & "," & drinkDietCoke.Value & "," & drinkCokeZero.Value & "," & drinkSmartWater.Value & "," & drinkSprite.Value & "," & drinkFanta.Value & "|" & "Sides: " & "£" & sidesPrice & "," & sideMeatballs.SelectedItem & "," & sideGarlicBread.SelectedItem & "," & sideWedges.SelectedItem & "," & sideChickenMixBox.SelectedItem & "|" & "Dips: " & "£" & dipsPrice & "," & dipRandom.Value & "," & dipBigGarlic.Value & "," & dipBigBBQ.Value & "," & dipFRANKs.Value & "," & dipChiliInfusedOil.Value & "," & total.ToString("C")
+            pizzaMakerOrder()
+        End If
+    End Sub
+
+    Private Sub pizzaMakerOrder()
+        ' // check if has ordered pizza on ClassicOrder
+        If pizzaCount = -1 Then
+            MsgBox("No orders in ClassicOrder, only PizzaMaker detected.")
+
+            Dim PizzaMakerPizzas As String = ""
+            Dim PizzaMakerPointer As Integer
+            For Each Pizza In CurrentOrder.PizzaMakerPizzas
+                PizzaMakerPointer = PizzaMakerPointer + 1
+                PizzaMakerPizzas = PizzaMakerPizzas + Pizza
+            Next
+
+            File.AppendAllText("Orders.txt", UserDetails.ID & "," & PizzaMakerPizzas & "," & CurrentOrder.Extras(0) + Environment.NewLine)
+            MsgBox("Order placed sucessfully with PizzaMaker.")
+        Else
+            MsgBox("ClassicOrder and PizzaMaker detected.")
+            ' // Get their current pizza selection.
+            Dim OrderPizzas As String = ""
+            Dim PizzaPointer As Integer
+            For Each Pizza In CurrentOrder.Pizzas
+                PizzaPointer = PizzaPointer + 1
+                OrderPizzas = OrderPizzas + Pizza
+                If PizzaPointer = pizzaCount Then OrderPizzas = OrderPizzas + "/" ' // Add delimiter char if needed.
+            Next
+
+            Dim PizzaMakerPizzas As String = ""
+            Dim PizzaMakerPointer As Integer
+            For Each Pizza In CurrentOrder.PizzaMakerPizzas
+                PizzaMakerPointer = PizzaMakerPointer + 1
+                PizzaMakerPizzas = PizzaMakerPizzas + Pizza
+            Next
+
+            File.AppendAllText("Orders.txt", UserDetails.ID & "," & OrderPizzas & PizzaMakerPizzas & "," & CurrentOrder.Extras(0) + Environment.NewLine)
+            MsgBox("Order placed sucessfully with ClassicOrder & PizzaMaker.")
         End If
     End Sub
 End Class

@@ -51,19 +51,31 @@ Partial Class ClassicOrder
         Me.GroupBox1 = New System.Windows.Forms.GroupBox()
         Me.Label12 = New System.Windows.Forms.Label()
         Me.GroupBox2 = New System.Windows.Forms.GroupBox()
+        Me.PictureBox4 = New System.Windows.Forms.PictureBox()
+        Me.PictureBox5 = New System.Windows.Forms.PictureBox()
+        Me.PictureBox6 = New System.Windows.Forms.PictureBox()
         Me.GroupBox3 = New System.Windows.Forms.GroupBox()
         Me.baseTomato = New System.Windows.Forms.RadioButton()
         Me.baseBBQ = New System.Windows.Forms.RadioButton()
+        Me.PictureBox8 = New System.Windows.Forms.PictureBox()
         Me.baseSundriedTomatoGarlic = New System.Windows.Forms.RadioButton()
+        Me.PictureBox3 = New System.Windows.Forms.PictureBox()
+        Me.PictureBox7 = New System.Windows.Forms.PictureBox()
         Me.currentPrice = New System.Windows.Forms.Label()
         Me.Label14 = New System.Windows.Forms.Label()
         Me.GroupBox4 = New System.Windows.Forms.GroupBox()
         Me.drinkSprite = New System.Windows.Forms.NumericUpDown()
+        Me.PictureBox14 = New System.Windows.Forms.PictureBox()
         Me.drinkFanta = New System.Windows.Forms.NumericUpDown()
+        Me.PictureBox13 = New System.Windows.Forms.PictureBox()
         Me.drinkSmartWater = New System.Windows.Forms.NumericUpDown()
+        Me.PictureBox12 = New System.Windows.Forms.PictureBox()
         Me.drinkCokeZero = New System.Windows.Forms.NumericUpDown()
+        Me.PictureBox11 = New System.Windows.Forms.PictureBox()
         Me.drinkDietCoke = New System.Windows.Forms.NumericUpDown()
+        Me.PictureBox10 = New System.Windows.Forms.PictureBox()
         Me.drinkCocaCola = New System.Windows.Forms.NumericUpDown()
+        Me.PictureBox9 = New System.Windows.Forms.PictureBox()
         Me.Label15 = New System.Windows.Forms.Label()
         Me.Label16 = New System.Windows.Forms.Label()
         Me.crustClassic = New System.Windows.Forms.RadioButton()
@@ -91,6 +103,10 @@ Partial Class ClassicOrder
         Me.Label20 = New System.Windows.Forms.Label()
         Me.RichTextBox1 = New System.Windows.Forms.RichTextBox()
         Me.Label19 = New System.Windows.Forms.Label()
+        Me.PictureBox18 = New System.Windows.Forms.PictureBox()
+        Me.PictureBox17 = New System.Windows.Forms.PictureBox()
+        Me.PictureBox16 = New System.Windows.Forms.PictureBox()
+        Me.PictureBox15 = New System.Windows.Forms.PictureBox()
         Me.Label23 = New System.Windows.Forms.Label()
         Me.GroupBox6 = New System.Windows.Forms.GroupBox()
         Me.dipChiliInfusedOil = New System.Windows.Forms.NumericUpDown()
@@ -103,6 +119,11 @@ Partial Class ClassicOrder
         Me.Label26 = New System.Windows.Forms.Label()
         Me.Label25 = New System.Windows.Forms.Label()
         Me.Label24 = New System.Windows.Forms.Label()
+        Me.PictureBox23 = New System.Windows.Forms.PictureBox()
+        Me.PictureBox22 = New System.Windows.Forms.PictureBox()
+        Me.PictureBox21 = New System.Windows.Forms.PictureBox()
+        Me.PictureBox20 = New System.Windows.Forms.PictureBox()
+        Me.PictureBox19 = New System.Windows.Forms.PictureBox()
         Me.resetOrder = New System.Windows.Forms.Button()
         Me.completeOrder = New System.Windows.Forms.Button()
         Me.addPizza = New System.Windows.Forms.Button()
@@ -111,41 +132,36 @@ Partial Class ClassicOrder
         Me.removePizza = New System.Windows.Forms.Button()
         Me.Label1 = New System.Windows.Forms.Label()
         Me.orderPrice = New System.Windows.Forms.Label()
-        Me.PictureBox23 = New System.Windows.Forms.PictureBox()
-        Me.PictureBox22 = New System.Windows.Forms.PictureBox()
-        Me.PictureBox21 = New System.Windows.Forms.PictureBox()
-        Me.PictureBox20 = New System.Windows.Forms.PictureBox()
-        Me.PictureBox19 = New System.Windows.Forms.PictureBox()
-        Me.PictureBox18 = New System.Windows.Forms.PictureBox()
-        Me.PictureBox17 = New System.Windows.Forms.PictureBox()
-        Me.PictureBox16 = New System.Windows.Forms.PictureBox()
-        Me.PictureBox15 = New System.Windows.Forms.PictureBox()
-        Me.PictureBox14 = New System.Windows.Forms.PictureBox()
-        Me.PictureBox13 = New System.Windows.Forms.PictureBox()
-        Me.PictureBox12 = New System.Windows.Forms.PictureBox()
-        Me.PictureBox11 = New System.Windows.Forms.PictureBox()
-        Me.PictureBox10 = New System.Windows.Forms.PictureBox()
-        Me.PictureBox9 = New System.Windows.Forms.PictureBox()
-        Me.PictureBox8 = New System.Windows.Forms.PictureBox()
-        Me.PictureBox3 = New System.Windows.Forms.PictureBox()
-        Me.PictureBox7 = New System.Windows.Forms.PictureBox()
-        Me.PictureBox4 = New System.Windows.Forms.PictureBox()
-        Me.PictureBox5 = New System.Windows.Forms.PictureBox()
-        Me.PictureBox6 = New System.Windows.Forms.PictureBox()
         Me.pizzaPreview = New System.Windows.Forms.PictureBox()
         Me.PictureBox2 = New System.Windows.Forms.PictureBox()
         Me.PictureBox1 = New System.Windows.Forms.PictureBox()
         Me.GroupBox1.SuspendLayout()
         Me.GroupBox2.SuspendLayout()
+        CType(Me.PictureBox4, System.ComponentModel.ISupportInitialize).BeginInit()
+        CType(Me.PictureBox5, System.ComponentModel.ISupportInitialize).BeginInit()
+        CType(Me.PictureBox6, System.ComponentModel.ISupportInitialize).BeginInit()
         Me.GroupBox3.SuspendLayout()
+        CType(Me.PictureBox8, System.ComponentModel.ISupportInitialize).BeginInit()
+        CType(Me.PictureBox3, System.ComponentModel.ISupportInitialize).BeginInit()
+        CType(Me.PictureBox7, System.ComponentModel.ISupportInitialize).BeginInit()
         Me.GroupBox4.SuspendLayout()
         CType(Me.drinkSprite, System.ComponentModel.ISupportInitialize).BeginInit()
+        CType(Me.PictureBox14, System.ComponentModel.ISupportInitialize).BeginInit()
         CType(Me.drinkFanta, System.ComponentModel.ISupportInitialize).BeginInit()
+        CType(Me.PictureBox13, System.ComponentModel.ISupportInitialize).BeginInit()
         CType(Me.drinkSmartWater, System.ComponentModel.ISupportInitialize).BeginInit()
+        CType(Me.PictureBox12, System.ComponentModel.ISupportInitialize).BeginInit()
         CType(Me.drinkCokeZero, System.ComponentModel.ISupportInitialize).BeginInit()
+        CType(Me.PictureBox11, System.ComponentModel.ISupportInitialize).BeginInit()
         CType(Me.drinkDietCoke, System.ComponentModel.ISupportInitialize).BeginInit()
+        CType(Me.PictureBox10, System.ComponentModel.ISupportInitialize).BeginInit()
         CType(Me.drinkCocaCola, System.ComponentModel.ISupportInitialize).BeginInit()
+        CType(Me.PictureBox9, System.ComponentModel.ISupportInitialize).BeginInit()
         Me.GroupBox5.SuspendLayout()
+        CType(Me.PictureBox18, System.ComponentModel.ISupportInitialize).BeginInit()
+        CType(Me.PictureBox17, System.ComponentModel.ISupportInitialize).BeginInit()
+        CType(Me.PictureBox16, System.ComponentModel.ISupportInitialize).BeginInit()
+        CType(Me.PictureBox15, System.ComponentModel.ISupportInitialize).BeginInit()
         Me.GroupBox6.SuspendLayout()
         CType(Me.dipChiliInfusedOil, System.ComponentModel.ISupportInitialize).BeginInit()
         CType(Me.dipFRANKs, System.ComponentModel.ISupportInitialize).BeginInit()
@@ -157,22 +173,6 @@ Partial Class ClassicOrder
         CType(Me.PictureBox21, System.ComponentModel.ISupportInitialize).BeginInit()
         CType(Me.PictureBox20, System.ComponentModel.ISupportInitialize).BeginInit()
         CType(Me.PictureBox19, System.ComponentModel.ISupportInitialize).BeginInit()
-        CType(Me.PictureBox18, System.ComponentModel.ISupportInitialize).BeginInit()
-        CType(Me.PictureBox17, System.ComponentModel.ISupportInitialize).BeginInit()
-        CType(Me.PictureBox16, System.ComponentModel.ISupportInitialize).BeginInit()
-        CType(Me.PictureBox15, System.ComponentModel.ISupportInitialize).BeginInit()
-        CType(Me.PictureBox14, System.ComponentModel.ISupportInitialize).BeginInit()
-        CType(Me.PictureBox13, System.ComponentModel.ISupportInitialize).BeginInit()
-        CType(Me.PictureBox12, System.ComponentModel.ISupportInitialize).BeginInit()
-        CType(Me.PictureBox11, System.ComponentModel.ISupportInitialize).BeginInit()
-        CType(Me.PictureBox10, System.ComponentModel.ISupportInitialize).BeginInit()
-        CType(Me.PictureBox9, System.ComponentModel.ISupportInitialize).BeginInit()
-        CType(Me.PictureBox8, System.ComponentModel.ISupportInitialize).BeginInit()
-        CType(Me.PictureBox3, System.ComponentModel.ISupportInitialize).BeginInit()
-        CType(Me.PictureBox7, System.ComponentModel.ISupportInitialize).BeginInit()
-        CType(Me.PictureBox4, System.ComponentModel.ISupportInitialize).BeginInit()
-        CType(Me.PictureBox5, System.ComponentModel.ISupportInitialize).BeginInit()
-        CType(Me.PictureBox6, System.ComponentModel.ISupportInitialize).BeginInit()
         CType(Me.pizzaPreview, System.ComponentModel.ISupportInitialize).BeginInit()
         CType(Me.PictureBox2, System.ComponentModel.ISupportInitialize).BeginInit()
         CType(Me.PictureBox1, System.ComponentModel.ISupportInitialize).BeginInit()
@@ -468,6 +468,33 @@ Partial Class ClassicOrder
         Me.GroupBox2.TabIndex = 48
         Me.GroupBox2.TabStop = False
         '
+        'PictureBox4
+        '
+        Me.PictureBox4.Image = Global.Dominos.My.Resources.Resources.small
+        Me.PictureBox4.Location = New System.Drawing.Point(16, 29)
+        Me.PictureBox4.Name = "PictureBox4"
+        Me.PictureBox4.Size = New System.Drawing.Size(71, 69)
+        Me.PictureBox4.TabIndex = 21
+        Me.PictureBox4.TabStop = False
+        '
+        'PictureBox5
+        '
+        Me.PictureBox5.Image = Global.Dominos.My.Resources.Resources.medium
+        Me.PictureBox5.Location = New System.Drawing.Point(101, 19)
+        Me.PictureBox5.Name = "PictureBox5"
+        Me.PictureBox5.Size = New System.Drawing.Size(80, 72)
+        Me.PictureBox5.TabIndex = 22
+        Me.PictureBox5.TabStop = False
+        '
+        'PictureBox6
+        '
+        Me.PictureBox6.Image = Global.Dominos.My.Resources.Resources.large
+        Me.PictureBox6.Location = New System.Drawing.Point(204, 12)
+        Me.PictureBox6.Name = "PictureBox6"
+        Me.PictureBox6.Size = New System.Drawing.Size(82, 79)
+        Me.PictureBox6.TabIndex = 23
+        Me.PictureBox6.TabStop = False
+        '
         'GroupBox3
         '
         Me.GroupBox3.Controls.Add(Me.baseTomato)
@@ -505,6 +532,15 @@ Partial Class ClassicOrder
         Me.baseBBQ.Text = "BBQ "
         Me.baseBBQ.UseVisualStyleBackColor = True
         '
+        'PictureBox8
+        '
+        Me.PictureBox8.Image = Global.Dominos.My.Resources.Resources.Dominos_Own_Tomato_Sauce_20170613
+        Me.PictureBox8.Location = New System.Drawing.Point(182, 10)
+        Me.PictureBox8.Name = "PictureBox8"
+        Me.PictureBox8.Size = New System.Drawing.Size(145, 152)
+        Me.PictureBox8.TabIndex = 50
+        Me.PictureBox8.TabStop = False
+        '
         'baseSundriedTomatoGarlic
         '
         Me.baseSundriedTomatoGarlic.AutoSize = True
@@ -516,6 +552,24 @@ Partial Class ClassicOrder
         Me.baseSundriedTomatoGarlic.TabStop = True
         Me.baseSundriedTomatoGarlic.Text = "Sundried Tomato and Garlic"
         Me.baseSundriedTomatoGarlic.UseVisualStyleBackColor = True
+        '
+        'PictureBox3
+        '
+        Me.PictureBox3.Image = Global.Dominos.My.Resources.Resources.Sundried_Tomato_and_Garlic_Sauce_20170613
+        Me.PictureBox3.Location = New System.Drawing.Point(6, 10)
+        Me.PictureBox3.Name = "PictureBox3"
+        Me.PictureBox3.Size = New System.Drawing.Size(145, 152)
+        Me.PictureBox3.TabIndex = 47
+        Me.PictureBox3.TabStop = False
+        '
+        'PictureBox7
+        '
+        Me.PictureBox7.Image = Global.Dominos.My.Resources.Resources.BBQ_Sauce_20170613
+        Me.PictureBox7.Location = New System.Drawing.Point(350, 10)
+        Me.PictureBox7.Name = "PictureBox7"
+        Me.PictureBox7.Size = New System.Drawing.Size(145, 152)
+        Me.PictureBox7.TabIndex = 49
+        Me.PictureBox7.TabStop = False
         '
         'currentPrice
         '
@@ -565,6 +619,15 @@ Partial Class ClassicOrder
         Me.drinkSprite.Size = New System.Drawing.Size(34, 20)
         Me.drinkSprite.TabIndex = 19
         '
+        'PictureBox14
+        '
+        Me.PictureBox14.Image = Global.Dominos.My.Resources.Resources.sprite_drink_20171123
+        Me.PictureBox14.Location = New System.Drawing.Point(116, 127)
+        Me.PictureBox14.Name = "PictureBox14"
+        Me.PictureBox14.Size = New System.Drawing.Size(100, 95)
+        Me.PictureBox14.TabIndex = 18
+        Me.PictureBox14.TabStop = False
+        '
         'drinkFanta
         '
         Me.drinkFanta.Location = New System.Drawing.Point(73, 202)
@@ -572,6 +635,15 @@ Partial Class ClassicOrder
         Me.drinkFanta.Name = "drinkFanta"
         Me.drinkFanta.Size = New System.Drawing.Size(34, 20)
         Me.drinkFanta.TabIndex = 17
+        '
+        'PictureBox13
+        '
+        Me.PictureBox13.Image = Global.Dominos.My.Resources.Resources.fanta_drink_20171123
+        Me.PictureBox13.Location = New System.Drawing.Point(10, 127)
+        Me.PictureBox13.Name = "PictureBox13"
+        Me.PictureBox13.Size = New System.Drawing.Size(100, 95)
+        Me.PictureBox13.TabIndex = 16
+        Me.PictureBox13.TabStop = False
         '
         'drinkSmartWater
         '
@@ -581,6 +653,15 @@ Partial Class ClassicOrder
         Me.drinkSmartWater.Size = New System.Drawing.Size(34, 20)
         Me.drinkSmartWater.TabIndex = 15
         '
+        'PictureBox12
+        '
+        Me.PictureBox12.Image = Global.Dominos.My.Resources.Resources.smartwater_drink_20170704
+        Me.PictureBox12.Location = New System.Drawing.Point(328, 19)
+        Me.PictureBox12.Name = "PictureBox12"
+        Me.PictureBox12.Size = New System.Drawing.Size(100, 95)
+        Me.PictureBox12.TabIndex = 14
+        Me.PictureBox12.TabStop = False
+        '
         'drinkCokeZero
         '
         Me.drinkCokeZero.Location = New System.Drawing.Point(285, 94)
@@ -588,6 +669,15 @@ Partial Class ClassicOrder
         Me.drinkCokeZero.Name = "drinkCokeZero"
         Me.drinkCokeZero.Size = New System.Drawing.Size(34, 20)
         Me.drinkCokeZero.TabIndex = 13
+        '
+        'PictureBox11
+        '
+        Me.PictureBox11.Image = Global.Dominos.My.Resources.Resources.coca_cola_zero_drink_20171123
+        Me.PictureBox11.Location = New System.Drawing.Point(222, 19)
+        Me.PictureBox11.Name = "PictureBox11"
+        Me.PictureBox11.Size = New System.Drawing.Size(100, 95)
+        Me.PictureBox11.TabIndex = 12
+        Me.PictureBox11.TabStop = False
         '
         'drinkDietCoke
         '
@@ -597,6 +687,15 @@ Partial Class ClassicOrder
         Me.drinkDietCoke.Size = New System.Drawing.Size(34, 20)
         Me.drinkDietCoke.TabIndex = 11
         '
+        'PictureBox10
+        '
+        Me.PictureBox10.Image = Global.Dominos.My.Resources.Resources.diet_coke_drink_20171123
+        Me.PictureBox10.Location = New System.Drawing.Point(116, 19)
+        Me.PictureBox10.Name = "PictureBox10"
+        Me.PictureBox10.Size = New System.Drawing.Size(100, 95)
+        Me.PictureBox10.TabIndex = 10
+        Me.PictureBox10.TabStop = False
+        '
         'drinkCocaCola
         '
         Me.drinkCocaCola.Location = New System.Drawing.Point(73, 94)
@@ -604,6 +703,15 @@ Partial Class ClassicOrder
         Me.drinkCocaCola.Name = "drinkCocaCola"
         Me.drinkCocaCola.Size = New System.Drawing.Size(34, 20)
         Me.drinkCocaCola.TabIndex = 7
+        '
+        'PictureBox9
+        '
+        Me.PictureBox9.Image = Global.Dominos.My.Resources.Resources.coca_cola_drink_20171123
+        Me.PictureBox9.Location = New System.Drawing.Point(10, 19)
+        Me.PictureBox9.Name = "PictureBox9"
+        Me.PictureBox9.Size = New System.Drawing.Size(100, 95)
+        Me.PictureBox9.TabIndex = 0
+        Me.PictureBox9.TabStop = False
         '
         'Label15
         '
@@ -906,6 +1014,42 @@ Partial Class ClassicOrder
         Me.Label19.TabIndex = 62
         Me.Label19.Text = "Meltin' Meatballs"
         '
+        'PictureBox18
+        '
+        Me.PictureBox18.Image = Global.Dominos.My.Resources.Resources.ChicknMix_20170626
+        Me.PictureBox18.Location = New System.Drawing.Point(416, 19)
+        Me.PictureBox18.Name = "PictureBox18"
+        Me.PictureBox18.Size = New System.Drawing.Size(128, 129)
+        Me.PictureBox18.TabIndex = 53
+        Me.PictureBox18.TabStop = False
+        '
+        'PictureBox17
+        '
+        Me.PictureBox17.Image = Global.Dominos.My.Resources.Resources.Wedges_20170626
+        Me.PictureBox17.Location = New System.Drawing.Point(282, 19)
+        Me.PictureBox17.Name = "PictureBox17"
+        Me.PictureBox17.Size = New System.Drawing.Size(128, 129)
+        Me.PictureBox17.TabIndex = 52
+        Me.PictureBox17.TabStop = False
+        '
+        'PictureBox16
+        '
+        Me.PictureBox16.Image = Global.Dominos.My.Resources.Resources.GarlicBread_201706261
+        Me.PictureBox16.Location = New System.Drawing.Point(148, 19)
+        Me.PictureBox16.Name = "PictureBox16"
+        Me.PictureBox16.Size = New System.Drawing.Size(128, 129)
+        Me.PictureBox16.TabIndex = 51
+        Me.PictureBox16.TabStop = False
+        '
+        'PictureBox15
+        '
+        Me.PictureBox15.Image = CType(resources.GetObject("PictureBox15.Image"), System.Drawing.Image)
+        Me.PictureBox15.Location = New System.Drawing.Point(14, 19)
+        Me.PictureBox15.Name = "PictureBox15"
+        Me.PictureBox15.Size = New System.Drawing.Size(128, 129)
+        Me.PictureBox15.TabIndex = 50
+        Me.PictureBox15.TabStop = False
+        '
         'Label23
         '
         Me.Label23.AutoSize = True
@@ -1029,6 +1173,51 @@ Partial Class ClassicOrder
         Me.Label24.TabIndex = 70
         Me.Label24.Text = "Random (£0.49)"
         '
+        'PictureBox23
+        '
+        Me.PictureBox23.Image = Global.Dominos.My.Resources.Resources.ChilliOil_20170626
+        Me.PictureBox23.Location = New System.Drawing.Point(144, 163)
+        Me.PictureBox23.Name = "PictureBox23"
+        Me.PictureBox23.Size = New System.Drawing.Size(130, 125)
+        Me.PictureBox23.TabIndex = 56
+        Me.PictureBox23.TabStop = False
+        '
+        'PictureBox22
+        '
+        Me.PictureBox22.Image = Global.Dominos.My.Resources.Resources.Franks_Dip_20170626
+        Me.PictureBox22.Location = New System.Drawing.Point(6, 163)
+        Me.PictureBox22.Name = "PictureBox22"
+        Me.PictureBox22.Size = New System.Drawing.Size(130, 125)
+        Me.PictureBox22.TabIndex = 55
+        Me.PictureBox22.TabStop = False
+        '
+        'PictureBox21
+        '
+        Me.PictureBox21.Image = Global.Dominos.My.Resources.Resources.BBQ_Dip_20170626
+        Me.PictureBox21.Location = New System.Drawing.Point(278, 10)
+        Me.PictureBox21.Name = "PictureBox21"
+        Me.PictureBox21.Size = New System.Drawing.Size(130, 125)
+        Me.PictureBox21.TabIndex = 54
+        Me.PictureBox21.TabStop = False
+        '
+        'PictureBox20
+        '
+        Me.PictureBox20.Image = Global.Dominos.My.Resources.Resources.Garlic_Dip_20170626
+        Me.PictureBox20.Location = New System.Drawing.Point(142, 10)
+        Me.PictureBox20.Name = "PictureBox20"
+        Me.PictureBox20.Size = New System.Drawing.Size(130, 125)
+        Me.PictureBox20.TabIndex = 53
+        Me.PictureBox20.TabStop = False
+        '
+        'PictureBox19
+        '
+        Me.PictureBox19.Image = CType(resources.GetObject("PictureBox19.Image"), System.Drawing.Image)
+        Me.PictureBox19.Location = New System.Drawing.Point(6, 10)
+        Me.PictureBox19.Name = "PictureBox19"
+        Me.PictureBox19.Size = New System.Drawing.Size(130, 125)
+        Me.PictureBox19.TabIndex = 47
+        Me.PictureBox19.TabStop = False
+        '
         'resetOrder
         '
         Me.resetOrder.Location = New System.Drawing.Point(872, 229)
@@ -1103,195 +1292,6 @@ Partial Class ClassicOrder
         Me.orderPrice.Size = New System.Drawing.Size(84, 29)
         Me.orderPrice.TabIndex = 91
         Me.orderPrice.Text = "£14.99"
-        '
-        'PictureBox23
-        '
-        Me.PictureBox23.Image = Global.Dominos.My.Resources.Resources.ChilliOil_20170626
-        Me.PictureBox23.Location = New System.Drawing.Point(144, 163)
-        Me.PictureBox23.Name = "PictureBox23"
-        Me.PictureBox23.Size = New System.Drawing.Size(130, 125)
-        Me.PictureBox23.TabIndex = 56
-        Me.PictureBox23.TabStop = False
-        '
-        'PictureBox22
-        '
-        Me.PictureBox22.Image = Global.Dominos.My.Resources.Resources.Franks_Dip_20170626
-        Me.PictureBox22.Location = New System.Drawing.Point(6, 163)
-        Me.PictureBox22.Name = "PictureBox22"
-        Me.PictureBox22.Size = New System.Drawing.Size(130, 125)
-        Me.PictureBox22.TabIndex = 55
-        Me.PictureBox22.TabStop = False
-        '
-        'PictureBox21
-        '
-        Me.PictureBox21.Image = Global.Dominos.My.Resources.Resources.BBQ_Dip_20170626
-        Me.PictureBox21.Location = New System.Drawing.Point(278, 10)
-        Me.PictureBox21.Name = "PictureBox21"
-        Me.PictureBox21.Size = New System.Drawing.Size(130, 125)
-        Me.PictureBox21.TabIndex = 54
-        Me.PictureBox21.TabStop = False
-        '
-        'PictureBox20
-        '
-        Me.PictureBox20.Image = Global.Dominos.My.Resources.Resources.Garlic_Dip_20170626
-        Me.PictureBox20.Location = New System.Drawing.Point(142, 10)
-        Me.PictureBox20.Name = "PictureBox20"
-        Me.PictureBox20.Size = New System.Drawing.Size(130, 125)
-        Me.PictureBox20.TabIndex = 53
-        Me.PictureBox20.TabStop = False
-        '
-        'PictureBox19
-        '
-        Me.PictureBox19.Image = CType(resources.GetObject("PictureBox19.Image"), System.Drawing.Image)
-        Me.PictureBox19.Location = New System.Drawing.Point(6, 10)
-        Me.PictureBox19.Name = "PictureBox19"
-        Me.PictureBox19.Size = New System.Drawing.Size(130, 125)
-        Me.PictureBox19.TabIndex = 47
-        Me.PictureBox19.TabStop = False
-        '
-        'PictureBox18
-        '
-        Me.PictureBox18.Image = Global.Dominos.My.Resources.Resources.ChicknMix_20170626
-        Me.PictureBox18.Location = New System.Drawing.Point(416, 19)
-        Me.PictureBox18.Name = "PictureBox18"
-        Me.PictureBox18.Size = New System.Drawing.Size(128, 129)
-        Me.PictureBox18.TabIndex = 53
-        Me.PictureBox18.TabStop = False
-        '
-        'PictureBox17
-        '
-        Me.PictureBox17.Image = Global.Dominos.My.Resources.Resources.Wedges_20170626
-        Me.PictureBox17.Location = New System.Drawing.Point(282, 19)
-        Me.PictureBox17.Name = "PictureBox17"
-        Me.PictureBox17.Size = New System.Drawing.Size(128, 129)
-        Me.PictureBox17.TabIndex = 52
-        Me.PictureBox17.TabStop = False
-        '
-        'PictureBox16
-        '
-        Me.PictureBox16.Image = Global.Dominos.My.Resources.Resources.GarlicBread_201706261
-        Me.PictureBox16.Location = New System.Drawing.Point(148, 19)
-        Me.PictureBox16.Name = "PictureBox16"
-        Me.PictureBox16.Size = New System.Drawing.Size(128, 129)
-        Me.PictureBox16.TabIndex = 51
-        Me.PictureBox16.TabStop = False
-        '
-        'PictureBox15
-        '
-        Me.PictureBox15.Image = CType(resources.GetObject("PictureBox15.Image"), System.Drawing.Image)
-        Me.PictureBox15.Location = New System.Drawing.Point(14, 19)
-        Me.PictureBox15.Name = "PictureBox15"
-        Me.PictureBox15.Size = New System.Drawing.Size(128, 129)
-        Me.PictureBox15.TabIndex = 50
-        Me.PictureBox15.TabStop = False
-        '
-        'PictureBox14
-        '
-        Me.PictureBox14.Image = Global.Dominos.My.Resources.Resources.sprite_drink_20171123
-        Me.PictureBox14.Location = New System.Drawing.Point(116, 127)
-        Me.PictureBox14.Name = "PictureBox14"
-        Me.PictureBox14.Size = New System.Drawing.Size(100, 95)
-        Me.PictureBox14.TabIndex = 18
-        Me.PictureBox14.TabStop = False
-        '
-        'PictureBox13
-        '
-        Me.PictureBox13.Image = Global.Dominos.My.Resources.Resources.fanta_drink_20171123
-        Me.PictureBox13.Location = New System.Drawing.Point(10, 127)
-        Me.PictureBox13.Name = "PictureBox13"
-        Me.PictureBox13.Size = New System.Drawing.Size(100, 95)
-        Me.PictureBox13.TabIndex = 16
-        Me.PictureBox13.TabStop = False
-        '
-        'PictureBox12
-        '
-        Me.PictureBox12.Image = Global.Dominos.My.Resources.Resources.smartwater_drink_20170704
-        Me.PictureBox12.Location = New System.Drawing.Point(328, 19)
-        Me.PictureBox12.Name = "PictureBox12"
-        Me.PictureBox12.Size = New System.Drawing.Size(100, 95)
-        Me.PictureBox12.TabIndex = 14
-        Me.PictureBox12.TabStop = False
-        '
-        'PictureBox11
-        '
-        Me.PictureBox11.Image = Global.Dominos.My.Resources.Resources.coca_cola_zero_drink_20171123
-        Me.PictureBox11.Location = New System.Drawing.Point(222, 19)
-        Me.PictureBox11.Name = "PictureBox11"
-        Me.PictureBox11.Size = New System.Drawing.Size(100, 95)
-        Me.PictureBox11.TabIndex = 12
-        Me.PictureBox11.TabStop = False
-        '
-        'PictureBox10
-        '
-        Me.PictureBox10.Image = Global.Dominos.My.Resources.Resources.diet_coke_drink_20171123
-        Me.PictureBox10.Location = New System.Drawing.Point(116, 19)
-        Me.PictureBox10.Name = "PictureBox10"
-        Me.PictureBox10.Size = New System.Drawing.Size(100, 95)
-        Me.PictureBox10.TabIndex = 10
-        Me.PictureBox10.TabStop = False
-        '
-        'PictureBox9
-        '
-        Me.PictureBox9.Image = Global.Dominos.My.Resources.Resources.coca_cola_drink_20171123
-        Me.PictureBox9.Location = New System.Drawing.Point(10, 19)
-        Me.PictureBox9.Name = "PictureBox9"
-        Me.PictureBox9.Size = New System.Drawing.Size(100, 95)
-        Me.PictureBox9.TabIndex = 0
-        Me.PictureBox9.TabStop = False
-        '
-        'PictureBox8
-        '
-        Me.PictureBox8.Image = Global.Dominos.My.Resources.Resources.Dominos_Own_Tomato_Sauce_20170613
-        Me.PictureBox8.Location = New System.Drawing.Point(182, 10)
-        Me.PictureBox8.Name = "PictureBox8"
-        Me.PictureBox8.Size = New System.Drawing.Size(145, 152)
-        Me.PictureBox8.TabIndex = 50
-        Me.PictureBox8.TabStop = False
-        '
-        'PictureBox3
-        '
-        Me.PictureBox3.Image = Global.Dominos.My.Resources.Resources.Sundried_Tomato_and_Garlic_Sauce_20170613
-        Me.PictureBox3.Location = New System.Drawing.Point(6, 10)
-        Me.PictureBox3.Name = "PictureBox3"
-        Me.PictureBox3.Size = New System.Drawing.Size(145, 152)
-        Me.PictureBox3.TabIndex = 47
-        Me.PictureBox3.TabStop = False
-        '
-        'PictureBox7
-        '
-        Me.PictureBox7.Image = Global.Dominos.My.Resources.Resources.BBQ_Sauce_20170613
-        Me.PictureBox7.Location = New System.Drawing.Point(350, 10)
-        Me.PictureBox7.Name = "PictureBox7"
-        Me.PictureBox7.Size = New System.Drawing.Size(145, 152)
-        Me.PictureBox7.TabIndex = 49
-        Me.PictureBox7.TabStop = False
-        '
-        'PictureBox4
-        '
-        Me.PictureBox4.Image = Global.Dominos.My.Resources.Resources.small
-        Me.PictureBox4.Location = New System.Drawing.Point(16, 29)
-        Me.PictureBox4.Name = "PictureBox4"
-        Me.PictureBox4.Size = New System.Drawing.Size(71, 69)
-        Me.PictureBox4.TabIndex = 21
-        Me.PictureBox4.TabStop = False
-        '
-        'PictureBox5
-        '
-        Me.PictureBox5.Image = Global.Dominos.My.Resources.Resources.medium
-        Me.PictureBox5.Location = New System.Drawing.Point(101, 19)
-        Me.PictureBox5.Name = "PictureBox5"
-        Me.PictureBox5.Size = New System.Drawing.Size(80, 72)
-        Me.PictureBox5.TabIndex = 22
-        Me.PictureBox5.TabStop = False
-        '
-        'PictureBox6
-        '
-        Me.PictureBox6.Image = Global.Dominos.My.Resources.Resources.large
-        Me.PictureBox6.Location = New System.Drawing.Point(204, 12)
-        Me.PictureBox6.Name = "PictureBox6"
-        Me.PictureBox6.Size = New System.Drawing.Size(82, 79)
-        Me.PictureBox6.TabIndex = 23
-        Me.PictureBox6.TabStop = False
         '
         'pizzaPreview
         '
@@ -1379,17 +1379,33 @@ Partial Class ClassicOrder
         Me.GroupBox1.PerformLayout()
         Me.GroupBox2.ResumeLayout(False)
         Me.GroupBox2.PerformLayout()
+        CType(Me.PictureBox4, System.ComponentModel.ISupportInitialize).EndInit()
+        CType(Me.PictureBox5, System.ComponentModel.ISupportInitialize).EndInit()
+        CType(Me.PictureBox6, System.ComponentModel.ISupportInitialize).EndInit()
         Me.GroupBox3.ResumeLayout(False)
         Me.GroupBox3.PerformLayout()
+        CType(Me.PictureBox8, System.ComponentModel.ISupportInitialize).EndInit()
+        CType(Me.PictureBox3, System.ComponentModel.ISupportInitialize).EndInit()
+        CType(Me.PictureBox7, System.ComponentModel.ISupportInitialize).EndInit()
         Me.GroupBox4.ResumeLayout(False)
         CType(Me.drinkSprite, System.ComponentModel.ISupportInitialize).EndInit()
+        CType(Me.PictureBox14, System.ComponentModel.ISupportInitialize).EndInit()
         CType(Me.drinkFanta, System.ComponentModel.ISupportInitialize).EndInit()
+        CType(Me.PictureBox13, System.ComponentModel.ISupportInitialize).EndInit()
         CType(Me.drinkSmartWater, System.ComponentModel.ISupportInitialize).EndInit()
+        CType(Me.PictureBox12, System.ComponentModel.ISupportInitialize).EndInit()
         CType(Me.drinkCokeZero, System.ComponentModel.ISupportInitialize).EndInit()
+        CType(Me.PictureBox11, System.ComponentModel.ISupportInitialize).EndInit()
         CType(Me.drinkDietCoke, System.ComponentModel.ISupportInitialize).EndInit()
+        CType(Me.PictureBox10, System.ComponentModel.ISupportInitialize).EndInit()
         CType(Me.drinkCocaCola, System.ComponentModel.ISupportInitialize).EndInit()
+        CType(Me.PictureBox9, System.ComponentModel.ISupportInitialize).EndInit()
         Me.GroupBox5.ResumeLayout(False)
         Me.GroupBox5.PerformLayout()
+        CType(Me.PictureBox18, System.ComponentModel.ISupportInitialize).EndInit()
+        CType(Me.PictureBox17, System.ComponentModel.ISupportInitialize).EndInit()
+        CType(Me.PictureBox16, System.ComponentModel.ISupportInitialize).EndInit()
+        CType(Me.PictureBox15, System.ComponentModel.ISupportInitialize).EndInit()
         Me.GroupBox6.ResumeLayout(False)
         Me.GroupBox6.PerformLayout()
         CType(Me.dipChiliInfusedOil, System.ComponentModel.ISupportInitialize).EndInit()
@@ -1402,22 +1418,6 @@ Partial Class ClassicOrder
         CType(Me.PictureBox21, System.ComponentModel.ISupportInitialize).EndInit()
         CType(Me.PictureBox20, System.ComponentModel.ISupportInitialize).EndInit()
         CType(Me.PictureBox19, System.ComponentModel.ISupportInitialize).EndInit()
-        CType(Me.PictureBox18, System.ComponentModel.ISupportInitialize).EndInit()
-        CType(Me.PictureBox17, System.ComponentModel.ISupportInitialize).EndInit()
-        CType(Me.PictureBox16, System.ComponentModel.ISupportInitialize).EndInit()
-        CType(Me.PictureBox15, System.ComponentModel.ISupportInitialize).EndInit()
-        CType(Me.PictureBox14, System.ComponentModel.ISupportInitialize).EndInit()
-        CType(Me.PictureBox13, System.ComponentModel.ISupportInitialize).EndInit()
-        CType(Me.PictureBox12, System.ComponentModel.ISupportInitialize).EndInit()
-        CType(Me.PictureBox11, System.ComponentModel.ISupportInitialize).EndInit()
-        CType(Me.PictureBox10, System.ComponentModel.ISupportInitialize).EndInit()
-        CType(Me.PictureBox9, System.ComponentModel.ISupportInitialize).EndInit()
-        CType(Me.PictureBox8, System.ComponentModel.ISupportInitialize).EndInit()
-        CType(Me.PictureBox3, System.ComponentModel.ISupportInitialize).EndInit()
-        CType(Me.PictureBox7, System.ComponentModel.ISupportInitialize).EndInit()
-        CType(Me.PictureBox4, System.ComponentModel.ISupportInitialize).EndInit()
-        CType(Me.PictureBox5, System.ComponentModel.ISupportInitialize).EndInit()
-        CType(Me.PictureBox6, System.ComponentModel.ISupportInitialize).EndInit()
         CType(Me.pizzaPreview, System.ComponentModel.ISupportInitialize).EndInit()
         CType(Me.PictureBox2, System.ComponentModel.ISupportInitialize).EndInit()
         CType(Me.PictureBox1, System.ComponentModel.ISupportInitialize).EndInit()

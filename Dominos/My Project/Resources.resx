@@ -118,6 +118,12 @@
     <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </resheader>
   <assembly alias="System.Windows.Forms" name="System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" />
+  <data name="NL_Topping.Ss_all_CircleLayer3Image_1275" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\NL_Topping.Ss_all_CircleLayer3Image_1275.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="Topping.V_ComponentImage_PizzaChef.Stack.Circle.2_en_Default" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Topping.V_ComponentImage_PizzaChef.Stack.Circle.2_en_Default.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
   <data name="Sauce.Xz_ComponentImage_PizzaChef.Tray_en_Default" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\Sauce.Xz_ComponentImage_PizzaChef.Tray_en_Default.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
@@ -130,8 +136,11 @@
   <data name="meatzzapizza-20170704" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\meatzzapizza-20170704.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
-  <data name="NL_Topping.K_all_CircleLayer3Image_1275" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\NL_Topping.K_all_CircleLayer3Image_1275.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  <data name="Topping.S_ComponentImage_PizzaChef.Stack.Circle.1_en_Default" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Topping.S_ComponentImage_PizzaChef.Stack.Circle.1_en_Default.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="Topping.G_ComponentImage_PizzaChef.Stack.Circle.1_en_Default" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Topping.G_ComponentImage_PizzaChef.Stack.Circle.1_en_Default.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
   <data name="Dips_Small_x4-20170626" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\Dips_Small_x4-20170626.jpeg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
@@ -148,29 +157,53 @@
   <data name="meatzzapizza-20170704-large" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\meatzzapizza-20170704-large.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
+  <data name="Topping.G_ComponentImage_PizzaChef.Stack.Circle.2_en_Default" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Topping.G_ComponentImage_PizzaChef.Stack.Circle.2_en_Default.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="Topping.S_ComponentImage_PizzaChef.Stack.Circle.3_en_Default" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Topping.S_ComponentImage_PizzaChef.Stack.Circle.3_en_Default.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
   <data name="Topping.F_ComponentImage_PizzaChef.Tray_en_Default" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\Topping.F_ComponentImage_PizzaChef.Tray_en_Default.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="Topping.S_ComponentImage_PizzaChef.Tray_en_Default" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Topping.S_ComponentImage_PizzaChef.Tray_en_Default.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="NL_Topping.K_all_TrayImage_1275" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\NL_Topping.K_all_TrayImage_1275.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
   <data name="GarlicBread-201706261" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\GarlicBread-201706261.jpeg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
+  <data name="NL_Topping.Ss_all_CircleLayer2Image_1275" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\NL_Topping.Ss_all_CircleLayer2Image_1275.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
   <data name="Garlic_Dip-20170626" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\Garlic_Dip-20170626.jpeg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
-  <data name="pepperonipassion-20170704" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\pepperonipassion-20170704.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  <data name="NL_Topping.K_all_CircleLayer3Image_1275" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\NL_Topping.K_all_CircleLayer3Image_1275.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="Franks_Dip-20170626" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Franks_Dip-20170626.jpeg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
   <data name="Topping.F_ComponentImage_PizzaChef.Stack.Circle.2_en_Default" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\Topping.F_ComponentImage_PizzaChef.Stack.Circle.2_en_Default.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
-  <data name="GarlicBread-20170626" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\GarlicBread-20170626.jpeg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  <data name="NL_Topping.H_all_CircleLayer3Image_1275" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\NL_Topping.H_all_CircleLayer3Image_1275.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
-  <data name="small" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\small.PNG;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  <data name="NL_Topping.H_all_CircleLayer1Image_1275" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\NL_Topping.H_all_CircleLayer1Image_1275.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
-  <data name="NL_Topping.B_all_CircleLayer2Image_1121" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\NL_Topping.B_all_CircleLayer2Image_1121.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  <data name="Topping.B_ComponentImage_PizzaChef.Tray_en_Default" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Topping.B_ComponentImage_PizzaChef.Tray_en_Default.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="Topping.G_ComponentImage_PizzaChef.Tray_en_Default" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Topping.G_ComponentImage_PizzaChef.Tray_en_Default.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="Topping.G_ComponentImage_PizzaChef.Stack.Circle.3_en_Default" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Topping.G_ComponentImage_PizzaChef.Stack.Circle.3_en_Default.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
   <data name="Sauce.Xb_ComponentImage_PizzaChef.Stack.Circle.1_en_Default" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\Sauce.Xb_ComponentImage_PizzaChef.Stack.Circle.1_en_Default.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
@@ -184,11 +217,20 @@
   <data name="Dominos_Own_Tomato_Sauce_20170613" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\Dominos_Own_Tomato_Sauce_20170613.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
+  <data name="Crust.H_ComponentImage_PizzaChef.Tray_en_Default" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Crust.H_ComponentImage_PizzaChef.Tray_en_Default.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="Topping.V_ComponentImage_PizzaChef.Tray_en_Default" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Topping.V_ComponentImage_PizzaChef.Tray_en_Default.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
   <data name="mighty-meaty-20170704" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\mighty-meaty-20170704.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
-  <data name="NL_Topping.K_all_TrayImage_1275" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\NL_Topping.K_all_TrayImage_1275.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  <data name="small" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\small.PNG;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="pepperonipassion-20170704" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\pepperonipassion-20170704.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
   <data name="Crust.C_ComponentImage_PizzaChef.Stack.Circle.1_en_Default" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\Crust.C_ComponentImage_PizzaChef.Stack.Circle.1_en_Default.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
@@ -199,11 +241,14 @@
   <data name="tray-placeholder" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\tray-placeholder.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
-  <data name="Topping.B_ComponentImage_PizzaChef.Tray_en_Default" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\Topping.B_ComponentImage_PizzaChef.Tray_en_Default.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  <data name="NL_Topping.H_all_TrayImage_1275" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\NL_Topping.H_all_TrayImage_1275.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
-  <data name="coca-cola-zero-drink-20171123" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\coca-cola-zero-drink-20171123.jpeg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  <data name="NL_Topping.Ss_all_CircleLayer1Image_1275" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\NL_Topping.Ss_all_CircleLayer1Image_1275.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="Crust.T_ComponentImage_PizzaChef.Tray_en_Default" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Crust.T_ComponentImage_PizzaChef.Tray_en_Default.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
   <data name="sprite-drink-20171123" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\sprite-drink-20171123.jpeg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
@@ -211,8 +256,8 @@
   <data name="cheese-and-tomato-20170704" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\cheese-and-tomato-20170704.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
-  <data name="medium" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\medium.PNG;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  <data name="Topping.V_ComponentImage_PizzaChef.Stack.Circle.3_en_Default" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Topping.V_ComponentImage_PizzaChef.Stack.Circle.3_en_Default.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
   <data name="Sauce.Xb_ComponentImage_PizzaChef.Tray_en_Default" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\Sauce.Xb_ComponentImage_PizzaChef.Tray_en_Default.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
@@ -232,6 +277,9 @@
   <data name="ChilliOil-20170626" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\ChilliOil-20170626.jpeg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
+  <data name="NL_Topping.H_all_CircleLayer2Image_1275" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\NL_Topping.H_all_CircleLayer2Image_1275.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
   <data name="Crust.P_ComponentImage_PizzaChef.Stack.Circle.1_en_Default" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\Crust.P_ComponentImage_PizzaChef.Stack.Circle.1_en_Default.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
@@ -244,6 +292,9 @@
   <data name="deluxe-20170704-large" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\deluxe-20170704-large.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
+  <data name="Topping.A_ComponentImage_PizzaChef.Tray_en_Default" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Topping.A_ComponentImage_PizzaChef.Tray_en_Default.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
   <data name="large" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\large.PNG;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
@@ -253,8 +304,11 @@
   <data name="BBQ_Dip-20170626" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\BBQ_Dip-20170626.jpeg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
-  <data name="Crust.T_ComponentImage_PizzaChef.Tray_en_Default" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\Crust.T_ComponentImage_PizzaChef.Tray_en_Default.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  <data name="medium" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\medium.PNG;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="coca-cola-zero-drink-20171123" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\coca-cola-zero-drink-20171123.jpeg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
   <data name="NL_Topping.B_all_CircleLayer3Image_1121" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\NL_Topping.B_all_CircleLayer3Image_1121.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
@@ -265,8 +319,14 @@
   <data name="Topping.F_ComponentImage_PizzaChef.Stack.Circle.1_en_Default" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\Topping.F_ComponentImage_PizzaChef.Stack.Circle.1_en_Default.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
-  <data name="Franks_Dip-20170626" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\Franks_Dip-20170626.jpeg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  <data name="GarlicBread-20170626" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\GarlicBread-20170626.jpeg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="NL_Topping.Ss_all_TrayImage_1275" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\NL_Topping.Ss_all_TrayImage_1275.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="NL_Topping.B_all_CircleLayer2Image_1121" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\NL_Topping.B_all_CircleLayer2Image_1121.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
   <data name="NL_Sauce.X_all_CircleLayer1Image_1275" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\NL_Sauce.X_all_CircleLayer1Image_1275.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
@@ -295,11 +355,17 @@
   <data name="pepperonipassion-20170704-large" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\pepperonipassion-20170704-large.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
+  <data name="Topping.S_ComponentImage_PizzaChef.Stack.Circle.2_en_Default" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Topping.S_ComponentImage_PizzaChef.Stack.Circle.2_en_Default.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
   <data name="Sauce.HBBSCComponentImagePizzaChef.Stack.Circle.1ENDefault19000101_011052" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\Sauce.HBBSCComponentImagePizzaChef.Stack.Circle.1ENDefault19000101_011052.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
   <data name="cheese-and-tomato-20170704-large" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\cheese-and-tomato-20170704-large.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="Topping.A_ComponentImage_PizzaChef.Stack.Circle.2_en_Default" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Topping.A_ComponentImage_PizzaChef.Stack.Circle.2_en_Default.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
   <data name="Sundried_Tomato_and_Garlic_Sauce_20170613" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\Sundried_Tomato_and_Garlic_Sauce_20170613.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
@@ -310,19 +376,25 @@
   <data name="ChicknMix-20170626" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\ChicknMix-20170626.jpeg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
-  <data name="Crust.H_ComponentImage_PizzaChef.Tray_en_Default" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\Crust.H_ComponentImage_PizzaChef.Tray_en_Default.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  <data name="Topping.A_ComponentImage_PizzaChef.Stack.Circle.1_en_Default" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Topping.A_ComponentImage_PizzaChef.Stack.Circle.1_en_Default.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="Topping.A_ComponentImage_PizzaChef.Stack.Circle.3_en_Default" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Topping.A_ComponentImage_PizzaChef.Stack.Circle.3_en_Default.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
   <data name="Topping.V_ComponentImage_PizzaChef.Stack.Circle.1_en_Default" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\Topping.V_ComponentImage_PizzaChef.Stack.Circle.1_en_Default.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
-  <data name="Topping.V_ComponentImage_PizzaChef.Stack.Circle.2_en_Default" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\Topping.V_ComponentImage_PizzaChef.Stack.Circle.2_en_Default.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  <data name="Topping.Et_ComponentImage_PizzaChef.Stack.Circle.1_en_Default" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Topping.Et_ComponentImage_PizzaChef.Stack.Circle.1_en_Default.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
-  <data name="Topping.V_ComponentImage_PizzaChef.Stack.Circle.3_en_Default" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\Topping.V_ComponentImage_PizzaChef.Stack.Circle.3_en_Default.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  <data name="Topping.Et_ComponentImage_PizzaChef.Stack.Circle.2_en_Default" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Topping.Et_ComponentImage_PizzaChef.Stack.Circle.2_en_Default.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
-  <data name="Topping.V_ComponentImage_PizzaChef.Tray_en_Default" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\Topping.V_ComponentImage_PizzaChef.Tray_en_Default.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  <data name="Topping.Et_ComponentImage_PizzaChef.Stack.Circle.3_en_Default" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Topping.Et_ComponentImage_PizzaChef.Stack.Circle.3_en_Default.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="NL_Topping.Et_all_TrayImage_1275" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\NL_Topping.Et_all_TrayImage_1275.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
 </root>

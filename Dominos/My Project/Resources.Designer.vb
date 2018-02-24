@@ -453,6 +453,56 @@ Namespace My.Resources
         '''<summary>
         '''  Looks up a localized resource of type System.Drawing.Bitmap.
         '''</summary>
+        Friend ReadOnly Property NL_Topping_Et_all_TrayImage_1275() As System.Drawing.Bitmap
+            Get
+                Dim obj As Object = ResourceManager.GetObject("NL_Topping.Et_all_TrayImage_1275", resourceCulture)
+                Return CType(obj,System.Drawing.Bitmap)
+            End Get
+        End Property
+        
+        '''<summary>
+        '''  Looks up a localized resource of type System.Drawing.Bitmap.
+        '''</summary>
+        Friend ReadOnly Property NL_Topping_H_all_CircleLayer1Image_1275() As System.Drawing.Bitmap
+            Get
+                Dim obj As Object = ResourceManager.GetObject("NL_Topping.H_all_CircleLayer1Image_1275", resourceCulture)
+                Return CType(obj,System.Drawing.Bitmap)
+            End Get
+        End Property
+        
+        '''<summary>
+        '''  Looks up a localized resource of type System.Drawing.Bitmap.
+        '''</summary>
+        Friend ReadOnly Property NL_Topping_H_all_CircleLayer2Image_1275() As System.Drawing.Bitmap
+            Get
+                Dim obj As Object = ResourceManager.GetObject("NL_Topping.H_all_CircleLayer2Image_1275", resourceCulture)
+                Return CType(obj,System.Drawing.Bitmap)
+            End Get
+        End Property
+        
+        '''<summary>
+        '''  Looks up a localized resource of type System.Drawing.Bitmap.
+        '''</summary>
+        Friend ReadOnly Property NL_Topping_H_all_CircleLayer3Image_1275() As System.Drawing.Bitmap
+            Get
+                Dim obj As Object = ResourceManager.GetObject("NL_Topping.H_all_CircleLayer3Image_1275", resourceCulture)
+                Return CType(obj,System.Drawing.Bitmap)
+            End Get
+        End Property
+        
+        '''<summary>
+        '''  Looks up a localized resource of type System.Drawing.Bitmap.
+        '''</summary>
+        Friend ReadOnly Property NL_Topping_H_all_TrayImage_1275() As System.Drawing.Bitmap
+            Get
+                Dim obj As Object = ResourceManager.GetObject("NL_Topping.H_all_TrayImage_1275", resourceCulture)
+                Return CType(obj,System.Drawing.Bitmap)
+            End Get
+        End Property
+        
+        '''<summary>
+        '''  Looks up a localized resource of type System.Drawing.Bitmap.
+        '''</summary>
         Friend ReadOnly Property NL_Topping_K_all_CircleLayer3Image_1275() As System.Drawing.Bitmap
             Get
                 Dim obj As Object = ResourceManager.GetObject("NL_Topping.K_all_CircleLayer3Image_1275", resourceCulture)
@@ -466,6 +516,46 @@ Namespace My.Resources
         Friend ReadOnly Property NL_Topping_K_all_TrayImage_1275() As System.Drawing.Bitmap
             Get
                 Dim obj As Object = ResourceManager.GetObject("NL_Topping.K_all_TrayImage_1275", resourceCulture)
+                Return CType(obj,System.Drawing.Bitmap)
+            End Get
+        End Property
+        
+        '''<summary>
+        '''  Looks up a localized resource of type System.Drawing.Bitmap.
+        '''</summary>
+        Friend ReadOnly Property NL_Topping_Ss_all_CircleLayer1Image_1275() As System.Drawing.Bitmap
+            Get
+                Dim obj As Object = ResourceManager.GetObject("NL_Topping.Ss_all_CircleLayer1Image_1275", resourceCulture)
+                Return CType(obj,System.Drawing.Bitmap)
+            End Get
+        End Property
+        
+        '''<summary>
+        '''  Looks up a localized resource of type System.Drawing.Bitmap.
+        '''</summary>
+        Friend ReadOnly Property NL_Topping_Ss_all_CircleLayer2Image_1275() As System.Drawing.Bitmap
+            Get
+                Dim obj As Object = ResourceManager.GetObject("NL_Topping.Ss_all_CircleLayer2Image_1275", resourceCulture)
+                Return CType(obj,System.Drawing.Bitmap)
+            End Get
+        End Property
+        
+        '''<summary>
+        '''  Looks up a localized resource of type System.Drawing.Bitmap.
+        '''</summary>
+        Friend ReadOnly Property NL_Topping_Ss_all_CircleLayer3Image_1275() As System.Drawing.Bitmap
+            Get
+                Dim obj As Object = ResourceManager.GetObject("NL_Topping.Ss_all_CircleLayer3Image_1275", resourceCulture)
+                Return CType(obj,System.Drawing.Bitmap)
+            End Get
+        End Property
+        
+        '''<summary>
+        '''  Looks up a localized resource of type System.Drawing.Bitmap.
+        '''</summary>
+        Friend ReadOnly Property NL_Topping_Ss_all_TrayImage_1275() As System.Drawing.Bitmap
+            Get
+                Dim obj As Object = ResourceManager.GetObject("NL_Topping.Ss_all_TrayImage_1275", resourceCulture)
                 Return CType(obj,System.Drawing.Bitmap)
             End Get
         End Property
@@ -643,9 +733,79 @@ Namespace My.Resources
         '''<summary>
         '''  Looks up a localized resource of type System.Drawing.Bitmap.
         '''</summary>
+        Friend ReadOnly Property Topping_A_ComponentImage_PizzaChef_Stack_Circle_1_en_Default() As System.Drawing.Bitmap
+            Get
+                Dim obj As Object = ResourceManager.GetObject("Topping.A_ComponentImage_PizzaChef.Stack.Circle.1_en_Default", resourceCulture)
+                Return CType(obj,System.Drawing.Bitmap)
+            End Get
+        End Property
+        
+        '''<summary>
+        '''  Looks up a localized resource of type System.Drawing.Bitmap.
+        '''</summary>
+        Friend ReadOnly Property Topping_A_ComponentImage_PizzaChef_Stack_Circle_2_en_Default() As System.Drawing.Bitmap
+            Get
+                Dim obj As Object = ResourceManager.GetObject("Topping.A_ComponentImage_PizzaChef.Stack.Circle.2_en_Default", resourceCulture)
+                Return CType(obj,System.Drawing.Bitmap)
+            End Get
+        End Property
+        
+        '''<summary>
+        '''  Looks up a localized resource of type System.Drawing.Bitmap.
+        '''</summary>
+        Friend ReadOnly Property Topping_A_ComponentImage_PizzaChef_Stack_Circle_3_en_Default() As System.Drawing.Bitmap
+            Get
+                Dim obj As Object = ResourceManager.GetObject("Topping.A_ComponentImage_PizzaChef.Stack.Circle.3_en_Default", resourceCulture)
+                Return CType(obj,System.Drawing.Bitmap)
+            End Get
+        End Property
+        
+        '''<summary>
+        '''  Looks up a localized resource of type System.Drawing.Bitmap.
+        '''</summary>
+        Friend ReadOnly Property Topping_A_ComponentImage_PizzaChef_Tray_en_Default() As System.Drawing.Bitmap
+            Get
+                Dim obj As Object = ResourceManager.GetObject("Topping.A_ComponentImage_PizzaChef.Tray_en_Default", resourceCulture)
+                Return CType(obj,System.Drawing.Bitmap)
+            End Get
+        End Property
+        
+        '''<summary>
+        '''  Looks up a localized resource of type System.Drawing.Bitmap.
+        '''</summary>
         Friend ReadOnly Property Topping_B_ComponentImage_PizzaChef_Tray_en_Default() As System.Drawing.Bitmap
             Get
                 Dim obj As Object = ResourceManager.GetObject("Topping.B_ComponentImage_PizzaChef.Tray_en_Default", resourceCulture)
+                Return CType(obj,System.Drawing.Bitmap)
+            End Get
+        End Property
+        
+        '''<summary>
+        '''  Looks up a localized resource of type System.Drawing.Bitmap.
+        '''</summary>
+        Friend ReadOnly Property Topping_Et_ComponentImage_PizzaChef_Stack_Circle_1_en_Default() As System.Drawing.Bitmap
+            Get
+                Dim obj As Object = ResourceManager.GetObject("Topping.Et_ComponentImage_PizzaChef.Stack.Circle.1_en_Default", resourceCulture)
+                Return CType(obj,System.Drawing.Bitmap)
+            End Get
+        End Property
+        
+        '''<summary>
+        '''  Looks up a localized resource of type System.Drawing.Bitmap.
+        '''</summary>
+        Friend ReadOnly Property Topping_Et_ComponentImage_PizzaChef_Stack_Circle_2_en_Default() As System.Drawing.Bitmap
+            Get
+                Dim obj As Object = ResourceManager.GetObject("Topping.Et_ComponentImage_PizzaChef.Stack.Circle.2_en_Default", resourceCulture)
+                Return CType(obj,System.Drawing.Bitmap)
+            End Get
+        End Property
+        
+        '''<summary>
+        '''  Looks up a localized resource of type System.Drawing.Bitmap.
+        '''</summary>
+        Friend ReadOnly Property Topping_Et_ComponentImage_PizzaChef_Stack_Circle_3_en_Default() As System.Drawing.Bitmap
+            Get
+                Dim obj As Object = ResourceManager.GetObject("Topping.Et_ComponentImage_PizzaChef.Stack.Circle.3_en_Default", resourceCulture)
                 Return CType(obj,System.Drawing.Bitmap)
             End Get
         End Property
@@ -686,6 +846,86 @@ Namespace My.Resources
         Friend ReadOnly Property Topping_F_ComponentImage_PizzaChef_Tray_en_Default() As System.Drawing.Bitmap
             Get
                 Dim obj As Object = ResourceManager.GetObject("Topping.F_ComponentImage_PizzaChef.Tray_en_Default", resourceCulture)
+                Return CType(obj,System.Drawing.Bitmap)
+            End Get
+        End Property
+        
+        '''<summary>
+        '''  Looks up a localized resource of type System.Drawing.Bitmap.
+        '''</summary>
+        Friend ReadOnly Property Topping_G_ComponentImage_PizzaChef_Stack_Circle_1_en_Default() As System.Drawing.Bitmap
+            Get
+                Dim obj As Object = ResourceManager.GetObject("Topping.G_ComponentImage_PizzaChef.Stack.Circle.1_en_Default", resourceCulture)
+                Return CType(obj,System.Drawing.Bitmap)
+            End Get
+        End Property
+        
+        '''<summary>
+        '''  Looks up a localized resource of type System.Drawing.Bitmap.
+        '''</summary>
+        Friend ReadOnly Property Topping_G_ComponentImage_PizzaChef_Stack_Circle_2_en_Default() As System.Drawing.Bitmap
+            Get
+                Dim obj As Object = ResourceManager.GetObject("Topping.G_ComponentImage_PizzaChef.Stack.Circle.2_en_Default", resourceCulture)
+                Return CType(obj,System.Drawing.Bitmap)
+            End Get
+        End Property
+        
+        '''<summary>
+        '''  Looks up a localized resource of type System.Drawing.Bitmap.
+        '''</summary>
+        Friend ReadOnly Property Topping_G_ComponentImage_PizzaChef_Stack_Circle_3_en_Default() As System.Drawing.Bitmap
+            Get
+                Dim obj As Object = ResourceManager.GetObject("Topping.G_ComponentImage_PizzaChef.Stack.Circle.3_en_Default", resourceCulture)
+                Return CType(obj,System.Drawing.Bitmap)
+            End Get
+        End Property
+        
+        '''<summary>
+        '''  Looks up a localized resource of type System.Drawing.Bitmap.
+        '''</summary>
+        Friend ReadOnly Property Topping_G_ComponentImage_PizzaChef_Tray_en_Default() As System.Drawing.Bitmap
+            Get
+                Dim obj As Object = ResourceManager.GetObject("Topping.G_ComponentImage_PizzaChef.Tray_en_Default", resourceCulture)
+                Return CType(obj,System.Drawing.Bitmap)
+            End Get
+        End Property
+        
+        '''<summary>
+        '''  Looks up a localized resource of type System.Drawing.Bitmap.
+        '''</summary>
+        Friend ReadOnly Property Topping_S_ComponentImage_PizzaChef_Stack_Circle_1_en_Default() As System.Drawing.Bitmap
+            Get
+                Dim obj As Object = ResourceManager.GetObject("Topping.S_ComponentImage_PizzaChef.Stack.Circle.1_en_Default", resourceCulture)
+                Return CType(obj,System.Drawing.Bitmap)
+            End Get
+        End Property
+        
+        '''<summary>
+        '''  Looks up a localized resource of type System.Drawing.Bitmap.
+        '''</summary>
+        Friend ReadOnly Property Topping_S_ComponentImage_PizzaChef_Stack_Circle_2_en_Default() As System.Drawing.Bitmap
+            Get
+                Dim obj As Object = ResourceManager.GetObject("Topping.S_ComponentImage_PizzaChef.Stack.Circle.2_en_Default", resourceCulture)
+                Return CType(obj,System.Drawing.Bitmap)
+            End Get
+        End Property
+        
+        '''<summary>
+        '''  Looks up a localized resource of type System.Drawing.Bitmap.
+        '''</summary>
+        Friend ReadOnly Property Topping_S_ComponentImage_PizzaChef_Stack_Circle_3_en_Default() As System.Drawing.Bitmap
+            Get
+                Dim obj As Object = ResourceManager.GetObject("Topping.S_ComponentImage_PizzaChef.Stack.Circle.3_en_Default", resourceCulture)
+                Return CType(obj,System.Drawing.Bitmap)
+            End Get
+        End Property
+        
+        '''<summary>
+        '''  Looks up a localized resource of type System.Drawing.Bitmap.
+        '''</summary>
+        Friend ReadOnly Property Topping_S_ComponentImage_PizzaChef_Tray_en_Default() As System.Drawing.Bitmap
+            Get
+                Dim obj As Object = ResourceManager.GetObject("Topping.S_ComponentImage_PizzaChef.Tray_en_Default", resourceCulture)
                 Return CType(obj,System.Drawing.Bitmap)
             End Get
         End Property
