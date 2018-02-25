@@ -95,6 +95,7 @@ Partial Class PizzaMaker
         Me.PictureBox2 = New System.Windows.Forms.PictureBox()
         Me.startOver = New System.Windows.Forms.Button()
         Me.addPizza = New System.Windows.Forms.Button()
+        Me.removePizzas = New System.Windows.Forms.Button()
         Me.chooseCrust.SuspendLayout()
         CType(Me.previewCrustClassic, System.ComponentModel.ISupportInitialize).BeginInit()
         CType(Me.previewCrustFreshPan, System.ComponentModel.ISupportInitialize).BeginInit()
@@ -870,19 +871,28 @@ Partial Class PizzaMaker
         '
         Me.startOver.Location = New System.Drawing.Point(576, 79)
         Me.startOver.Name = "startOver"
-        Me.startOver.Size = New System.Drawing.Size(117, 23)
+        Me.startOver.Size = New System.Drawing.Size(71, 23)
         Me.startOver.TabIndex = 119
         Me.startOver.Text = "Start Over"
         Me.startOver.UseVisualStyleBackColor = True
         '
         'addPizza
         '
-        Me.addPizza.Location = New System.Drawing.Point(699, 79)
+        Me.addPizza.Location = New System.Drawing.Point(650, 79)
         Me.addPizza.Name = "addPizza"
-        Me.addPizza.Size = New System.Drawing.Size(117, 23)
+        Me.addPizza.Size = New System.Drawing.Size(106, 23)
         Me.addPizza.TabIndex = 120
         Me.addPizza.Text = "Add Pizza to Order"
         Me.addPizza.UseVisualStyleBackColor = True
+        '
+        'removePizzas
+        '
+        Me.removePizzas.Location = New System.Drawing.Point(758, 79)
+        Me.removePizzas.Name = "removePizzas"
+        Me.removePizzas.Size = New System.Drawing.Size(103, 23)
+        Me.removePizzas.TabIndex = 121
+        Me.removePizzas.Text = "Remove Pizza(s)"
+        Me.removePizzas.UseVisualStyleBackColor = True
         '
         'PizzaMaker
         '
@@ -890,6 +900,7 @@ Partial Class PizzaMaker
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
         Me.BackColor = System.Drawing.SystemColors.ButtonHighlight
         Me.ClientSize = New System.Drawing.Size(1097, 1041)
+        Me.Controls.Add(Me.removePizzas)
         Me.Controls.Add(Me.addPizza)
         Me.Controls.Add(Me.startOver)
         Me.Controls.Add(Me.chooseToppings)
@@ -1015,4 +1026,5 @@ Partial Class PizzaMaker
     Friend WithEvents maxToppingsNotice As Label
     Friend WithEvents startOver As Button
     Friend WithEvents addPizza As Button
+    Friend WithEvents removePizzas As Button
 End Class

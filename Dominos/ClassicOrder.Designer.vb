@@ -614,7 +614,7 @@ Partial Class ClassicOrder
         'drinkSprite
         '
         Me.drinkSprite.Location = New System.Drawing.Point(179, 202)
-        Me.drinkSprite.Maximum = New Decimal(New Integer() {99, 0, 0, 0})
+        Me.drinkSprite.Maximum = New Decimal(New Integer() {20, 0, 0, 0})
         Me.drinkSprite.Name = "drinkSprite"
         Me.drinkSprite.Size = New System.Drawing.Size(34, 20)
         Me.drinkSprite.TabIndex = 19
@@ -631,7 +631,7 @@ Partial Class ClassicOrder
         'drinkFanta
         '
         Me.drinkFanta.Location = New System.Drawing.Point(73, 202)
-        Me.drinkFanta.Maximum = New Decimal(New Integer() {99, 0, 0, 0})
+        Me.drinkFanta.Maximum = New Decimal(New Integer() {20, 0, 0, 0})
         Me.drinkFanta.Name = "drinkFanta"
         Me.drinkFanta.Size = New System.Drawing.Size(34, 20)
         Me.drinkFanta.TabIndex = 17
@@ -648,7 +648,7 @@ Partial Class ClassicOrder
         'drinkSmartWater
         '
         Me.drinkSmartWater.Location = New System.Drawing.Point(391, 94)
-        Me.drinkSmartWater.Maximum = New Decimal(New Integer() {99, 0, 0, 0})
+        Me.drinkSmartWater.Maximum = New Decimal(New Integer() {20, 0, 0, 0})
         Me.drinkSmartWater.Name = "drinkSmartWater"
         Me.drinkSmartWater.Size = New System.Drawing.Size(34, 20)
         Me.drinkSmartWater.TabIndex = 15
@@ -665,7 +665,7 @@ Partial Class ClassicOrder
         'drinkCokeZero
         '
         Me.drinkCokeZero.Location = New System.Drawing.Point(285, 94)
-        Me.drinkCokeZero.Maximum = New Decimal(New Integer() {99, 0, 0, 0})
+        Me.drinkCokeZero.Maximum = New Decimal(New Integer() {20, 0, 0, 0})
         Me.drinkCokeZero.Name = "drinkCokeZero"
         Me.drinkCokeZero.Size = New System.Drawing.Size(34, 20)
         Me.drinkCokeZero.TabIndex = 13
@@ -682,7 +682,7 @@ Partial Class ClassicOrder
         'drinkDietCoke
         '
         Me.drinkDietCoke.Location = New System.Drawing.Point(179, 94)
-        Me.drinkDietCoke.Maximum = New Decimal(New Integer() {99, 0, 0, 0})
+        Me.drinkDietCoke.Maximum = New Decimal(New Integer() {20, 0, 0, 0})
         Me.drinkDietCoke.Name = "drinkDietCoke"
         Me.drinkDietCoke.Size = New System.Drawing.Size(34, 20)
         Me.drinkDietCoke.TabIndex = 11
@@ -699,7 +699,7 @@ Partial Class ClassicOrder
         'drinkCocaCola
         '
         Me.drinkCocaCola.Location = New System.Drawing.Point(73, 94)
-        Me.drinkCocaCola.Maximum = New Decimal(New Integer() {99, 0, 0, 0})
+        Me.drinkCocaCola.Maximum = New Decimal(New Integer() {20, 0, 0, 0})
         Me.drinkCocaCola.Name = "drinkCocaCola"
         Me.drinkCocaCola.Size = New System.Drawing.Size(34, 20)
         Me.drinkCocaCola.TabIndex = 7
@@ -888,7 +888,7 @@ Partial Class ClassicOrder
         Me.sideChickenMixBox.Cursor = System.Windows.Forms.Cursors.Default
         Me.sideChickenMixBox.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList
         Me.sideChickenMixBox.FormattingEnabled = True
-        Me.sideChickenMixBox.Items.AddRange(New Object() {"0", "1", "2", "3", "4", "5", "6", "7", "8", "9", "10"})
+        Me.sideChickenMixBox.Items.AddRange(New Object() {"0", "1", "2", "3", "4", "5", "6", "7", "8", "9"})
         Me.sideChickenMixBox.Location = New System.Drawing.Point(512, 176)
         Me.sideChickenMixBox.Name = "sideChickenMixBox"
         Me.sideChickenMixBox.Size = New System.Drawing.Size(32, 21)
@@ -899,7 +899,7 @@ Partial Class ClassicOrder
         Me.sideWedges.Cursor = System.Windows.Forms.Cursors.Default
         Me.sideWedges.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList
         Me.sideWedges.FormattingEnabled = True
-        Me.sideWedges.Items.AddRange(New Object() {"0", "1", "2", "3", "4", "5", "6", "7", "8", "9", "10"})
+        Me.sideWedges.Items.AddRange(New Object() {"0", "1", "2", "3", "4", "5", "6", "7", "8", "9"})
         Me.sideWedges.Location = New System.Drawing.Point(375, 176)
         Me.sideWedges.Name = "sideWedges"
         Me.sideWedges.Size = New System.Drawing.Size(32, 21)
@@ -910,7 +910,7 @@ Partial Class ClassicOrder
         Me.sideGarlicBread.Cursor = System.Windows.Forms.Cursors.Default
         Me.sideGarlicBread.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList
         Me.sideGarlicBread.FormattingEnabled = True
-        Me.sideGarlicBread.Items.AddRange(New Object() {"0", "1", "2", "3", "4", "5", "6", "7", "8", "9", "10"})
+        Me.sideGarlicBread.Items.AddRange(New Object() {"0", "1", "2", "3", "4", "5", "6", "7", "8", "9"})
         Me.sideGarlicBread.Location = New System.Drawing.Point(241, 176)
         Me.sideGarlicBread.Name = "sideGarlicBread"
         Me.sideGarlicBread.Size = New System.Drawing.Size(32, 21)
@@ -922,7 +922,7 @@ Partial Class ClassicOrder
         Me.sideMeatballs.Cursor = System.Windows.Forms.Cursors.Default
         Me.sideMeatballs.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList
         Me.sideMeatballs.FormattingEnabled = True
-        Me.sideMeatballs.Items.AddRange(New Object() {"0", "1", "2", "3", "4", "5", "6", "7", "8", "9", "10"})
+        Me.sideMeatballs.Items.AddRange(New Object() {"0", "1", "2", "3", "4", "5", "6", "7", "8", "9"})
         Me.sideMeatballs.Location = New System.Drawing.Point(110, 176)
         Me.sideMeatballs.Name = "sideMeatballs"
         Me.sideMeatballs.Size = New System.Drawing.Size(32, 21)
@@ -1086,7 +1086,7 @@ Partial Class ClassicOrder
         'dipChiliInfusedOil
         '
         Me.dipChiliInfusedOil.Location = New System.Drawing.Point(240, 269)
-        Me.dipChiliInfusedOil.Maximum = New Decimal(New Integer() {99, 0, 0, 0})
+        Me.dipChiliInfusedOil.Maximum = New Decimal(New Integer() {20, 0, 0, 0})
         Me.dipChiliInfusedOil.Name = "dipChiliInfusedOil"
         Me.dipChiliInfusedOil.Size = New System.Drawing.Size(34, 20)
         Me.dipChiliInfusedOil.TabIndex = 78
@@ -1094,7 +1094,7 @@ Partial Class ClassicOrder
         'dipFRANKs
         '
         Me.dipFRANKs.Location = New System.Drawing.Point(104, 269)
-        Me.dipFRANKs.Maximum = New Decimal(New Integer() {99, 0, 0, 0})
+        Me.dipFRANKs.Maximum = New Decimal(New Integer() {20, 0, 0, 0})
         Me.dipFRANKs.Name = "dipFRANKs"
         Me.dipFRANKs.Size = New System.Drawing.Size(34, 20)
         Me.dipFRANKs.TabIndex = 77
@@ -1102,7 +1102,7 @@ Partial Class ClassicOrder
         'dipBigBBQ
         '
         Me.dipBigBBQ.Location = New System.Drawing.Point(374, 115)
-        Me.dipBigBBQ.Maximum = New Decimal(New Integer() {99, 0, 0, 0})
+        Me.dipBigBBQ.Maximum = New Decimal(New Integer() {20, 0, 0, 0})
         Me.dipBigBBQ.Name = "dipBigBBQ"
         Me.dipBigBBQ.Size = New System.Drawing.Size(34, 20)
         Me.dipBigBBQ.TabIndex = 76
@@ -1110,7 +1110,7 @@ Partial Class ClassicOrder
         'dipBigGarlic
         '
         Me.dipBigGarlic.Location = New System.Drawing.Point(238, 115)
-        Me.dipBigGarlic.Maximum = New Decimal(New Integer() {99, 0, 0, 0})
+        Me.dipBigGarlic.Maximum = New Decimal(New Integer() {20, 0, 0, 0})
         Me.dipBigGarlic.Name = "dipBigGarlic"
         Me.dipBigGarlic.Size = New System.Drawing.Size(34, 20)
         Me.dipBigGarlic.TabIndex = 75
@@ -1118,7 +1118,7 @@ Partial Class ClassicOrder
         'dipRandom
         '
         Me.dipRandom.Location = New System.Drawing.Point(102, 115)
-        Me.dipRandom.Maximum = New Decimal(New Integer() {99, 0, 0, 0})
+        Me.dipRandom.Maximum = New Decimal(New Integer() {20, 0, 0, 0})
         Me.dipRandom.Name = "dipRandom"
         Me.dipRandom.Size = New System.Drawing.Size(34, 20)
         Me.dipRandom.TabIndex = 20

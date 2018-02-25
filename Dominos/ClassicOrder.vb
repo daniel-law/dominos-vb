@@ -15,6 +15,8 @@ Public Class ClassicOrder
 
     Private pizzaCount As Integer = 0 ' // Stores the quantity of all pizza(s).
     Private orderedPizzaTotal As Decimal = 14.99 ' // Stores the cost of all pizza(s).
+    Private orderTotal As Decimal ' // Stores the total cost of the order when placing.
+    Private discountApplied As Boolean = False ' // Stores discount state.
 
     ' ==========================================================================
     ' GLOBAL
@@ -86,6 +88,11 @@ Public Class ClassicOrder
             sidesPrice = 0
             dipsPrice = 0
             getPrice()
+
+            ' // Reset PizzaMaker orders.
+            CurrentOrder.PizzaMakerStatus = 0
+            ReDim CurrentOrder.PizzaMakerPizzas(0)
+            CurrentOrder.PizzaMakerTotal = 0
         End If
     End Sub
 
@@ -263,15 +270,19 @@ Public Class ClassicOrder
     ' ==========================================================================
 
     Private Sub addPizza_Click(sender As Object, e As EventArgs) Handles addPizza.Click
-        ' // Store the fact they've added a pizza to their order.
-        pizzaCount = pizzaCount + 1
-        ReDim Preserve CurrentOrder.Pizzas(pizzaCount)
-        CurrentOrder.Pizzas(pizzaCount) = "Size: " & selectedSize & " / " & "Topping: " & selectedTopping & " / " & "Crust: " & selectedCrust & " / " & "Base: " & selectedBase & "|" & (pizzaPrice + crustPrice)
-        pizzasInOrder.Text = (pizzaCount + 1) & " pizza(s) in order." ' // 0 based indexing.
+        If pizzaCount < 19 Then
+            ' // Store the fact they've added a pizza to their order.
+            pizzaCount = pizzaCount + 1
+            ReDim Preserve CurrentOrder.Pizzas(pizzaCount)
+            CurrentOrder.Pizzas(pizzaCount) = "Size: " & selectedSize & " / " & "Topping: " & selectedTopping & " / " & "Crust: " & selectedCrust & " / " & "Base: " & selectedBase & "|" & (pizzaPrice + crustPrice)
+            pizzasInOrder.Text = (pizzaCount + 1) & " pizza(s) in order." ' // 0 based indexing.
 
-        ' // Update the total price.
-        orderedPizzaTotal = orderedPizzaTotal + (pizzaPrice + crustPrice)
-        getPrice()
+            ' // Update the total price.
+            orderedPizzaTotal = orderedPizzaTotal + (pizzaPrice + crustPrice)
+            getPrice()
+        Else
+            MsgBox("Max limit reached. Only 20 pizzas allowed per order.")
+        End If
     End Sub
 
     Private Sub removePizza_Click(sender As Object, e As EventArgs) Handles removePizza.Click
@@ -300,9 +311,14 @@ Public Class ClassicOrder
             MsgBox("First, grab yourself a pizza :)")
         ElseIf pizzaCount >= 0 And CurrentOrder.pizzamakerstatus = False Then
             MsgBox("ClassicOrder detected.")
+            orderTotal = orderPrice.Text.Remove(0, 1)
+            ' // Apply 5% discount if applicable.
+            If orderTotal > 20 Then
+                orderTotal = (orderTotal / 100 * 95)
+                discountApplied = True
+            End If
             ' // Get their current side selection.
-            Dim total As Decimal = orderPrice.Text.Remove(0, 1)
-            CurrentOrder.Extras(0) = "Drinks: " & "£" & drinkPrice & "," & drinkCocaCola.Value & "," & drinkDietCoke.Value & "," & drinkCokeZero.Value & "," & drinkSmartWater.Value & "," & drinkSprite.Value & "," & drinkFanta.Value & "|" & "Sides: " & "£" & sidesPrice & "," & sideMeatballs.SelectedItem & "," & sideGarlicBread.SelectedItem & "," & sideWedges.SelectedItem & "," & sideChickenMixBox.SelectedItem & "|" & "Dips: " & "£" & dipsPrice & "," & dipRandom.Value & "," & dipBigGarlic.Value & "," & dipBigBBQ.Value & "," & dipFRANKs.Value & "," & dipChiliInfusedOil.Value & "," & total.ToString("C")
+            CurrentOrder.Extras(0) = "Drinks: " & "£" & drinkPrice & "," & drinkCocaCola.Value & "," & drinkDietCoke.Value & "," & drinkCokeZero.Value & "," & drinkSmartWater.Value & "," & drinkSprite.Value & "," & drinkFanta.Value & "|" & "Sides: " & "£" & sidesPrice & "," & sideMeatballs.SelectedItem & "," & sideGarlicBread.SelectedItem & "," & sideWedges.SelectedItem & "," & sideChickenMixBox.SelectedItem & "|" & "Dips: " & "£" & dipsPrice & "," & dipRandom.Value & "," & dipBigGarlic.Value & "," & dipBigBBQ.Value & "," & dipFRANKs.Value & "," & dipChiliInfusedOil.Value & "," & orderTotal.ToString("C")
 
             ' // Get their current pizza selection.
             Dim OrderPizzas As String = ""
@@ -314,14 +330,22 @@ Public Class ClassicOrder
             Next
 
             File.AppendAllText("Orders.txt", UserDetails.ID & "," & OrderPizzas & "," & CurrentOrder.Extras(0) + Environment.NewLine)
+            If discountApplied = True Then MsgBox("5% coupon applied. Dominos perks, baby.")
+            MsgBox("The price is " & orderTotal.ToString("C") & " with 20% VAT of " & ((orderTotal / 100) * 20).ToString("c") & ".")
             MsgBox("Order placed sucessfully.")
+            orderTotal = 0
         End If
 
         If CurrentOrder.PizzaMakerStatus = True Then
-            Dim total As Decimal = orderPrice.Text.Remove(0, 1) + CurrentOrder.PizzaMakerTotal
+            orderTotal = orderPrice.Text.Remove(0, 1) + CurrentOrder.PizzaMakerTotal
+            ' // Apply 5% discount if applicable.
+            If orderTotal > 20 Then
+                orderTotal = (orderTotal / 100 * 95)
+                discountApplied = True
+            End If
 
             ' // Get their current side selection.
-            CurrentOrder.Extras(0) = "Drinks: " & "£" & drinkPrice & "," & drinkCocaCola.Value & "," & drinkDietCoke.Value & "," & drinkCokeZero.Value & "," & drinkSmartWater.Value & "," & drinkSprite.Value & "," & drinkFanta.Value & "|" & "Sides: " & "£" & sidesPrice & "," & sideMeatballs.SelectedItem & "," & sideGarlicBread.SelectedItem & "," & sideWedges.SelectedItem & "," & sideChickenMixBox.SelectedItem & "|" & "Dips: " & "£" & dipsPrice & "," & dipRandom.Value & "," & dipBigGarlic.Value & "," & dipBigBBQ.Value & "," & dipFRANKs.Value & "," & dipChiliInfusedOil.Value & "," & total.ToString("C")
+            CurrentOrder.Extras(0) = "Drinks: " & "£" & drinkPrice & "," & drinkCocaCola.Value & "," & drinkDietCoke.Value & "," & drinkCokeZero.Value & "," & drinkSmartWater.Value & "," & drinkSprite.Value & "," & drinkFanta.Value & "|" & "Sides: " & "£" & sidesPrice & "," & sideMeatballs.SelectedItem & "," & sideGarlicBread.SelectedItem & "," & sideWedges.SelectedItem & "," & sideChickenMixBox.SelectedItem & "|" & "Dips: " & "£" & dipsPrice & "," & dipRandom.Value & "," & dipBigGarlic.Value & "," & dipBigBBQ.Value & "," & dipFRANKs.Value & "," & dipChiliInfusedOil.Value & "," & orderTotal.ToString("C")
             pizzaMakerOrder()
         End If
     End Sub
@@ -339,7 +363,10 @@ Public Class ClassicOrder
             Next
 
             File.AppendAllText("Orders.txt", UserDetails.ID & "," & PizzaMakerPizzas & "," & CurrentOrder.Extras(0) + Environment.NewLine)
+            If discountApplied = True Then MsgBox("5% coupon applied. Dominos perks, baby.")
+            MsgBox("The price is " & CurrentOrder.PizzaMakerTotal.ToString("c") & " with a 20% VAT of " & (orderTotal / 100 * 20).ToString("c") & ".")
             MsgBox("Order placed sucessfully with PizzaMaker.")
+            orderTotal = 0
         Else
             MsgBox("ClassicOrder and PizzaMaker detected.")
             ' // Get their current pizza selection.
@@ -359,7 +386,10 @@ Public Class ClassicOrder
             Next
 
             File.AppendAllText("Orders.txt", UserDetails.ID & "," & OrderPizzas & PizzaMakerPizzas & "," & CurrentOrder.Extras(0) + Environment.NewLine)
+            If discountApplied = True Then MsgBox("5% coupon applied. Dominos perks, baby.")
+            MsgBox("The price is " & orderTotal.ToString("C") & " with a 20% VAT of " & (orderTotal / 100 * 20).ToString("C") & ".")
             MsgBox("Order placed sucessfully with ClassicOrder & PizzaMaker.")
+            orderTotal = 0
         End If
     End Sub
 End Class

@@ -81,7 +81,7 @@
     ' ==========================================================================
 
     Private Sub startOver_Click(sender As Object, e As EventArgs) Handles startOver.Click
-        Dim ActionToTake As Integer = MsgBox("Are you sure you wish to remove your custom pizza?", vbYesNo)
+        Dim ActionToTake As Integer = MsgBox("Are you sure you wish to remove your custom pizza selection?", vbYesNo)
 
         If ActionToTake = DialogResult.Yes Then
             ' Set toppings = none selected.
@@ -403,5 +403,19 @@
             swissCheeseQuantity = 3
         End If
         getPrice()
+    End Sub
+
+    Private Sub removePizzas_Click(sender As Object, e As EventArgs) Handles removePizzas.Click
+        Dim ActionToTake As Integer = MsgBox("Are you sure? This will remove ALL your PizzaMaker pizzas.", vbYesNo)
+
+        If ActionToTake = DialogResult.Yes Then
+            ' // Reset PizzaMaker orders.
+            CurrentOrder.PizzaMakerStatus = 0
+            ReDim CurrentOrder.PizzaMakerPizzas(0)
+            CurrentOrder.PizzaMakerTotal = 0
+            MsgBox("Success. All PizzaMaker pizzas removed from order.")
+        Else
+            MsgBox("Order not modified.")
+        End If
     End Sub
 End Class
